@@ -1,0 +1,162 @@
+/* GLOBAL */
+*{
+    /* css3 */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.clear{
+    clear: both;
+}
+
+/* HEADER */
+.header {
+    padding: 10px 0;
+}
+.header img{
+    width: 250px;
+}
+/* B1: xóa dấu tròn đen của danh sách */
+.header ul{
+    list-style: none;
+    background-color: black;
+    padding: 20px;
+}
+/* B2: xóa đường gạch của thẻ a, đổi màu chữ thẻ a */
+.header a{
+    text-decoration: none;
+    color: white;
+}
+/*B3: đổi tính chất của thẻ li chuyển từ block qua inline */
+/* B4: thêm khoảng cách */
+.header li{
+    display: inline;
+    margin: 10px;
+    /* padding: 30px;
+    border: 5px solid red; */
+}
+
+/* CAROUSEL */
+.carousel{
+    background-image: url(../img/slider_1.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* INTRO */
+.intro p {
+    padding: 20px 5px;
+}
+.intro b {
+    color: red;
+    text-align: justify;
+    text-transform: uppercase;
+}
+.intro_item_left, .intro_item_right {
+    float: left;
+    width: 50%;
+    padding-right: 5px;
+}
+.intro_item {
+    float: left;
+    padding: 10px;
+}
+.intro_item1 {
+    width: 50%;
+}
+.intro_item2 {;
+    width: 100%;
+}
+
+.intro_item img {
+    width: 100%;
+    display: block;
+}
+/* PRODUCTS */
+.products h2 {
+    text-align: center;
+    padding: 25px;
+}
+.products_item{
+    float: left;
+    width: 25%;
+    padding:0 5px;
+    text-align: justify;
+}
+.products_item img{
+    width: 100%;
+}
+.products_item h3 {
+    padding: 10px 0;
+}
+.products_item button {
+    background-color: #D85450;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px; 
+    margin: 15px 0;   
+}
+
+/* BANNER */
+.banner{
+    background-image: url(../img/nature.jpg);
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    margin: 50px 0;
+}
+.banner_circle{
+    position: absolute;
+    /* top,left, right, bottom */
+    top:20px;
+    left: 350px;
+
+    width: 250px;
+    height: 250px;
+    /* rgba */
+    background-color: rgb(97, 19, 19,0.5);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.banner_circle p {
+    padding: 0;
+    font-size: 20px;
+}
+.banner_circle p:first-child {
+    font-size: 30px;
+    padding-top: 40px;
+
+}
+.banner_circle p:nth-child(2) {
+    font-size: 80px;
+    margin: 0;
+}
+
+/* SERVICES */
+.services_content {
+    width: 60%;
+    margin: 0 auto;
+}
+.services_item {
+    float: left;
+    width: 33.33%;
+    padding: 0 10px;
+    text-align: center;
+}
+.services_item img {
+    width: 50px;
+    height: 50px;
+}
+
+/* FOOTER */
+.footer {
+    height: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
