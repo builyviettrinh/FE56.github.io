@@ -1,0 +1,151 @@
+/* GLOBAL */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* HEADER */
+header {
+    padding: 15px;
+}
+header .logo {
+    width: 20%;
+}
+header .slogan {
+    padding-left: 70rem;
+}
+header nav ul {
+    list-style: none;
+    border: 1px solid #DFDFDF;
+    padding: 15px;
+
+}
+header nav li {
+    display: inline;
+    padding: 20px;
+}
+header nav a {
+    text-decoration: none;
+    color: #646464;
+    font-weight: 600;
+}
+
+/* BANNER */
+.banner {
+    background-image: url(../images/slider_1.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+
+COMMON
+.line_image {
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* INTRO */
+.intro {
+    padding: 40px 15px;
+    text-align: center;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+.intro p {
+    color: #838383;
+}
+
+/* COURSE */
+.course {
+    padding: 20px 0;
+    text-align: center;
+}
+.course_content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.course_item {
+    padding: 12px;
+}
+.course_content img {
+    width: 100%;
+    height: 200px;
+}
+.course h3 {
+    color: #942D39;
+}
+
+/* NEWS */
+.news {
+    padding: 20px 0;
+    text-align: center;
+}
+.news_content {
+    padding: 10px;
+    text-align: justify;
+
+}
+.news_item_left, .news_item_right {
+    float: left;
+    width: 50%;
+}
+.news_item_left img {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #862422;
+}
+.news_item_left {
+    padding: 5px;
+
+}
+.news_item_0-1 {
+    position: relative;
+}
+.news_item_0-1 p {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    height: 50px;
+    background-color: rgb(0, 0, 0,0.6);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.news_item_1-1, .news_item_1-2 {
+    float: left;
+    width: 50%;
+}
+.news_item_1-1{
+    /* padding-right: 20px; */
+
+}
+.news_item_right img {
+    width: 100%;
+
+}
+.news_item {
+    padding-right: 15px;
+}
+.news_item_1-1,.news_item_1-2 {
+    position: relative;
+}
+.news_item_1-1 p {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    height: 50px;
+    background-color: rgb(0, 0, 0,0.6);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
