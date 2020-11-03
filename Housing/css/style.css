@@ -1,0 +1,44 @@
+/* GOLOBAL  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ html, body {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+ /* HEADER  */
+header {
+    background-color: black;
+}
+header h1 a {
+     font-size: 56px;
+     text-transform: capitalize;
+     letter-spacing: 2px;
+     color: white;
+     text-decoration: none;
+ }
+header a span {
+     color: #00cdce;
+ }
+ header nav li {
+     display: inline;
+ }
+header nav ul {
+    list-style: none;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+ /* CAROUSEL */
+/* ABOUT */
+/* STATS */
+/* BLOG   */
+ /* GET MORE  */
+/* PORTFOLIO */
+/* SUBSCRIBE */
+/* OUR AGENTS */
+/* CONTACT */
+/* FOOTER */

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VUS Anh văn hội Việt Mỹ</title>
     <!-- FONT GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
@@ -14,14 +14,19 @@
 <body>
     <!-- HEADER -->
     <header>
-        <img src="./images/logo.png" alt="" class="logo">
-        <img src="./images/slogan.png" alt="" class="slogan">
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="slogan">
+            <img src="./images/slogan.png" alt="">
+        </div>
+        <div class="clear"></div>
         <nav>
             <ul>
-                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#" class="active">TRANG CHỦ</a></li>
                 <li><a href="#intro">GIỚI THIỆU</a></li>
                 <li><a href="#">THÀNH TỰU</a></li>
-                <li><a href="#course">CÁC KHOA HỌC</a></li>
+                <li><a href="#course">CÁC KHOÁ HỌC</a></li>
                 <li><a href="#news">TIN TỨC & SỰ KIỆN</a></li>
                 <li><a href="#">CHẤT LƯỢNG GIẢNG DẠY</a></li>
                 <li><a href="#">GÓC HỌC VIÊN</a></li>
@@ -82,35 +87,52 @@
             <div class="news_item_left">
                 <div class="news_item_0-1">
                     <img src="./images/tin_tuc_1.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>cùng vus vui hội trăng rằm tại "thành phố tuổi thơ"</p>
                 </div>
             </div>
             <div class="news_item_right">
                 <div class="news_item">
-                    <div class="news_item news_item_1-1">
+                    <div class="news_item_1-1">
                         <img src="./images/tin_tuc_2.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>2.947 học viên vus nhận chứng chỉ quốc tế</p>
                     </div>
-                    <div class="news_item news_item_1-1">
+                </div>
+
+                <div class="news_item">
+                    <div class="news_item_1-1">
                         <img src="./images/tin_tuc_3.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>842 học viên của hệ thống anh văn hôi viêt mỹ nhận chứng chỉ</p>
                     </div>
-                    <div class="news_item news_item_1-1">
+                </div>
+
+                <div class="news_item">
+                    <div class="news_item_1-1">
                         <img src="./images/tin_tuc_4.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>gala trao giải vus summer contest 2016 be a star</p>
                     </div>
-                    <div class="news_item news_item_1-1">
+                </div>
+
+                <div class="news_item">
+                    <div class="news_item_1-1">
                         <img src="./images/tin_tuc_5.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>ngày hội dành cho giáo viên anh ngữ vus tesol 2016</p>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
+        <div class="clear"></div>
     </section>
-
+<script>
+    var header = document.getElementsByTagName("ul");
+    var btn = document.getElementsByTagName("a");
+    for( var i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace("active","");
+            this.className +="active";
+        });
+    }
+</script>
     
 </body>
 </html>
