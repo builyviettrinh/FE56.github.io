@@ -6,13 +6,18 @@
 }
 html, body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;    
 }
 .clear {
     clear: both;
 }
 /* HEADER */
+header img {
+    display: block;
+    width: 100%;
+}
 header .logo {
-    width: 20%;
+    display: block;
     float: left;
     padding-left: 1rem;
 }
@@ -25,11 +30,10 @@ header nav ul {
     border: 1px solid #DFDFDF;
     border-left: none;
     border-right: none;
-    padding: 15px 0;
+    padding: 15px 5px;
 }
 header nav li {
     display: inline;
-    padding: 5px;
 }
 header nav a {
     text-decoration: none;
@@ -45,17 +49,15 @@ header nav .active, a:hover {
 /* BANNER */
 .banner {
     background-image: url(../images/slider_1.png);
-    height: 500px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20px 10px;
 }
-
 .line_image {
     padding: 10px 0;
-    text-align: center;
+    text-align: center; 
 }
-
 /* INTRO */
 .intro {
     padding: 40px 15px;
@@ -63,7 +65,6 @@ header nav .active, a:hover {
     word-spacing: 2px;
     line-height: 25px;
 }
-
 .intro p {
     color: #838383;
 }
@@ -75,17 +76,19 @@ header nav .active, a:hover {
 }
 .course_content {
     display: grid;
+    text-align: left;
     grid-template-columns: repeat(4,1fr);
-}
-.course_item {
-    padding: 12px;
+    gap: 0 18px;
+    margin: 0 10px;
 }
 .course_content img {
     width: 100%;
+    display: block;
     height: 200px;
 }
-.course h3 {
+.course h4 {
     color: #942D39;
+    padding: 10px 0;
 }
 
 /* NEWS */
@@ -108,7 +111,8 @@ header nav .active, a:hover {
 }
 .news_item_left img {
     width: 100%;
-    padding-bottom: 5px;
+    display: block;
+    padding-bottom: 3px;
     border-bottom: 3px solid #862422;
 }
 .news_item_0-1 {
@@ -117,7 +121,7 @@ header nav .active, a:hover {
 .news_item_0-1 p {
     position: absolute;
     width: 100%;
-    bottom: 10px;
+    bottom: 5px;
     left: 0;
     height: 50px;
     background-color: rgb(0, 0, 0,0.6);
@@ -131,13 +135,14 @@ header nav .active, a:hover {
 .news_item {
     float: left;
     width: 50%;
-    padding-left: 20px;
-    padding-bottom: 5px;
+    padding-left: 18px;
+    padding-bottom: 10px;
     
 }
 .news_item_right img {
     width: 100%;
-    padding-bottom: 5px;
+    display: block;
+    padding-bottom: 3px;
     border-bottom: 3px solid #862422;
 }
 .news_item_1-1 {
@@ -146,7 +151,7 @@ header nav .active, a:hover {
 .news_item_1-1 p {
     position: absolute;
     width: 100%;
-    bottom: 10px;
+    bottom: 5px;
     left: 0;
     height: 50px;
     background-color: rgb(0, 0, 0,0.6);

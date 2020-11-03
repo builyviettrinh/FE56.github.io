@@ -5,59 +5,59 @@
     padding: 0;
     margin: 0;
 }
+html,body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
 .clear{
     clear: both;
 }
+/* h2,h3, h4 {
+    font-weight: 600;
+    fo
+} */
 
 /* HEADER */
-.header {
-    padding: 10px 0;
-}
 .header img{
     width: 250px;
 }
-/* B1: xóa dấu tròn đen của danh sách */
 .header ul{
     list-style: none;
     background-color: black;
-    padding: 20px;
+    padding: 10px;
 }
-/* B2: xóa đường gạch của thẻ a, đổi màu chữ thẻ a */
 .header a{
     text-decoration: none;
     color: white;
 }
-/*B3: đổi tính chất của thẻ li chuyển từ block qua inline */
-/* B4: thêm khoảng cách */
 .header li{
     display: inline;
     margin: 10px;
-    /* padding: 30px;
-    border: 5px solid red; */
 }
 
 /* CAROUSEL */
 .carousel{
     background-image: url(../img/slider_1.jpg);
-    height: 600px;
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 10px 0;
 }
 
 /* INTRO */
 .intro p {
-    padding: 20px 5px;
+    margin: 20px 5px;
+    text-align: justify;
 }
 .intro b {
     color: red;
-    text-align: justify;
     text-transform: uppercase;
 }
 .intro_item_left, .intro_item_right {
     float: left;
     width: 50%;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 .intro_item {
     float: left;
@@ -66,8 +66,9 @@
 .intro_item1 {
     width: 50%;
 }
-.intro_item2 {;
+.intro_item2 {
     width: 100%;
+    padding: 10px;
 }
 
 .intro_item img {
@@ -82,11 +83,13 @@
 .products_item{
     float: left;
     width: 25%;
-    padding:0 5px;
+    padding:0 10px;
     text-align: justify;
 }
 .products_item img{
     width: 100%;
+    /* height: 100%; */
+    display: block;
 }
 .products_item h3 {
     padding: 10px 0;
@@ -96,26 +99,25 @@
     color: white;
     border: none;
     border-radius: 3px;
-    padding: 5px 10px; 
-    margin: 15px 0;   
+    padding: 10px 15px; 
+    margin: 20px 0;   
 }
 
 /* BANNER */
 .banner{
     background-image: url(../img/nature.jpg);
-    height: 300px;
+    height: 250px;
     background-size: cover;
     position: relative;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 .banner_circle{
     position: absolute;
     /* top,left, right, bottom */
     top:20px;
     left: 350px;
-
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     /* rgba */
     background-color: rgb(97, 19, 19,0.5);
     border-radius: 50%;
@@ -123,16 +125,14 @@
     color: white;
 }
 .banner_circle p {
-    padding: 0;
-    font-size: 20px;
+    font-size: 16px;
 }
 .banner_circle p:first-child {
-    font-size: 30px;
+    font-size: 24px;
     padding-top: 40px;
-
 }
 .banner_circle p:nth-child(2) {
-    font-size: 80px;
+    font-size: 60px;
     margin: 0;
 }
 
@@ -144,12 +144,16 @@
 .services_item {
     float: left;
     width: 33.33%;
-    padding: 0 10px;
+    padding: 0 5px;
     text-align: center;
 }
 .services_item img {
-    width: 50px;
-    height: 50px;
+    width: 30%;
+    height: 30%;
+    margin: 10px 0;
+}
+.services_item p {
+    margin: 5px;
 }
 
 /* FOOTER */
@@ -159,4 +163,5 @@
     color: white;
     text-align: center;
     padding: 20px 0;
+    margin-top: 10px;
 }

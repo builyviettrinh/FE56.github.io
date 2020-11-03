@@ -1,0 +1,83 @@
+body {
+    font-size: 1.5rem;
+}
+/* header */
+.header h2 {
+    background-color: red;
+    color: white;
+    margin: 15px 0;
+}
+.header ul  {
+    list-style-type: none;
+    padding-left: 0;
+}
+ /* intro  */
+ .intro {
+     height: 900px;
+     background-color: #A52A2A;
+     color: white; 
+     
+ }
+ .intro h2 {
+    text-align: center;
+ }
+ .intro p { 
+     font-size: 26px; 
+     text-align: justify;  
+ }
+.intro i {
+    color: black;
+}
+ /* restaurant place */
+ .restaurant-place {
+    height: 950px;
+    background-color: #A52A2A;
+    color: white;
+ }
+ .restaurant-place h2 {
+     text-align: center;
+ }
+
+ /* Price List */
+ .price-list {
+     text-align: center;
+ } 
+ .price-list table {
+     width : 60%;
+     height: 800px;
+     margin: auto;
+ }
+.price-list table, th, td {
+    border: 1px solid black;
+        
+}
+.price-list th {
+    padding: 15px;
+        
+}
+
+.green-tea {
+    background-image: url(../img/greentea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-align: right;
+}
+
+.black-tea {
+    background-image: url(../img/blacktea.jpg);
+    background-repeat: no-repeat;
+}
+.olong-tea {
+    background-image: url(../img/olongtea.jpg);
+    background-repeat: no-repeat;
+    text-align: left;
+}
+.fruit-tea {
+    background-image: url(../img/fruit.jpg);
+    background-repeat: no-repeat;
+
+}
+.milk-tea {
+    background-image: url(../img/milktea.png);
+    background-repeat: no-repeat;
+}
