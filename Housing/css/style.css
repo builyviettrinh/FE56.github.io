@@ -56,44 +56,109 @@ header nav {
 }
 
  /* CAROUSEL */
- .carousel {
-     width: 80%;
-     margin: 0 auto;
+ .carousel_content .item {
+     height: 500px;
  }
- .slide1 {
-     background-image: url(../images/b1.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     height: 800px;
- }
- .slide2 {
-    background-image: url(../images/b2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-}
-.slide3 {
-    background-image: url(../images/b3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-}
-.slide4 {
-    background-image: url(../images/b4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-}
-.carousel_content {
-    position: relative;;
-}
-.carousel .item {
-    position: absolute;
+.carousel_content img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
+
 /* ABOUT */
+.about {
+    padding: 50px 0;
+    text-align: center;
+}
+.about_content {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.about_content i {
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
 /* STATS */
+.stats {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #00cdce;
+    font-size: 3rem;
+
+}
+.stats_content {
+    width: 70%;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
 /* BLOG   */
+.blog {
+    text-align: center;
+    padding: 50px 0;
+}
+.blog_content {
+    width: 70%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+}
+.blog_content  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* color   #00cdce : xanh bien  */
+.blog_content .blog_item {
+    background-color: #e6ebff54;
+}
+.blog_item h4 {
+    margin: 10px;
+    color: #00cdce;
+}
+.blog_item button {
+    background-color: black;
+    color: #00cdce;
+    padding: 10px 20px;
+    margin: 20px 0 ;
+}
+
+/* modal  */
+.modal-header  {
+    background-color: #00cdce;
+    color: #fff;
+}
+.modal-header h5 {
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.modal-header  button {
+    font-size: 3rem;
+    color: #070606;
+    z-index: 5;
+}
+.modal-body img {
+    width: 100%;
+}
+.modal-body p {
+    text-align: justify;
+    padding: 20px;
+}
+
+
  /* GET MORE  */
 /* PORTFOLIO */
 /* SUBSCRIBE */

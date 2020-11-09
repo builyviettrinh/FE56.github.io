@@ -1,0 +1,74 @@
+/* GLOBAL */
+html,body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header{
+    position: absolute;
+    top:30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+}
+
+
+/* 110 */
+#movieNavBar .nav-item::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    /* #fbbd61,#ec7532 */
+    /* từ trái qua phải */
+    /* left là vị trí màu bắt đầu */
+    /* right là vị trí màu kết thúc */
+    background:linear-gradient(to right,#fbbd61,#ec7532);
+    transition: all 0.5s;
+}
+#movieNavBar .nav-item:hover::after{
+    width: 100%;
+}
+
+#movieNavBar .nav-item.active::after{
+    width: 100%;
+}
+
+/* CAROUSEL */
+#movieCarousel .carousel-caption{
+    
+    /* Canh giữa cho position:absolute */
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    text-align: left;
+
+} 
+
+/* NEW IN */
+.newIn__img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.newIn__img .newIn__overlay{
+    opacity: 0.8;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 205%;
+    height: 100%;
+    background: linear-gradient(to bottom,#fbbd61,#ec7532);
+    /* vị trí chưa hover */
+    transform: translateX(-125%) skewX(30deg);
+    transition: all 0.5s;
+}
+/* vị trí đã hover */
+.newIn__img:hover .newIn__overlay{
+    transform: translateX(-30%) skewX(30deg);
+}
