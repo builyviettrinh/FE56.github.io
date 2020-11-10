@@ -8,37 +8,36 @@
      font-family: 'Montserrat', sans-serif;
      font-size: 14px;
  }
- .clear {
-     clear: both;
- }
+h2 {
+    font-size: 4rem;
+    font-weight: 500;
+}
 
  /* HEADER  */
 header {
-    background-color: black;
-    width: 100%;
     height: 80px;
     padding: 10px 20px;
 }
-header h1 a {
-     font-size: 56px;
+header  a {
+     /* font-size: 56px; */
      text-transform: capitalize;
      letter-spacing: 2px;
      color: white;
      text-decoration: none;
  }
- header .logo {
+
+ /* header .logo {
     display: block;
     float: left;
-}
+} */
 header a span {
      color: #00cdce;
  }
  header nav li {
-     display: inline;
      margin: 10px;
-     padding-bottom: 10px;
      border-bottom: 2px solid white;
  }
+ /*
 header nav ul {
     list-style: none;    
 }
@@ -53,7 +52,7 @@ header nav {
     display: block;
     float: right;
     margin: 30px 0;
-}
+} */
 
  /* CAROUSEL */
  .carousel_content .item {
@@ -99,7 +98,6 @@ header nav {
     margin: 15px auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-
 }
 /* BLOG   */
 .blog {
@@ -127,7 +125,7 @@ header nav {
     margin: 10px;
     color: #00cdce;
 }
-.blog_item button {
+.blog_item button,.getMore_content button {
     background-color: black;
     color: #00cdce;
     padding: 10px 20px;
@@ -160,8 +158,59 @@ header nav {
 
 
  /* GET MORE  */
+ .getMore {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 300px;
+
+ }
+ .getMore_content {
+     background-color: #00cdce;
+ }
 /* PORTFOLIO */
+.portfolio_content {
+    width: 60%;
+    margin: 0 auto;
+}
+.portfolio_img {
+    width: 100%;
+    height: 100%;
+}
 /* SUBSCRIBE */
+.subscript {
+    background-color: #00cdce;
+}
+.subscript form {
+    width: 50%;
+    margin: 10px auto;
+}
+
 /* OUR AGENTS */
+
 /* CONTACT */
+.contact_form {
+    width: 70%;
+    margin: 0 auto;
+}
+.contact_form form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: repeat(4,1fr); */
+    gap: 20px;
+}
+.contact_form textarea {
+    grid-row: 2 / 4;
+}
+
 /* FOOTER */
+footer {
+    background-color: #00cdce;
+
+}
+.footer_socials ul {
+    display: inline;
+    list-style: none;
+}
+.footer_socials li {
+    display: inline;
+}

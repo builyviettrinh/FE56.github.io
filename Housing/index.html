@@ -32,7 +32,36 @@
   <body>
     <!-- HEADER  -->
     <header>
-      <div class="logo">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand logo" href=index.html">hous<span>ing</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto nav justify-content-end"">
+            <li class="nav-item active">
+              <a class="nav-link  text-white" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Agents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- <div class="logo">
         <h1>
           <a href="index.html">hous<span>ing</span> </a>
         </h1>
@@ -46,7 +75,7 @@
           <li><a href="#team">Agents</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
     <div class="clear"></div>
 
@@ -88,7 +117,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
         </div>
         <div class="about_item">
-          <i class="fa fa-money-bill"></i>
+          <i class="far fa-money-bill-alt"></i>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
         </div>
       </div>
@@ -110,15 +139,15 @@
           <p>clients</p>
         </div>
         <div class="stats_item">
-          <p class="counter">3500</p>
+          <p class="counter">35340</p>
           <p>clients</p>
         </div>
         <div class="stats_item">
-          <p class="counter">3500</p>
+          <p class="counter">6500</p>
           <p>clients</p>
         </div>
         <div class="stats_item">
-          <p class="counter">3500</p>
+          <p class="counter">4500</p>
           <p>clients</p>
         </div>
       </div>
@@ -149,7 +178,7 @@
       </div>
 
       <!-- modal  -->
-      <div class="modal modal-dialog modal-dialog-centered fade" id="blog_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal  fade" id="blog_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -172,25 +201,171 @@
     <!-- GET MORE  -->
     <section class="getMore">
       <div class="getMore_video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/58hoktsqk_Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       </div>
-      <div class="getMore_content">
-        <h2>Get More..</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut minim veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+      <div class="getMore_content text-center">
+        <h2 class="m-5">Get More..</h2>
+        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut minim veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
         <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
 
       </div>
     </section>
 
     <!-- PORTFOLIO  -->
+    <section class="portfolio">   
+      <h2 class="m-5  text-center">Portfolio</h2>
+      <div class="portfolio_content">
+        <div class="row">
+          <div class="col-4">
+            <div class="portfolio_img">
+                <img class="img-fluid" src="./images/img1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="portfolio_img">
+              <img class="img-fluid" src="./images/img2.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="portfolio_img">
+             <img class="img-fluid" src="./images/img3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4">
+            <div class="portfolio_img">
+              <img class="img-fluid" src="./images/img4.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="portfolio_img">
+             <img class="img-fluid" src="./images/img5.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="portfolio_img">
+             <img class="img-fluid" src="./images/img6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
     <!-- SUBSCRIBE  -->
+    <section class="subscript text-center m-5 p-2">
+      <h2 class="m-4">Subscript</h2>
+      <p class="text-white">consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+
+      <form>
+        <input class="form-control form-control-lg mr-sm-2 subscript_email" type="email" placeholder="Email" aria-label="email">
+        <button class="btn btn-dark px-5 btn-lg my-2 my-sm-3" type="submit">Click</button>
+      </form>
+    </section>
 
     <!-- OUR AGENTS  -->
+    <section class="ourAgents">
+      <h2>Our Agents</h2>
+      <div class="ourAgents_content">
+        <div class="row">
+          <div class="col-3">
+            <img src="./images/t1.jpg" alt="">
+            <div class="image_text">
+              <h3>Kat</h3>
+              <p>Lorem ipsum</p>
+              <div class="Agent_socials">
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <img src="./images/t2.jpg" alt="">
+            <div class="image_text">
+              <h3>Kat</h3>
+              <p>Lorem ipsum</p>
+              <div class="Agent_socials">
+                
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <img src="./images/t3.jpg" alt="">
+            <div class="image_text">
+              <h3>Kat</h3>
+              <p>Lorem ipsum</p>
+              <div class="Agent_socials">
+                
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <img src="./images/t4.jpg" alt="">
+            <div class="image_text">
+              <h3>Kat</h3>
+              <p>Lorem ipsum</p>
+              <div class="Agent_socials">
+                
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- map  -->
+    <div class="contact_map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22491.398034284808!2d106.63867024396886!3d10.814939916780537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529111aa89f9d%3A0xd8f09cc0aa1b27f3!2sTan%20Son%20Nhat%20International%20Airport!5e0!3m2!1sen!2s!4v1604223268002!5m2!1sen!2s" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    </div>
 
     <!-- CONTACT  -->
+    <section class="contact">
+      <h2 class="text-center py-4">Contact Us</h2>
+      <div class="contact_form">
+        <form action="">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Last Name">
+          <input type="email" name="" id="" placeholder="Email">
+          <input type="tel" name="" id="" placeholder="Phone">
+
+          <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+          <button>Submit</button>
+
+        </form>
+      </div>
+
+    </section>
 
     <!-- FOOTER  -->
+    <footer>
+      <div class="container py-5 mt-5">
+        <div class="row copyright">
+          <div class="col-7">
+            <p class="text-white">© 2017 Housing. All Rights Reserved | Design by <a href="#" target="_blank" class="text-danger"> W3layouts </a></p>
+          </div>
+          <div class="rol-5">
+            <div class="footer_socials">
+              <ul>
+                <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
+                <li><a href="#"><span><i class="fab fa-vk"></i></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
 
     <!-- Thư viện hỗ trợ -->
     <script
@@ -231,6 +406,11 @@
         //   },
         },
       });
+    </script>
+    <script>
+      $('#myModal').on('shown.bs.modal', function () {
+         $('#myInput').trigger('focus')
+      })
     </script>
   </body>
 </html>
