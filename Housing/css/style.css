@@ -15,21 +15,13 @@ h2 {
 
  /* HEADER  */
 header {
-    height: 80px;
-    padding: 10px 20px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    background-color: rgb(7, 6, 6, 0.7);
 }
-header  a {
-     /* font-size: 56px; */
-     text-transform: capitalize;
-     letter-spacing: 2px;
-     color: white;
-     text-decoration: none;
- }
-
- /* header .logo {
-    display: block;
-    float: left;
-} */
 header a span {
      color: #00cdce;
  }
@@ -37,28 +29,15 @@ header a span {
      margin: 10px;
      border-bottom: 2px solid white;
  }
- /*
-header nav ul {
-    list-style: none;    
-}
-header nav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    margin: 30px 0;
-    font-size: 1.2rem;
-}
-header nav {
-    display: block;
-    float: right;
-    margin: 30px 0;
-} */
 
  /* CAROUSEL */
- .carousel_content .item {
-     height: 500px;
- }
-.carousel_content img {
+.house_carousel {
+    position: relative;
+    top: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
+.house_carousel_content img {
     display: block;
     width: 100%;
     height: 100%;
@@ -183,7 +162,7 @@ header nav {
 
 /* OUR AGENTS */
 .ourAgents_content {
-    width: 80%;
+    width: 70%;
     margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -191,7 +170,6 @@ header nav {
 }
 .ourAgents_content img{
     width: 100%;
-    height: 100%;
     display: block;
 }
 
@@ -207,10 +185,19 @@ header nav {
     color: #fff;
     padding: 20px;
     text-align: center;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.footer_socials  a span i {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
 }
 .image_text h3 {
     color: #00cdce;
-
 }
 
 /* CONTACT */
@@ -263,3 +250,23 @@ footer {
     line-height: 33px;
     text-align: center;
 }
+
+/* BACK TO TOP  */
+.backToTop {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    color: blue;
+    display: block;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+}
+  
