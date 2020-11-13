@@ -38,18 +38,13 @@ header a span {
  /* CAROUSEL */
 .house_carousel {
     position: relative;
-    top: 40px;
-    width: 90%;
+    top: 50px;
+    width: 100%;
     margin: 0 auto;
 }
-/* .house_carousel_content img {
-    display: block;
-    width: 100%;
-    height: 100%;
-} */
 
 .slideshow-container {
-    max-width: 90%;
+    max-width: 85%;
     position: relative;
     margin: auto;
 }
@@ -102,9 +97,6 @@ a.prev {
    height: 64px;
    width: 64px;
 }
-/* .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-} */
 
 /* xử lý text bên trong  */
 .text {
@@ -166,9 +158,10 @@ a.prev {
 .about {
     padding: 50px 0;
     text-align: center;
+    font-size: 1.5rem;
 }
 .about_content {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -180,6 +173,9 @@ a.prev {
     padding: 20px;
     border-radius: 50%;
     margin: 15px 0;
+}
+.about_us h4 {
+    color: #00cdce;
 }
 
 /* STATS */
