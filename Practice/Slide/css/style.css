@@ -16,8 +16,9 @@
      margin: auto;
  }
  .slideshow-container img {
-     height: 500px;
-
+     /* height: 500px; */
+     /* display: block; */
+     max-height: 1000px;
 }
  .mySlides {
      display: none;
@@ -36,11 +37,33 @@
      transition: 0.6s ease;
      border-radius: 0 3px 3px 0;
      user-select: none;
+     color: black;
  }
- .next {
-     right: 0;
+
+ a.next {
+     right: -100px;
      border-radius: 3px 0 0 3px;
+     background: url(../images/right-arrow.png) no-repeat 0px 0px;
+     opacity: 0.7;
+     z-index: 3;
+     text-indent: -9999px;
+     overflow: hidden;
+     text-decoration: none;
+     height: 64px;
+     width: 64px;
  }
+ a.prev {
+    left: -100px;
+    border-radius: 3px 0 0 3px;
+    background: url(../images/left-arrow.png) no-repeat 0px 0px;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 64px;
+    width: 64px;
+}
  .prev:hover, .next:hover {
      background-color: rgba(0,0,0,0.8);
  }
@@ -48,20 +71,11 @@
  /* xử lý text bên trong  */
 .text {
     color: #f2f2f2;
-    font-size: 15px;
+    font-size: 2.5rem;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     width: 100%;    
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 16px;
-    position: absolute;
-    padding: 8px 12px;
-    top: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -69,15 +83,19 @@
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
+    margin: 0 8px;
+    background-color: black;
     border-radius: 50%;
     display: inline-block;
-    /* position: absolute; */
     transition: background-color 0.s ease;
 }
+.dots {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+}
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #fff;
 }
 
 /* Fading animation  hieu ung lam mo */
@@ -101,3 +119,55 @@
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }  
+
+
+
+  /* demo2  */
+  .swiper-container {
+    width: 80%;
+    /* height: 300px; */
+}
+  /* customize  */
+  .swiper-container {
+    /* width: 600px; */
+     height: 500px; 
+    text-align: center;
+  }
+
+  .swiper-slide {
+    line-height: 300px;
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+
+  .button-prev,
+  .button-next {
+    position: absolute;
+    top: 50%;
+  
+    height: 64px;
+    width: 64px;
+    margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    /*   font-size:50px; */
+  }
+  
+  .button-prev {
+    left: 10px;
+    right: auto;
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/01-12-2017/housing-demo_Free/524021621/web/images/left-arrow.png)
+      no-repeat 0px 0px;
+  }
+  
+  .button-next {
+    right: 10px;
+    left: auto;
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/01-12-2017/housing-demo_Free/524021621/web/images/right-arrow.png)
+      no-repeat 0px 0px;
+  }

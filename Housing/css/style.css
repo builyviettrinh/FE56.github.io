@@ -21,13 +21,18 @@ header {
     transform: translateX(-50%);
     position: fixed;
     background-color: rgb(7, 6, 6, 0.7);
+    font-size: 2rem;
+    font-weight: 500;
+}
+.navbar-brand {
+    font-size: 4rem;
 }
 header a span {
      color: #00cdce;
  }
  header nav li {
      margin: 10px;
-     border-bottom: 2px solid white;
+     border-bottom: 3px solid white;
  }
 
  /* CAROUSEL */
@@ -37,10 +42,123 @@ header a span {
     width: 90%;
     margin: 0 auto;
 }
-.house_carousel_content img {
+/* .house_carousel_content img {
     display: block;
     width: 100%;
     height: 100%;
+} */
+
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+}
+.slideshow-container img {
+    /* height: 500px; */
+    /* display: block; */
+    max-height: 1000px;
+}
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* width: auto; */
+    font-size: 50px;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    color: black;
+}
+
+a.next {
+    right: -100px;
+    border-radius: 3px 0 0 3px;
+    background: url(../images/right-arrow.png) no-repeat 0px 0px;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 64px;
+    width: 64px;
+}
+a.prev {
+   left: -100px;
+   border-radius: 3px 0 0 3px;
+   background: url(../images/left-arrow.png) no-repeat 0px 0px;
+   opacity: 0.7;
+   z-index: 3;
+   text-indent: -9999px;
+   overflow: hidden;
+   text-decoration: none;
+   height: 64px;
+   width: 64px;
+}
+/* .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+} */
+
+/* xử lý text bên trong  */
+.text {
+   color: #f2f2f2;
+   font-size: 2.5rem;
+   position: absolute;
+   top: 50%;
+   left: 30%;
+   width: 100%;    
+}
+
+/* The dots/bullets/indicators */
+.dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 8px;
+   background-color: black;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.s ease;
+}
+.dots {
+   position: absolute;
+   bottom: 20%;
+   left: 50%;
+}
+.active, .dot:hover {
+   background-color: #fff;
+}
+
+/* Fading animation  hieu ung lam mo */
+.fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+}
+
+@keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+   .prev, .next,.text {font-size: 11px}
+ }  
+.fade:not(.show) {
+    opacity: 1;
 }
 
 

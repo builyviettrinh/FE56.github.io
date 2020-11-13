@@ -30,7 +30,7 @@
   <!-- HEADER  -->
   <header class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark ">
-      <a class="navbar-brand logo" href="index.html">hous<span>ing</span></a>
+      <a class="navbar-brand logo" href="index.html">Hous<span>ing</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#houseNavBar"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -63,7 +63,7 @@
 
   <!-- CAROUSEL  -->
   <section class="house_carousel">
-    <div class="house_carousel_content">
+    <!-- <div class="house_carousel_content">
       <div class="owl-carousel owl-theme">
         <div class="item">
           <img src="./images/b1.jpg" alt="">
@@ -86,8 +86,54 @@
           <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu.</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
+    <div class="slideshow-container">
+      <!-- khai báo nội dung 3 slide  -->
+      <div class="mySlides fade">
+        <img src="./images/b1.jpg" style="width: 100%" />
+        <div class="text">
+          <h2>VOLUPTATE VELIT ESSE</h2>
+          <p>Quis autem velreprehenderit qui ea.eum iure</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/b2.jpg" style="width: 100%" />
+        <div class="text">
+          <h2>VOLUPTATE VELIT ESSE</h2>
+          <p>Quis autem velreprehenderit qui ea.eum iure</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/b3.jpg" style="width: 100%" />
+        <div class="text">
+          <h2>VOLUPTATE VELIT ESSE</h2>
+          <p>Claritas est etiam processus dynamicus, qui sequitur</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/b4.jpg" style="width: 100%" />
+        <div class="text">
+          <h2>VOLUPTATE VELIT ESSE</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, facere!</p>
+        </div>
+      </div>
+
+      <!-- tạo 2 dấu mũi tên next prev  -->
+      <a onclick="plusSlides(-1)" class="prev">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- xử lý dấu chấm (dot), vòng tròn circles  -->
+      <div style="text-align:center" class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
   </section>
 
   <!-- ABOUT  -->
@@ -340,10 +386,6 @@
       </div>
 
 
-
-
-
-
   </section>
 
   <!-- map  -->
@@ -461,6 +503,31 @@
       $('#myInput').trigger('focus')
     })
   </script>
+
+      <!-- show carousel  -->
+      <script>
+        var slideIndex = 0;
+        showSlides();
+  
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+      </script>
 
   <!-- BACK TO TOP  -->
   <script src="./js/util.js"></script>
