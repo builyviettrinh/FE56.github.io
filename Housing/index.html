@@ -22,6 +22,9 @@
   <link rel="stylesheet" href="./css/owl.carousel.min.css" />
   <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
 
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="./css/magnific-popup.css">
+
   <!-- MAIN CSS  -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -41,19 +44,19 @@
           <a class="nav-link  text-white" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">About</a>
+            <a class="nav-link text-white" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Blog</a>
+            <a class="nav-link text-white" href="#blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Portfolio</a>
+            <a class="nav-link text-white" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Agents</a>
+            <a class="nav-link text-white" href="#agents">Agents</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Contact</a>
+            <a class="nav-link text-white" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -67,32 +70,32 @@
       <!-- khai báo nội dung 3 slide  -->
       <div class="mySlides fade">
         <img src="./images/b1.jpg" style="width: 100%" />
-        <div class="text ">
-          <h2 class="display-2 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
+        <div class="text text-center">
+          <h2 class="display-4 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
           <p>Quis autem velreprehenderit qui ea</p>
         </div>
       </div>
 
       <div class="mySlides fade">
         <img src="./images/b2.jpg" style="width: 100%" />
-        <div class="text">
-          <h2 class="display-2 font-weight-bold">QUIS AUTEM VE EUM IURE</h2>
-          <p>Quis autem velreprehenderit qui ea.eum iure</p>
+        <div class="text text-center">
+          <h2 class="display-4 font-weight-bold">QUIS AUTEM VE EUM IURE</h2>
+          <p>velreprehenderit qui ea.eum iure</p>
         </div>
       </div>
 
       <div class="mySlides fade">
         <img src="./images/b3.jpg" style="width: 100%" />
-        <div class="text">
-          <h2 class="display-2 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
+        <div class="text text-center">
+          <h2 class="display-4 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
           <p>Claritas est etiam processus dynamicus, qui sequitur</p>
         </div>
       </div>
 
       <div class="mySlides fade">
         <img src="./images/b4.jpg" style="width: 100%" />
-        <div class="text">
-          <h2 class="display-2 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
+        <div class="text text-center">
+          <h2 class="display-4 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, facere!</p>
         </div>
       </div>
@@ -112,7 +115,7 @@
   </section>
 
   <!-- ABOUT  -->
-  <section class="container about my-5">
+  <section class="container about" id="about">
     <h2>About</h2>
     <div class="about_content">
       <div class="about_item">
@@ -129,7 +132,7 @@
       </div>
     </div>
     <div class="about_us">
-      <h4>About us</h4>
+      <h3 class="py-3">About us</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed odio consequat, tristique elit sed, molestie
         nulla. Mauris et quam leo. Quisque tincidunt facilisis rutrum. Etiam mattis arcu vitae velit sagittis vehicula.
@@ -142,31 +145,31 @@
   </section>
 
   <!-- STATS  -->
-  <section class="stats">
-    <h2>Stats</h2>
-    <div class="stats_content">
+  <section class="stats"  id="stats">
+    <h2 class="pb-3">Stats</h2>
+    <div class="stats_content container ">
       <div class="stats_item">
-        <p class="counter">3500</p>
+        <p class="counter text-white">3500</p>
         <p>clients</p>
       </div>
       <div class="stats_item">
-        <p class="counter">35340</p>
-        <p>clients</p>
+        <p class="counter text-white">35340</p>
+        <p>Plans</p>
       </div>
       <div class="stats_item">
-        <p class="counter">6500</p>
-        <p>clients</p>
+        <p class="counter text-white">6500</p>
+        <p>Projects</p>
       </div>
       <div class="stats_item">
-        <p class="counter">4500</p>
-        <p>clients</p>
+        <p class="counter text-white">4500</p>
+        <p>Likes</p>
       </div>
     </div>
   </section>
 
   <!-- BLOG  -->
-  <section class="blog">
-    <h2>Blog</h2>
+  <section class="blog container"  id="blog">
+    <h2 class="pb-3">Blog</h2>
     <div class="blog_content">
       <div class="blog_item">
         <img src="./images/g1.jpg" alt="">
@@ -214,16 +217,13 @@
 
   <!-- GET MORE  -->
   <section class="getMore">
-    <div class="row getMore_video">
-      <div class="col">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/58hoktsqk_Q" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+    <div class="row">
+      <div class="col getMore_video">
+        <a class="popup-vimeo" href="https://vimeo.com/45830194"><span class="fa fa-play-circle"></span></a><br>
       </div>
-
       <div class="col getMore_content text-center">
-        <h3 class="py-3">GET MORE</h3>
-        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        <h3 class="py-5 font-weight-bold">GET MORE...</h3>
+        <p class="text-white px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut minim veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
           laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
           pariatur.</p>
@@ -234,7 +234,7 @@
   </section>
 
   <!-- PORTFOLIO  -->
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <h2 class="m-5  text-center">Portfolio</h2>
     <div class="portfolio_content">
       <div class="row">
@@ -289,7 +289,7 @@
   </section>
 
   <!-- OUR AGENTS  -->
-  <section class="ourAgents">
+  <section class="ourAgents" id="agents">
     <h2 class="text-center">Our Agents</h2>
 
     <div class="ourAgents_content">
@@ -373,7 +373,7 @@
   </div>
 
   <!-- CONTACT  -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2 class="text-center py-4">Contact Us</h2>
 
     <div class="contact_form">
@@ -537,6 +537,52 @@
   <!-- BACK TO TOP  -->
   <script src="./js/util.js"></script>
   <script src="./js/main.js"></script>  
+
+  <!-- scroll smooth  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!-- Magnific Popup core JS file -->
+<script src="./js/jquery.magnific-popup.js"></script>
+<script>
+$(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+});
+</script>
+
 </body>
 
 </html>
