@@ -72,3 +72,11 @@ header{
 .newIn__img:hover .newIn__overlay{
     transform: translateX(-30%) skewX(30deg);
 }
+
+/* responsive  */
+@media screen and (max-width:576px){
+    /* nhỏ hơn 576px  */
+    .newIn__img img {
+        width: 100%;
+    }
+}
