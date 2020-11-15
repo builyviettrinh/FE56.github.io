@@ -14,9 +14,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
 
   <!-- FONT AWESOME  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
+    crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 
   <!-- OWL CAROUSEL  -->
   <link rel="stylesheet" href="./css/owl.carousel.min.css" />
@@ -25,14 +27,17 @@
   <!-- Magnific Popup core CSS file -->
   <link rel="stylesheet" href="./css/magnific-popup.css">
 
+  <!-- LightSpeedBox -->
+  <link href="./css/lsb.css" rel="stylesheet">
+
   <!-- MAIN CSS  -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- HEADER  -->
-  <header class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header class="container-fluid" id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark py-0">
       <a class="navbar-brand logo" href="index.html">Hous<span>ing</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#houseNavBar"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,23 +45,23 @@
       </button>
       <div class="collapse navbar-collapse" id="houseNavBar">
         <ul class="navbar-nav ml-auto">
-            <li class=" nav-item">
-          <a class="nav-link  text-white" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#about">About</a>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#about">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#blog">Blog</a>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#blog">Blog</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#agents">Agents</a>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#ourAgents">Agents</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#contact">Contact</a>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -101,11 +106,11 @@
       </div>
 
       <!-- tạo 2 dấu mũi tên next prev  -->
-      <a  class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
       <!-- xử lý dấu chấm (dot), vòng tròn circles  -->
-      <div  class="dots text-center" >
+      <div class="dots text-center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
@@ -115,9 +120,9 @@
   </section>
 
   <!-- ABOUT  -->
-  <section class="container about" id="about">
+  <section class=" about" id="about">
     <h2>About</h2>
-    <div class="about_content">
+    <div class="about_content container">
       <div class="about_item">
         <i class="fa fa-home"></i>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
@@ -127,11 +132,11 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
       </div>
       <div class="about_item">
-        <i class="far fa-money-bill-alt"></i>
+        <i class="fa fa-money"></i>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
       </div>
     </div>
-    <div class="about_us">
+    <div class="about_us  container">
       <h3 class="py-3">About us</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed odio consequat, tristique elit sed, molestie
@@ -145,9 +150,9 @@
   </section>
 
   <!-- STATS  -->
-  <section class="stats"  id="stats">
+  <section class="stats" id="stats">
     <h2 class="pb-3">Stats</h2>
-    <div class="stats_content container ">
+    <div class="stats_content container">
       <div class="stats_item">
         <p class="counter text-white">3500</p>
         <p>clients</p>
@@ -168,26 +173,33 @@
   </section>
 
   <!-- BLOG  -->
-  <section class="blog container"  id="blog">
-    <h2 class="pb-3">Blog</h2>
-    <div class="blog_content">
+  <section class="blog" id="blog">
+    <h2 class="text-center pb-3">Blog</h2>
+    <div class="blog_content  container text-left">
       <div class="blog_item">
         <img src="./images/g1.jpg" alt="">
-        <h4> Lorem Ipsum passage,</h4>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-        <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
+        <div class="blog_text">
+          <h4>Lorem Ipsum passage,</h4>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+          <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
+        </div>
+
       </div>
       <div class="blog_item">
         <img src="./images/g1.jpg" alt="">
-        <h4> Lorem Ipsum passage,</h4>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-        <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
+        <div class="blog_text">
+          <h4>Lorem Ipsum passage,</h4>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+          <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
+        </div>
       </div>
       <div class="blog_item">
         <img src="./images/g1.jpg" alt="">
-        <h4> Lorem Ipsum passage,</h4>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-        <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
+        <div class="blog_text">
+          <h4>Lorem Ipsum passage,</h4>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+          <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
+        </div>
       </div>
     </div>
 
@@ -221,9 +233,10 @@
       <div class="col getMore_video">
         <a class="popup-vimeo" href="https://vimeo.com/45830194"><span class="fa fa-play-circle"></span></a><br>
       </div>
-      <div class="col getMore_content text-center">
-        <h3 class="py-5 font-weight-bold">GET MORE...</h3>
-        <p class="text-white px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      <div class="col getMore_content text-center container py-5">
+        <h3 class="font-weight-bold">GET MORE...</h3>
+        <p class="text-white p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt
           ut minim veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
           laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
           pariatur.</p>
@@ -235,29 +248,29 @@
 
   <!-- PORTFOLIO  -->
   <section class="portfolio" id="portfolio">
-    <h2 class="m-5  text-center">Portfolio</h2>
+    <h2 class="m-4  text-center">Portfolio</h2>
     <div class="portfolio_content">
       <div class="row">
         <div class="col-4">
           <div class="portfolio_img">
-            <img class="img-fluid" src="./images/img1.jpg" alt="">
+            <a href="./images/img1.jpg" class="lsb-preview"><img class="img-fluid" src="./images/img1.jpg" alt=""></a>
           </div>
         </div>
         <div class="col-4">
           <div class="portfolio_img">
-            <img class="img-fluid" src="./images/img2.jpg" alt="">
+            <a href="./images/img1.jpg" class="lsb-preview"><img class="img-fluid" src="./images/img2.jpg" alt=""></a>
           </div>
         </div>
         <div class="col-4">
           <div class="portfolio_img">
-            <img class="img-fluid" src="./images/img3.jpg" alt="">
+            <a href="./images/img1.jpg" class="lsb-preview"><img class="img-fluid" src="./images/img3.jpg" alt=""></a>
           </div>
         </div>
       </div>
       <div class="row mt-3">
         <div class="col-4">
           <div class="portfolio_img">
-            <img class="img-fluid" src="./images/img4.jpg" alt="">
+            <a href="./images/img1.jpg" class="lsb-preview"><img class="img-fluid" src="./images/img4.jpg" alt=""></a>
           </div>
         </div>
         <div class="col-4">
@@ -276,7 +289,7 @@
   </section>
 
   <!-- SUBSCRIBE  -->
-  <section class="subscript text-center m-5 p-2">
+  <section class="subscript text-center p-2">
     <h2 class="m-4">Subscript</h2>
     <p class="text-white">consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi</p>
@@ -289,8 +302,8 @@
   </section>
 
   <!-- OUR AGENTS  -->
-  <section class="ourAgents" id="agents">
-    <h2 class="text-center">Our Agents</h2>
+  <section class="ourAgents container" id="ourAgents">
+    <h2 class="text-center p-3">Our Agents</h2>
 
     <div class="ourAgents_content">
       <div class="ourAgents_item">
@@ -300,8 +313,8 @@
           <p>Lorem ipsum</p>
           <div class="footer_socials">
             <ul>
-              <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
-              <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
               <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
             </ul>
           </div>
@@ -316,8 +329,8 @@
           <p>Lorem ipsum</p>
           <div class="footer_socials">
             <ul>
-              <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
-              <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
               <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
             </ul>
           </div>
@@ -333,8 +346,8 @@
           <p>Lorem ipsum</p>
           <div class="footer_socials">
             <ul>
-              <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
-              <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
               <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
             </ul>
           </div>
@@ -350,8 +363,8 @@
           <p>Lorem ipsum</p>
           <div class="footer_socials">
             <ul>
-              <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
-              <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
               <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
             </ul>
           </div>
@@ -363,20 +376,21 @@
 
   </section>
 
-  <!-- map  -->
-  <div class="contact_map">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22491.398034284808!2d106.63867024396886!3d10.814939916780537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529111aa89f9d%3A0xd8f09cc0aa1b27f3!2sTan%20Son%20Nhat%20International%20Airport!5e0!3m2!1sen!2s!4v1604223268002!5m2!1sen!2s"
-      width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0"></iframe>
 
-  </div>
 
   <!-- CONTACT  -->
   <section class="contact" id="contact">
+    <!-- map  -->
+    <div class="contact_map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22491.398034284808!2d106.63867024396886!3d10.814939916780537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529111aa89f9d%3A0xd8f09cc0aa1b27f3!2sTan%20Son%20Nhat%20International%20Airport!5e0!3m2!1sen!2s!4v1604223268002!5m2!1sen!2s"
+        width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+
     <h2 class="text-center py-4">Contact Us</h2>
 
-    <div class="contact_form">
+    <div class="contact_form  container">
       <form>
         <div class="form-row">
           <div class="col mr-4 left">
@@ -414,10 +428,10 @@
         <div class="col-12 col-xl-5">
           <div class="footer_socials">
             <ul>
-              <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
-              <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
               <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
-              <li><a href="#"><span><i class="fab fa-vk"></i></span></a></li>
+              <li><a href="#"><span><i class="fa fa-vk"></i></span></a></li>
             </ul>
           </div>
         </div>
@@ -427,7 +441,7 @@
 
   <!-- BACK TO TOP  -->
   <a href="#" class="backToTop cd-top text-replace js-cd-top">
-    <i class="fa fa-angle-up"></i>
+    <img src="./images/arrowup.png" alt="">
   </a>
 
   <!-- Thư viện hỗ trợ -->
@@ -508,80 +522,110 @@
   <script>
     var slideIndex = 1;
     showSlides(slideIndex);
-    
+
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-    
+
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-    
+
     function showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
       for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
+        slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
     }
-    </script>
+  </script>
 
   <!-- BACK TO TOP  -->
   <script src="./js/util.js"></script>
-  <script src="./js/main.js"></script>  
+  <script src="./js/main.js"></script>
 
   <!-- scroll smooth  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
-    } // End if
-  });
-});
-</script>
+    });
+  </script>
 
-<!-- Magnific Popup core JS file -->
-<script src="./js/jquery.magnific-popup.js"></script>
-<script>
-$(document).ready(function() {
-	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+  <!-- Magnific Popup core JS file -->
+  <script src="./js/jquery.magnific-popup.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
 
-		fixedContentPos: false
-	});
-});
-</script>
+        fixedContentPos: false
+      });
+    });
+  </script>
+
+  <!-- LightSpeedBox -->
+  <script src="./js/lsb.min.js"></script>
+  <script>
+    // $(window).load(function () {
+    //   $.fn.lightspeedBox();
+    // });
+    $(window).on('load', function () {
+      $.fn.lightspeedBox();
+
+    });
+    // $.fn.lightspeedBox({
+    //   showImageTitle: true,
+    //   showImageCount: true,
+    //   showDownloadButton: true,
+    //   showAutoPlayButton: true,
+    //   autoPlayback: false,
+    //   playbackTiming: 3500,
+    //   zIndex: 30,
+    //   locale: {
+    //     nextButton: 'Next image',
+    //     prevButton: 'Previous image',
+    //     closeButton: 'Close',
+    //     downloadButton: 'Download image',
+    //     noImageFound: 'Sorry, no image found.',
+    //     autoplayButton: 'Enable autoplay'
+    //   }
+    // });
+
+  </script>
 
 </body>
 
