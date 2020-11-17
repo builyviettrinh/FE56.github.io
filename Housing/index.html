@@ -101,7 +101,7 @@
         <img src="./images/b4.jpg" style="width: 100%" />
         <div class="text text-center">
           <h2 class="display-4 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, facere!</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </div>
       </div>
 
@@ -120,9 +120,9 @@
   </section>
 
   <!-- ABOUT  -->
-  <section class=" about" id="about">
+  <section class="about  container" id="about">
     <h2>About</h2>
-    <div class="about_content container">
+    <div class="about_content">
       <div class="about_item">
         <i class="fa fa-home"></i>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
@@ -150,22 +150,22 @@
   </section>
 
   <!-- STATS  -->
-  <section class="stats" id="stats">
+  <section class="stats container-fluid" id="stats">
     <h2 class="pb-3">Stats</h2>
-    <div class="stats_content container">
-      <div class="stats_item">
+    <div class="row stats_content">
+      <div class="col-12 col-sm-6 col-md-3 stats_item">
         <p class="counter text-white">3500</p>
         <p>clients</p>
       </div>
-      <div class="stats_item">
+      <div class=" col-12 col-sm-6 col-md-3 stats_item">
         <p class="counter text-white">35340</p>
         <p>Plans</p>
       </div>
-      <div class="stats_item">
+      <div class="col-12 col-sm-6 col-md-3 stats_item">
         <p class="counter text-white">6500</p>
         <p>Projects</p>
       </div>
-      <div class="stats_item">
+      <div class="col-12 col-sm-6 col-md-3 stats_item">
         <p class="counter text-white">4500</p>
         <p>Likes</p>
       </div>
@@ -173,11 +173,14 @@
   </section>
 
   <!-- BLOG  -->
-  <section class="blog" id="blog">
+  <section class="blog container" id="blog">
     <h2 class="text-center pb-3">Blog</h2>
-    <div class="blog_content  container text-left">
-      <div class="blog_item">
-        <img src="./images/g1.jpg" alt="">
+    <div class="row blog_content text-left">
+      <div class="col-12 col-md-4 blog_item">
+        <div  class="blog_img">
+          <img src="./images/g1.jpg" alt="">
+        </div>
+
         <div class="blog_text">
           <h4>Lorem Ipsum passage,</h4>
           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
@@ -185,16 +188,20 @@
         </div>
 
       </div>
-      <div class="blog_item">
-        <img src="./images/g1.jpg" alt="">
+      <div class="col-12 col-md-4 blog_item">
+        <div  class="blog_img">
+          <img src="./images/g2.jpg" alt="">
+        </div>
         <div class="blog_text">
           <h4>Lorem Ipsum passage,</h4>
           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
           <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
         </div>
       </div>
-      <div class="blog_item">
-        <img src="./images/g1.jpg" alt="">
+      <div class="col-12 col-md-4 blog_item">
+        <div  class="blog_img">
+          <img src="./images/g1.jpg" alt="">
+        </div>
         <div class="blog_text">
           <h4>Lorem Ipsum passage,</h4>
           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
@@ -204,12 +211,12 @@
     </div>
 
     <!-- modal  -->
-    <div class="modal  fade" id="blog_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal  fade in" id="blog_Modal" tabindex="-1" role="dialog" aria-labelledby="blog_ModalLabel"
       aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Housing</h5>
+            <h5 class="modal-title" id="blog_ModalLabel">Housing</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -230,10 +237,10 @@
   <!-- GET MORE  -->
   <section class="getMore">
     <div class="row">
-      <div class="col getMore_video">
-        <a class="popup-vimeo" href="https://vimeo.com/45830194"><span class="fa fa-play-circle"></span></a><br>
+      <div class="col-12  col-md-6 getMore_video">
+        <a class="popup-vimeo" href="https://vimeo.com/45830194"><span class="fa fa-play-circle"></span></a>
       </div>
-      <div class="col getMore_content text-center container py-5">
+      <div class="col-12 col-md-6  getMore_content text-center container py-5">
         <h3 class="font-weight-bold">GET MORE...</h3>
         <p class="text-white p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
@@ -242,7 +249,6 @@
           pariatur.</p>
         <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
       </div>
-
     </div>
   </section>
 
@@ -250,8 +256,8 @@
   <section class="portfolio" id="portfolio">
     <h2 class="m-4  text-center">Portfolio</h2>
     <div class="portfolio_content container">
-      <div class="row">
-        <div class="col-4">
+      <div class="row ">
+        <div class="portfolio_item col-6 col-md-4">
           <div class="portfolio_img">
             <a href="./images/img1.jpg" class="lsb-preview">
               <img class="img-fluid" src="./images/img1.jpg" alt="">
@@ -259,14 +265,14 @@
             <!-- gallery  -->
             <div class="portfolio_gallery">
               <a href="./images/img1.jpg" class="lsb-preview">
-                <h3>GALLERY</h3>
+                <p>GALLERY</p>
                 <p>Lorem Ipsum is simply dummy</p>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="portfolio_item col-6 col-md-4">
           <div class="portfolio_img">
             <a href="./images/img2.jpg" class="lsb-preview">
               <img class="img-fluid" src="./images/img2.jpg" alt="">
@@ -274,14 +280,14 @@
             <!-- gallery  -->
             <div class="portfolio_gallery">
               <a href="./images/img2.jpg" class="lsb-preview">
-                <h3>GALLERY</h3>
+                <p>GALLERY</p>
                 <p>Lorem Ipsum is simply dummy</p>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="portfolio_item col-6 col-md-4">
           <div class="portfolio_img">
             <a href="./images/img3.jpg" class="lsb-preview">
               <img class="img-fluid" src="./images/img3.jpg" alt="">
@@ -289,7 +295,52 @@
             <!-- gallery  -->
             <div class="portfolio_gallery">
               <a href="./images/img3.jpg" class="lsb-preview">
-                <h3>GALLERY</h3>
+                <p>GALLERY</p>
+                <p>Lorem Ipsum is simply dummy</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio_item col-6 col-md-4">
+          <div class="portfolio_img">
+            <a href="./images/img1.jpg" class="lsb-preview">
+              <img class="img-fluid" src="./images/img1.jpg" alt="">
+            </a>
+            <!-- gallery  -->
+            <div class="portfolio_gallery">
+              <a href="./images/img1.jpg" class="lsb-preview">
+                <p>GALLERY</p>
+                <p>Lorem Ipsum is simply dummy</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio_item col-6 col-md-4">
+          <div class="portfolio_img">
+            <a href="./images/img2.jpg" class="lsb-preview">
+              <img class="img-fluid" src="./images/img2.jpg" alt="">
+            </a>
+            <!-- gallery  -->
+            <div class="portfolio_gallery">
+              <a href="./images/img2.jpg" class="lsb-preview">
+                <p>GALLERY</p>
+                <p>Lorem Ipsum is simply dummy</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio_item col-6 col-md-4">
+          <div class="portfolio_img">
+            <a href="./images/img3.jpg" class="lsb-preview">
+              <img class="img-fluid" src="./images/img3.jpg" alt="">
+            </a>
+            <!-- gallery  -->
+            <div class="portfolio_gallery">
+              <a href="./images/img3.jpg" class="lsb-preview">
+                <p>GALLERY</p>
                 <p>Lorem Ipsum is simply dummy</p>
               </a>
             </div>
@@ -297,53 +348,7 @@
         </div>
       </div>
 
-      <div class="row mt-3">
-        <div class="col-4">
-          <div class="portfolio_img">
-            <a href="./images/img4.jpg" class="lsb-preview">
-              <img class="img-fluid" src="./images/img4.jpg" alt="">
-            </a>
-            <!-- gallery  -->
-            <div class="portfolio_gallery">
-              <a href="./images/img4.jpg" class="lsb-preview">
-                <h3>GALLERY</h3>
-                <p>Lorem Ipsum is simply dummy</p>
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-4">
-          <div class="portfolio_img">
-            <a href="./images/img5.jpg" class="lsb-preview">
-              <img class="img-fluid" src="./images/img5.jpg" alt="">
-            </a>
-            <!-- gallery  -->
-            <div class="portfolio_gallery">
-              <a href="./images/img5.jpg" class="lsb-preview">
-                <h3>GALLERY</h3>
-                <p>Lorem Ipsum is simply dummy</p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="portfolio_img">
-            <a href="./images/img6.jpg" class="lsb-preview">
-              <img class="img-fluid" src="./images/img6.jpg" alt="">
-            </a>
-            <!-- gallery  -->
-            <div class="portfolio_gallery">
-              <a href="./images/img.jpg" class="lsb-preview">
-                <h3>GALLERY</h3>
-                <p>Lorem Ipsum is simply dummy</p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
 
   </section>
@@ -556,9 +561,9 @@
   <!-- show carousel  -->
   <script>
     var slideIndex = 0;
-    showSlides1();
+    showSlidesAuto();
 
-    function showSlides1(n) {
+    function showSlidesAuto(n) {
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
@@ -574,7 +579,7 @@
       }
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides1, 4000); // Change image every 2 seconds
+      setTimeout(showSlidesAuto, 4000); // Change image every 2 seconds
     }
   </script>
 
@@ -667,23 +672,6 @@
       $.fn.lightspeedBox();
 
     });
-    // $.fn.lightspeedBox({
-    //   showImageTitle: true,
-    //   showImageCount: true,
-    //   showDownloadButton: true,
-    //   showAutoPlayButton: true,
-    //   autoPlayback: false,
-    //   playbackTiming: 3500,
-    //   zIndex: 30,
-    //   locale: {
-    //     nextButton: 'Next image',
-    //     prevButton: 'Previous image',
-    //     closeButton: 'Close',
-    //     downloadButton: 'Download image',
-    //     noImageFound: 'Sorry, no image found.',
-    //     autoplayButton: 'Enable autoplay'
-    //   }
-    // });
 
   </script>
 

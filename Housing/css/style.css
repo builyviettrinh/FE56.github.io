@@ -16,7 +16,7 @@ h2 {
  /* HEADER  */
 #header {
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     left: 50%;
     padding: 0;
     transform: translateX(-50%);
@@ -118,10 +118,28 @@ a.prev {
         max-width: 100%; 
     }
 } 
+@media (max-width: 992px) {
+        /* vùng ảnh hưởng nhỏ hơn 992px */
+        .mySlides h2 {
+            font-size: 3rem;
+        }
+        .mySlides p {
+            font-size: 2rem;
+        }
+}
+@media (max-width: 768px) {
+    /* vùng ảnh hưởng nhỏ hơn 768px */
+    .mySlides h2 {
+        font-size: 2rem;
+    }
+    .mySlides p {
+        font-size: 1.5rem;
+    }
+}
 @media screen and (max-width:576px){
     /* vùng ảnh hưởng nhỏ hơn 576px */
     .mySlides h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .mySlides p {
         font-size: 1rem;
@@ -207,10 +225,30 @@ a.prev {
     font-size: 3rem;
 }
 /* responsive  */
-@media screen and (max-width:576px){
-    /* vùng ảnh hưởng nhỏ hơn 576px */
+@media screen and (max-width: 1024px) {
+    /* vùng ảnh hưởng nhỏ hơn 1024px */
+    .about_content {
+        font-size: 1.8rem;
+        padding: 0em 1.5em;
+    }
+    .about p {
+        font-size: 1.5rem;
+    }
+    .about_content i {
+        font-size: 2.5rem;
+        border: 1px solid black;
+        padding: 1em;
+        border-radius: 50%;
+        margin: 0.5em 0;
+    }
+} 
+@media screen and (max-width: 768px) {
+    /* vùng ảnh hưởng nhỏ hơn 768px */
     .about_content {
         display: block;
+    }
+    .about p {
+        font-size: 2rem;
     }
 } 
 /* STATS */
@@ -220,34 +258,21 @@ a.prev {
     background-color: #00cdce;
     font-size: 3rem;
 }
-.stats_content {
-    display: flex;
-    justify-content: space-around;
-}
 .stats_item p:first-child {
     font-size: 4rem;
     margin-bottom: 0;
 }
-/* responsive  */
-@media screen and (max-width:980px){
-    /* vùng ảnh hưởng nhỏ hơn 980px */
-    .stats_content {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 2em;
-    }
-} 
 
 /* BLOG   */
 .blog {
     padding: 4em 0;
 }
-.blog_content {
+/* .blog_content {
     margin: 10px auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2em;
-}
+} */
 .blog_content  img {
     display: block;
     width: 100%;
@@ -268,6 +293,12 @@ a.prev {
     color: #00cdce;
     padding: 10px 20px;
 }
+@media screen and (max-width: 768px) {
+    /* vùng ảnh hưởng nhỏ hơn 768px */
+    .blog_item {
+        margin-bottom: 2em;
+    }
+} 
 
 /* modal  */
 .modal-header  {
@@ -276,12 +307,14 @@ a.prev {
 }
 .modal-header h5 {
     font-size: 3rem;
-    text-align: center;
+    padding-left: 3.5em;
+    font-weight: bold;
 }
 .modal-header  button {
-    font-size: 3rem;
-    color: #070606;
-    z-index: 5;
+    font-size: 3em;
+    color: #a0260f;
+    outline: none;
+    opacity: 1;
 }
 .modal-body img {
     width: 100%;
@@ -291,7 +324,7 @@ a.prev {
     padding: 20px;
 }
 /* responsive  */
-/* coi bai movie  */
+
 
  /* GET MORE  */
  .getMore_content {
@@ -309,39 +342,59 @@ a.prev {
      padding: 16px 19px;
      position: absolute;
      top: 40%;
-     left: 50%;
-     /* display: inline-block; */
+     left: 45%;
      background: rgba(0, 189, 189, 0.53);
      border-radius: 50%;
      color: #fff;
      transition: all 0.5s;
  }
+ @media (min-width: 576px) and (max-width:768px){
+     .getMore_video {
+         height: 300px;
+     }
+ }
+ @media (max-width: 576px) {
+    .getMore_video {
+        height: 300px;
+    }
+}
  /* pop up  */
- .mfp-fade.mfp-bg {
-	opacity: 0;
-	-webkit-transition: all 0.15s ease-out; 
+ .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 0s;
+ }
+ #blog_Modal h5 {
+     font-weight: 500;
+     justify-content: center;
+ }
+
+ /* .mfp-fade.mfp-bg { */
+	/* opacity: 0; */
+	/* -webkit-transition: all 0.15s ease-out; 
 	-moz-transition: all 0.15s ease-out; 
 	transition: all 0.15s ease-out;
 }
 .mfp-fade.mfp-bg.mfp-ready {
 	opacity: 0.8;
-}
-.mfp-fade.mfp-bg.mfp-removing {
+} */
+/* .mfp-fade.mfp-bg.mfp-removing {
 	opacity: 0;
-}
+} */
 
-.mfp-fade.mfp-wrap .mfp-content {
-	opacity: 0;
+/* .mfp-fade.mfp-wrap .mfp-content {
+	/* opacity: 0;  */ /*
 	-webkit-transition: all 0.15s ease-out; 
 	-moz-transition: all 0.15s ease-out; 
 	transition: all 0.15s ease-out;
-}
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+} */
+/* .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
 	opacity: 1;
-}
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+} */
+/* .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
 	opacity: 0;
-}
+} */
 
 /* PORTFOLIO */
 #portfolio {
@@ -355,22 +408,26 @@ a.prev {
 .portfolio_img {
     position: relative;
 }
-.portfolio_gallery h3 {
+.portfolio_item {
+    padding-bottom: 20px;
+}
+.portfolio_gallery p:first-child {
     color: #00b6e3;
     padding: 0.8em;
     border-top: 2px solid #00b6e3;
     border-bottom: 2px solid #00b6e3;
     font-weight: 500;
+    margin: 0;
 }
-.portfolio_gallery p {
+.portfolio_gallery p:last-child {
     color: #fff;
     font-size: 1.3rem;
-    padding-top: 1em;
+    padding-top: 0.8em;
 }
 .portfolio_gallery  {
     position: absolute;
-    top: 17px;
-    left: 30px;
+    top: 8%;
+    left: 8%;
     width: 85%;
     height: 85%;
     padding: 1em 1.5em;
@@ -380,9 +437,25 @@ a.prev {
     opacity: 0; 
     transition: all 0.5s;
 }
+.portfolio_gallery a {
+    text-decoration: none;
+}
 .portfolio_img:hover .portfolio_gallery {
     opacity: 1;
 }
+@media (max-width: 1200px) {
+    .portfolio_gallery p {
+        font-size: 1rem;
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 992px) {
+    /* vùng ảnh hưởng nhỏ hơn 992px */
+    .portfolio_gallery  {
+        font-size: 0.5rem;
+    }
+}
+
 /* SUBSCRIBE */
 .subscript {
     background-color: #00cdce;
@@ -394,6 +467,13 @@ a.prev {
 .subscript form {
     width: 30%;
     margin: 20px auto;
+}
+@media screen and (max-width: 992px) {
+    /* vùng ảnh hưởng nhỏ hơn 992px */
+    .subscript p {
+        color: rgb(255, 255, 255);
+        padding: 0px 10em;
+    }
 }
 
 /* OUR AGENTS */
