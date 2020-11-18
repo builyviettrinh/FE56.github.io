@@ -1,680 +1,828 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Housing</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Housing</title>
+    <!-- bootrap css  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
-  <!-- bootrap css  -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- FONT GOOGLE -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- FONT GOOGLE -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
-
-  <!-- FONT AWESOME  -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    <!-- FONT AWESOME  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" /> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
 
+    <!-- OWL CAROUSEL  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
 
-  <!-- OWL CAROUSEL  -->
-  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
 
-  <!-- Magnific Popup core CSS file -->
-  <link rel="stylesheet" href="./css/magnific-popup.css">
+    <!-- LightSpeedBox -->
+    <link href="./css/lsb.css" rel="stylesheet" />
 
-  <!-- LightSpeedBox -->
-  <link href="./css/lsb.css" rel="stylesheet">
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-  <!-- MAIN CSS  -->
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <!-- HEADER  -->
-  <header class="container-fluid" id="header">
-    <nav class="navbar navbar-expand-lg navbar-dark py-0">
-      <a class="navbar-brand logo" href="index.html">Hous<span>ing</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#houseNavBar"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="houseNavBar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="#blog">Blog</a>
-          </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="#ourAgents">Agents</a>
-          </li>
-          <li class="nav-item mr-4">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-  </header>
-
-  <!-- CAROUSEL  -->
-  <section class="house_carousel">
-    <div class="slideshow-container">
-      <!-- khai báo nội dung 3 slide  -->
-      <div class="mySlides fade">
-        <img src="./images/b1.jpg" style="width: 100%" />
-        <div class="text text-center">
-          <h2 class="display-4 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
-          <p>Quis autem velreprehenderit qui ea</p>
+  <body>
+    <!-- HEADER  -->
+    <header class="container-fluid" id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark py-0">
+        <a class="navbar-brand logo" href="index.html">Hous<span>ing</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#houseNavBar"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="houseNavBar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#ourAgents">Agents</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
+    </header>
 
-      <div class="mySlides fade">
-        <img src="./images/b2.jpg" style="width: 100%" />
-        <div class="text text-center">
-          <h2 class="display-4 font-weight-bold">QUIS AUTEM VE EUM IURE</h2>
-          <p>velreprehenderit qui ea.eum iure</p>
-        </div>
-      </div>
-
-      <div class="mySlides fade">
-        <img src="./images/b3.jpg" style="width: 100%" />
-        <div class="text text-center">
-          <h2 class="display-4 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
-          <p>Claritas est etiam processus dynamicus, qui sequitur</p>
-        </div>
-      </div>
-
-      <div class="mySlides fade">
-        <img src="./images/b4.jpg" style="width: 100%" />
-        <div class="text text-center">
-          <h2 class="display-4 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-
-      <!-- tạo 2 dấu mũi tên next prev  -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <!-- xử lý dấu chấm (dot), vòng tròn circles  -->
-      <div class="dots text-center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT  -->
-  <section class="about  container" id="about">
-    <h2>About</h2>
-    <div class="about_content">
-      <div class="about_item">
-        <i class="fa fa-home"></i>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
-      </div>
-      <div class="about_item">
-        <i class="fa fa-key"></i>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
-      </div>
-      <div class="about_item">
-        <i class="fa fa-money"></i>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <div class="about_us  container">
-      <h3 class="py-3">About us</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed odio consequat, tristique elit sed, molestie
-        nulla. Mauris et quam leo. Quisque tincidunt facilisis rutrum. Etiam mattis arcu vitae velit sagittis vehicula.
-        Duis posuere ex in mollis iaculis. Suspendisse tincidunt ut velit id euismod.vulputate turpis porta ex sodales,
-        dignissim hendrerit eros sagittis. Curabitur lacinia dui ut luctus congue. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Cras quis
-      </p>
-    </div>
-
-  </section>
-
-  <!-- STATS  -->
-  <section class="stats container-fluid" id="stats">
-    <h2 class="pb-3">Stats</h2>
-    <div class="row stats_content">
-      <div class="col-12 col-sm-6 col-md-3 stats_item">
-        <p class="counter text-white">3500</p>
-        <p>clients</p>
-      </div>
-      <div class=" col-12 col-sm-6 col-md-3 stats_item">
-        <p class="counter text-white">35340</p>
-        <p>Plans</p>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 stats_item">
-        <p class="counter text-white">6500</p>
-        <p>Projects</p>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 stats_item">
-        <p class="counter text-white">4500</p>
-        <p>Likes</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG  -->
-  <section class="blog container" id="blog">
-    <h2 class="text-center pb-3">Blog</h2>
-    <div class="row blog_content text-left">
-      <div class="col-12 col-md-4 blog_item">
-        <div  class="blog_img">
-          <img src="./images/g1.jpg" alt="">
+    <!-- CAROUSEL  -->
+    <section class="house_carousel">
+      <div class="slideshow-container">
+        <!-- khai báo nội dung 3 slide  -->
+        <div class="mySlides fade">
+          <img src="./images/b1.jpg" style="width: 100%" />
+          <div class="text text-center">
+            <h2 class="display-4 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
+            <p>Quis autem velreprehenderit qui ea</p>
+          </div>
         </div>
 
-        <div class="blog_text">
-          <h4>Lorem Ipsum passage,</h4>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-          <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
+        <div class="mySlides fade">
+          <img src="./images/b2.jpg" style="width: 100%" />
+          <div class="text text-center">
+            <h2 class="display-4 font-weight-bold">QUIS AUTEM VE EUM IURE</h2>
+            <p>velreprehenderit qui ea.eum iure</p>
+          </div>
         </div>
 
-      </div>
-      <div class="col-12 col-md-4 blog_item">
-        <div  class="blog_img">
-          <img src="./images/g2.jpg" alt="">
+        <div class="mySlides fade">
+          <img src="./images/b3.jpg" style="width: 100%" />
+          <div class="text text-center">
+            <h2 class="display-4 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
+            <p>Claritas est etiam processus dynamicus, qui sequitur</p>
+          </div>
         </div>
-        <div class="blog_text">
-          <h4>Lorem Ipsum passage,</h4>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-          <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 blog_item">
-        <div  class="blog_img">
-          <img src="./images/g1.jpg" alt="">
-        </div>
-        <div class="blog_text">
-          <h4>Lorem Ipsum passage,</h4>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-          <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
-        </div>
-      </div>
-    </div>
 
-    <!-- modal  -->
-    <div class="modal  fade in" id="blog_Modal" tabindex="-1" role="dialog" aria-labelledby="blog_ModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="blog_ModalLabel">Housing</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+        <div class="mySlides fade">
+          <img src="./images/b4.jpg" style="width: 100%" />
+          <div class="text text-center">
+            <h2 class="display-4 font-weight-bold">VOLUPTATE VELIT ESSE</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <!-- tạo 2 dấu mũi tên next prev  -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- xử lý dấu chấm (dot), vòng tròn circles  -->
+        <div class="dots text-center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT  -->
+    <section class="about container" id="about">
+      <h2>About</h2>
+      <div class="about_content">
+        <div class="about_item">
+          <i class="fa fa-home"></i>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="about_item">
+          <i class="fa fa-key"></i>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="about_item">
+          <i class="fa fa-money"></i>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="about_us container">
+        <h3 class="py-3">About us</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed
+          odio consequat, tristique elit sed, molestie nulla. Mauris et quam
+          leo. Quisque tincidunt facilisis rutrum. Etiam mattis arcu vitae velit
+          sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse
+          tincidunt ut velit id euismod.vulputate turpis porta ex sodales,
+          dignissim hendrerit eros sagittis. Curabitur lacinia dui ut luctus
+          congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+          quis
+        </p>
+      </div>
+    </section>
+
+    <!-- STATS  -->
+    <section class="stats container-fluid" id="stats">
+      <h2 class="pb-3">Stats</h2>
+      <div class="row stats_content">
+        <div class="col-12 col-sm-6 col-md-3 stats_item">
+          <p class="counter text-white">3500</p>
+          <p>clients</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 stats_item">
+          <p class="counter text-white">35340</p>
+          <p>Plans</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 stats_item">
+          <p class="counter text-white">6500</p>
+          <p>Projects</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 stats_item">
+          <p class="counter text-white">4500</p>
+          <p>Likes</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG  -->
+    <section class="blog container" id="blog">
+      <h2 class="text-center pb-3">Blog</h2>
+      <div class="row blog_content text-left">
+        <div class="col-12 col-md-4 blog_item">
+          <div class="blog_img">
+            <img src="./images/g1.jpg" alt="" />
+          </div>
+
+          <div class="blog_text">
+            <h4>Lorem Ipsum passage,</h4>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium
+            </p>
+            <button type="button" data-toggle="modal" data-target="#blog_Modal">
+              Read more..
             </button>
           </div>
-          <div class="modal-body">
-            <img src="./images/img2.jpg" alt="">
-            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
-              ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-              molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+        </div>
+        <div class="col-12 col-md-4 blog_item">
+          <div class="blog_img">
+            <img src="./images/g2.jpg" alt="" />
           </div>
-
+          <div class="blog_text">
+            <h4>Lorem Ipsum passage,</h4>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium
+            </p>
+            <button type="button" data-toggle="modal" data-target="#blog_Modal">
+              Read more..
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 blog_item">
+          <div class="blog_img">
+            <img src="./images/g1.jpg" alt="" />
+          </div>
+          <div class="blog_text">
+            <h4>Lorem Ipsum passage,</h4>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium
+            </p>
+            <button type="button" data-toggle="modal" data-target="#blog_Modal">
+              Read more..
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-  </section>
-
-  <!-- GET MORE  -->
-  <section class="getMore" id="getMore">
-    <div class="row">
-      <div class="col-12  col-md-6 getMore_video">
-        <a class="popup-vimeo" href="https://vimeo.com/45830194"><span class="fa fa-play-circle"></span></a>
+      <!-- modal  -->
+      <div
+        class="modal fade in"
+        id="blog_Modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="blog_ModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="blog_ModalLabel">Housing</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="./images/img2.jpg" alt="" />
+              <p>
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                consequatur? Quis autem vel eum iure reprehenderit qui in ea
+                voluptate velit esse quam nihil molestiae consequatur, vel illum
+                qui dolorem eum fugiat quo voluptas nulla pariatur.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-md-6  getMore_content text-center container py-5">
-        <h3 class="font-weight-bold">GET MORE...</h3>
-        <p class="text-white p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt
-          ut minim veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-          pariatur.</p>
-        <button type="button" data-toggle="modal" data-target="#blog_Modal">Read more..</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PORTFOLIO  -->
-  <section class="portfolio" id="portfolio">
-    <h2 class="m-4  text-center">Portfolio</h2>
-    <div class="portfolio_content container">
-      <div class="row ">
-        <div class="portfolio_item col-6 col-md-4">
-          <div class="portfolio_img">
-            <a href="./images/img1.jpg" class="lsb-preview">
-              <img class="img-fluid" src="./images/img1.jpg" alt="">
-            </a>
-            <!-- gallery  -->
-            <div class="portfolio_gallery">
+    <!-- GET MORE  -->
+    <section class="getMore" id="getMore">
+      <div class="row">
+        <div class="col-12 col-md-6 getMore_video">
+          <a class="popup-vimeo" href="https://vimeo.com/45830194"
+            ><span class="fa fa-play-circle"></span
+          ></a>
+        </div>
+        <div class="col-12 col-md-6 getMore_content text-center container py-5">
+          <h3 class="font-weight-bold">GET MORE...</h3>
+          <p class="text-white p-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut minim veniam, labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi esse quam nihil molestiae consequatur, vel illum qui
+            dolorem eum fugiat quo voluptas nulla pariatur.
+          </p>
+          <button type="button" data-toggle="modal" data-target="#blog_Modal">
+            Read more..
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO  -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="m-4 text-center">Portfolio</h2>
+      <div class="portfolio_content container">
+        <div class="row">
+          <div class="portfolio_item col-6 col-md-4">
+            <div class="portfolio_img">
               <a href="./images/img1.jpg" class="lsb-preview">
-                <p>GALLERY</p>
-                <p>Lorem Ipsum is simply dummy</p>
+                <img class="img-fluid" src="./images/img1.jpg" alt="" />
               </a>
+              <!-- gallery  -->
+              <div class="portfolio_gallery">
+                <a href="./images/img1.jpg" class="lsb-preview">
+                  <p>GALLERY</p>
+                  <p>Lorem Ipsum is simply dummy</p>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="portfolio_item col-6 col-md-4">
-          <div class="portfolio_img">
-            <a href="./images/img2.jpg" class="lsb-preview">
-              <img class="img-fluid" src="./images/img2.jpg" alt="">
-            </a>
-            <!-- gallery  -->
-            <div class="portfolio_gallery">
+          <div class="portfolio_item col-6 col-md-4">
+            <div class="portfolio_img">
               <a href="./images/img2.jpg" class="lsb-preview">
-                <p>GALLERY</p>
-                <p>Lorem Ipsum is simply dummy</p>
+                <img class="img-fluid" src="./images/img2.jpg" alt="" />
               </a>
+              <!-- gallery  -->
+              <div class="portfolio_gallery">
+                <a href="./images/img2.jpg" class="lsb-preview">
+                  <p>GALLERY</p>
+                  <p>Lorem Ipsum is simply dummy</p>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="portfolio_item col-6 col-md-4">
-          <div class="portfolio_img">
-            <a href="./images/img3.jpg" class="lsb-preview">
-              <img class="img-fluid" src="./images/img3.jpg" alt="">
-            </a>
-            <!-- gallery  -->
-            <div class="portfolio_gallery">
+          <div class="portfolio_item col-6 col-md-4">
+            <div class="portfolio_img">
               <a href="./images/img3.jpg" class="lsb-preview">
-                <p>GALLERY</p>
-                <p>Lorem Ipsum is simply dummy</p>
+                <img class="img-fluid" src="./images/img3.jpg" alt="" />
               </a>
+              <!-- gallery  -->
+              <div class="portfolio_gallery">
+                <a href="./images/img3.jpg" class="lsb-preview">
+                  <p>GALLERY</p>
+                  <p>Lorem Ipsum is simply dummy</p>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="portfolio_item col-6 col-md-4">
-          <div class="portfolio_img">
-            <a href="./images/img1.jpg" class="lsb-preview">
-              <img class="img-fluid" src="./images/img1.jpg" alt="">
-            </a>
-            <!-- gallery  -->
-            <div class="portfolio_gallery">
+          <div class="portfolio_item col-6 col-md-4">
+            <div class="portfolio_img">
               <a href="./images/img1.jpg" class="lsb-preview">
-                <p>GALLERY</p>
-                <p>Lorem Ipsum is simply dummy</p>
+                <img class="img-fluid" src="./images/img1.jpg" alt="" />
               </a>
+              <!-- gallery  -->
+              <div class="portfolio_gallery">
+                <a href="./images/img1.jpg" class="lsb-preview">
+                  <p>GALLERY</p>
+                  <p>Lorem Ipsum is simply dummy</p>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="portfolio_item col-6 col-md-4">
-          <div class="portfolio_img">
-            <a href="./images/img2.jpg" class="lsb-preview">
-              <img class="img-fluid" src="./images/img2.jpg" alt="">
-            </a>
-            <!-- gallery  -->
-            <div class="portfolio_gallery">
+          <div class="portfolio_item col-6 col-md-4">
+            <div class="portfolio_img">
               <a href="./images/img2.jpg" class="lsb-preview">
-                <p>GALLERY</p>
-                <p>Lorem Ipsum is simply dummy</p>
+                <img class="img-fluid" src="./images/img2.jpg" alt="" />
               </a>
+              <!-- gallery  -->
+              <div class="portfolio_gallery">
+                <a href="./images/img2.jpg" class="lsb-preview">
+                  <p>GALLERY</p>
+                  <p>Lorem Ipsum is simply dummy</p>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="portfolio_item col-6 col-md-4">
-          <div class="portfolio_img">
-            <a href="./images/img3.jpg" class="lsb-preview">
-              <img class="img-fluid" src="./images/img3.jpg" alt="">
-            </a>
-            <!-- gallery  -->
-            <div class="portfolio_gallery">
+          <div class="portfolio_item col-6 col-md-4">
+            <div class="portfolio_img">
               <a href="./images/img3.jpg" class="lsb-preview">
-                <p>GALLERY</p>
-                <p>Lorem Ipsum is simply dummy</p>
+                <img class="img-fluid" src="./images/img3.jpg" alt="" />
               </a>
+              <!-- gallery  -->
+              <div class="portfolio_gallery">
+                <a href="./images/img3.jpg" class="lsb-preview">
+                  <p>GALLERY</p>
+                  <p>Lorem Ipsum is simply dummy</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
+    <!-- SUBSCRIBE  -->
+    <section class="subscript text-center p-2">
+      <h2 class="m-4">Subscript</h2>
+      <p>
+        consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+        pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi
+      </p>
 
-    </div>
-
-  </section>
-
-  <!-- SUBSCRIBE  -->
-  <section class="subscript text-center p-2">
-    <h2 class="m-4">Subscript</h2>
-    <p>consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi</p>
-
-    <form>
-      <input class="form-control form-control-lg mr-sm-2 subscript_email" type="email" placeholder="Email"
-        aria-label="email">
-      <button class="btn btn-dark px-5 btn-lg my-2 my-sm-3" type="submit">Click</button>
-    </form>
-  </section>
-
-  <!-- OUR AGENTS  -->
-  <section class="ourAgents container" id="ourAgents">
-    <h2 class="text-center p-3">Our Agents</h2>
-
-    <div class="ourAgents_content">
-      <div class="ourAgents_item">
-        <img class="img-fluid" src="./images/t1.jpg" alt="">
-        <div class="image_text">
-          <h3>Kat</h3>
-          <p>Lorem ipsum</p>
-          <div class="footer_socials">
-            <ul>
-              <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="ourAgents_item">
-        <img class="img-fluid" src="./images/t2.jpg" alt="">
-        <div class="image_text">
-          <h3>Kat</h3>
-          <p>Lorem ipsum</p>
-          <div class="footer_socials">
-            <ul>
-              <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="ourAgents_item">
-        <img class="img-fluid" src="./images/t3.jpg" alt="">
-        <div class="image_text">
-          <h3>Kat</h3>
-          <p>Lorem ipsum</p>
-          <div class="footer_socials">
-            <ul>
-              <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="ourAgents_item">
-        <img class="img-fluid" src="./images/t4.jpg" alt="">
-        <div class="image_text">
-          <h3>Kat</h3>
-          <p>Lorem ipsum</p>
-          <div class="footer_socials">
-            <ul>
-              <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-
-
-  </section>
-
-
-
-  <!-- CONTACT  -->
-  <section class="contact" id="contact">
-    <!-- map  -->
-    <div class="contact_map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22491.398034284808!2d106.63867024396886!3d10.814939916780537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529111aa89f9d%3A0xd8f09cc0aa1b27f3!2sTan%20Son%20Nhat%20International%20Airport!5e0!3m2!1sen!2s!4v1604223268002!5m2!1sen!2s"
-        width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
-    </div>
-
-    <h2 class="text-center py-4">Contact Us</h2>
-
-    <div class="contact_form  container">
       <form>
-        <div class="form-row">
-          <div class="col mr-4 left">
-            <div class="form-row">
-              <input type="text" class="form-control mb-4" placeholder="First name">
-              <input type="text" class="form-control mb-4" placeholder="First name">
-              <input type="text" class="form-control mb-4" placeholder="First name">
-              <input type="text" class="form-control mb-4" placeholder="First name">
-            </div>
-          </div>
-
-          <div class="col right">
-            <div class="form-row">
-              <textarea class="mb-4 pb-1" placeholder="Message" name="" id="" cols="40" rows="7"></textarea>
-            </div>
-            <div class="form-row">
-              <input type="submit" class="form-control submit submit" value="Submit">
-            </div>
-          </div>
-        </div>
+        <input
+          class="form-control form-control-lg mr-sm-2 subscript_email"
+          type="email"
+          placeholder="Email"
+          aria-label="email"
+        />
+        <button class="btn btn-dark px-5 btn-lg my-2 my-sm-3" type="submit">
+          Click
+        </button>
       </form>
-    </div>
+    </section>
 
+    <!-- OUR AGENTS  -->
+    <section class="ourAgents container" id="ourAgents">
+      <h2 class="text-center p-3">Our Agents</h2>
 
-  </section>
-
-  <!-- FOOTER  -->
-  <footer>
-    <div class="container py-4 mt-4">
-      <div class="row copyright">
-        <div class="col-12 col-xl-7">
-          <p class="text-white pt-2">© 2017 Housing. All Rights Reserved | Design by <a href="#" target="_blank"
-              class="text-danger"> W3layouts </a></p>
+      <div class="row ourAgents_content">
+        <div class="col-12 col-sm-6 col-xl-3 ourAgents_item">
+          <div class="ourAgents_img">
+            <img class="img-fluid" src="./images/t1.jpg" alt="" />
+          </div>
+          <div class="ourAgents_text">
+            <h3>Kat</h3>
+            <p>Lorem ipsum</p>
+            <div class="footer_socials">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-facebook"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-twitter"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-rss"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-xl-5">
-          <div class="footer_socials">
-            <ul>
-              <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-rss"></i></span></a></li>
-              <li><a href="#"><span><i class="fa fa-vk"></i></span></a></li>
-            </ul>
+
+        <div class="col-12 col-sm-6 col-xl-3 ourAgents_item">
+          <div class="ourAgents_img">
+            <img class="img-fluid" src="./images/t2.jpg" alt="" />
+          </div>
+          <div class="ourAgents_text">
+            <h3>Kat</h3>
+            <p>Lorem ipsum</p>
+            <div class="footer_socials">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-facebook"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-twitter"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-rss"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3 ourAgents_item">
+          <div class="ourAgents_img">
+            <img class="img-fluid" src="./images/t3.jpg" alt="" />
+          </div>
+          <div class="ourAgents_text">
+            <h3>Kat</h3>
+            <p>Lorem ipsum</p>
+            <div class="footer_socials">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-facebook"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-twitter"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-rss"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3 ourAgents_item">
+          <div class="ourAgents_img">
+            <img class="img-fluid" src="./images/t4.jpg" alt="" />
+          </div>
+          <div class="ourAgents_text">
+            <h3>Kat</h3>
+            <p>Lorem ipsum</p>
+            <div class="footer_socials">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-facebook"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-twitter"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-rss"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- BACK TO TOP  -->
-  <a href="#" class="backToTop cd-top text-replace js-cd-top">
-    <img src="./images/arrowup.png" alt="">
-  </a>
+    <!-- CONTACT  -->
+    <section class="contact" id="contact">
+      <!-- map  -->
+      <div class="contact_map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22491.398034284808!2d106.63867024396886!3d10.814939916780537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529111aa89f9d%3A0xd8f09cc0aa1b27f3!2sTan%20Son%20Nhat%20International%20Airport!5e0!3m2!1sen!2s!4v1604223268002!5m2!1sen!2s"
+          width="100%"
+          height="400"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
 
-  <!-- Thư viện hỗ trợ -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <h2 class="text-center py-4">Contact Us</h2>
 
-  <!-- waypoints  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-    crossorigin="anonymous"></script>
+      <div class="contact_form container">
+        <form>
+          <div class="form-row">
+            <div class="col mr-4 left">
+              <div class="form-row">
+                <input type="text" class="form-control mb-4" placeholder="First name"/>
+                <input  type="text"  class="form-control mb-4" placeholder="First name" />
+                <input type="text"   class="form-control mb-4" placeholder="First name" />
+                <input type="text"  class="form-control mb-4" placeholder="First name"/>
+              </div>
+            </div>
 
-  <!-- bootstrap  -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+            <div class="col right">
+              <div class="form-row">
+                <textarea class="mb-4 pb-1"  placeholder="Message" name=""  id="" cols="40" rows="7">
 
-  <!-- count up js  -->
-  <script src="./js/jquery.countup.js"></script>
-  <script>
-    $('.counter').countUp();
-  </script>
+                </textarea>
+              </div>
+              <div class="form-row">
+                <input
+                  type="submit"   class="form-control submit submit"  value="Submit" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
 
-  <!-- OWL JS -->
-  <script src="./js/owl.carousel.min.js"></script>
-  <script>
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      responsive: {
-        0: {
-          items: 1,
+    <!-- FOOTER  -->
+    <footer>
+      <div class="container py-4 mt-4">
+        <div class="row copyright">
+          <div class="col-12 col-xl-7">
+            <p class="text-white pt-2">
+              © 2017 Housing. All Rights Reserved | Design by
+              <a href="#" target="_blank" class="text-danger"> W3layouts </a>
+            </p>
+          </div>
+          <div class="col-12 col-xl-5">
+            <div class="footer_socials">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-facebook"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-twitter"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-rss"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa fa-vk"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP  -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <img src="./images/arrowup.png" alt="" />
+    </a>
+
+    <!-- Thư viện hỗ trợ -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- waypoints  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- count up js  -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
+
+    <!-- OWL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          //   600: {
+          //     items: 3,
+          //   },
+          //   1000: {
+          //     items: 5,
+          //   },
         },
-        //   600: {
-        //     items: 3,
-        //   },
-        //   1000: {
-        //     items: 5,
-        //   },
-      },
-    });
-  </script>
-  <script>
-    $('#myModal').on('shown.bs.modal', function () {
-      $('#myInput').trigger('focus')
-    })
-  </script>
-
-  <!-- show carousel  -->
-  <script>
-    var slideIndex = 0;
-    showSlidesAuto();
-
-    function showSlidesAuto(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      setTimeout(showSlidesAuto, 4000); // Change image every 2 seconds
-    }
-  </script>
-
-  <!-- hieu ung prev , next  -->
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  </script>
-
-  <!-- BACK TO TOP  -->
-  <script src="./js/util.js"></script>
-  <script src="./js/main.js"></script>
-
-  <!-- scroll smooth  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
       });
-    });
-  </script>
-
-  <!-- Magnific Popup core JS file -->
-  <script src="./js/jquery.magnific-popup.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-
-        fixedContentPos: false
+    </script>
+    <script>
+      $("#myModal").on("shown.bs.modal", function () {
+        $("#myInput").trigger("focus");
       });
-    });
-  </script>
+    </script>
 
-  <!-- LightSpeedBox -->
-  <script src="./js/lsb.min.js"></script>
-  <script>
-    // $(window).load(function () {
-    //   $.fn.lightspeedBox();
-    // });
-    $(window).on('load', function () {
-      $.fn.lightspeedBox();
+    <!-- show carousel  -->
+    <script>
+      var slideIndex = 0;
+      showSlidesAuto();
 
-    });
+      function showSlidesAuto(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlidesAuto, 4000); // Change image every 2 seconds
+      }
+    </script>
 
-  </script>
+    <!-- hieu ung prev , next  -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-</body>
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
 
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <!-- BACK TO TOP  -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- scroll smooth  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="./js/jquery.magnific-popup.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
+          disableOn: 700,
+          type: "iframe",
+          mainClass: "mfp-fade",
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false,
+        });
+      });
+    </script>
+
+    <!-- LightSpeedBox -->
+    <script src="./js/lsb.min.js"></script>
+    <script>
+      // $(window).load(function () {
+      //   $.fn.lightspeedBox();
+      // });
+      $(window).on("load", function () {
+        $.fn.lightspeedBox();
+      });
+    </script>
+  </body>
 </html>
