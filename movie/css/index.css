@@ -5,6 +5,15 @@ html,body{
 *{
     box-sizing: border-box;
 }
+.title {
+    color: #ec7532;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+    position: relative;
+}
 
 /* HEADER */
 header{
@@ -13,9 +22,10 @@ header{
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-
 }
-
+header .navbar-nav {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
 /* 110 */
 #movieNavBar .nav-item::after{
     content: "";
@@ -44,10 +54,41 @@ header{
     top:60%;
     left: 50%;
     transform: translate(-50%,-50%);
-
     text-align: left;
-
 } 
+.carousel-caption p:first-child {
+    color: #fbbd61;
+}
+#movieCarousel .carousel-item {
+    height: 800px;
+}
+#movieCarousel .movie_item1 {
+    background: url('../img/hero-1.jpg') no-repeat center;
+    background-size: cover;
+}
+#movieCarousel .movie_item2 {
+    background: url('../img/hero-2.jpg') no-repeat center;
+    background-size: cover;
+}
+#movieCarousel .movie_item3 {
+    background: url('../img/hero-3.jpg') no-repeat center;
+    background-size: cover;
+}
+.movieCarousel__trailer .moviePG {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+}
+.movieCarousel__trailer button {
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    background:linear-gradient(to right,#fbbd61,#ec7532);
+    color: #fff;
+    letter-spacing: 5px;
+    text-transform: uppercase; 
+
+}
 
 /* NEW IN */
 .newIn__img{
@@ -80,8 +121,63 @@ header{
     }
 }
 
-/* coming soon  */
+/* showTimes  */
 
+/* coming soon  */
+.coming {
+    background-color: #101010;
+}
+.coming_bg {
+    padding: 80px 0;
+    background-image: url(../img/slide-3.png);
+    background-size: cover;
+    background-position: center center;
+}
+.coming_bg .title {
+    color: #fff;
+    /* border-bottom: 2px #ec7532 solid;  */
+}
+.coming_detail > span {
+    font-size: 14px;
+    color: #ec7532;
+}
+.coming_detail > h1 {
+    font-size: 34px;
+}
+.coming_detail  .fa-star {
+    color: #fbbd61;
+    font-size: 14px;
+}
+.coming_detail coming_date {
+    opacity: 0.75;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.coming_detail a {
+    color: #ec7532;
+    letter-spacing: 3px;
+}
+.coming_trailer {
+    position: relative;
+}
+.coming_trailer img {
+    display: block;
+    width: 100%;
+}
+.coming_trailer i {
+    width: 84px;
+    height: 84px;
+    line-height: 84px;
+    display: block;
+    border: 2px solid #ec7532;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
 
 /* contact  */
 .contact p:last-child {
@@ -96,7 +192,11 @@ header{
 #footer h6 {
     color: #ec7532;
     letter-spacing: 2px;
+    margin-left: 40px;
 }
+/* #footer .copyright {
+    padding: 20px;
+} */
 #footer .copyright::before {
     content: "";
     width: 100%;
