@@ -87,6 +87,10 @@ header .navbar-nav {
     color: #fff;
     letter-spacing: 5px;
     text-transform: uppercase; 
+}
+.movieCarousel__trailer a {
+    text-decoration: none;
+    color: #fff;
 
 }
 
