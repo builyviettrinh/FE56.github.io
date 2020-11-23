@@ -7,12 +7,9 @@ html,body{
 }
 .title {
     color: #ec7532;
-    font-size: 18px;
+    /* font-size: 18px; */
     letter-spacing: 2px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    padding-bottom: 15px;
-    position: relative;
+
 }
 
 /* HEADER */
@@ -59,6 +56,18 @@ header .navbar-nav {
 .carousel-caption p:first-child {
     color: #fbbd61;
 }
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: none;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #fff;
+}
+
 #movieCarousel .carousel-item {
     height: 800px;
 }
@@ -82,32 +91,67 @@ header .navbar-nav {
 .movieCarousel__trailer button {
     border: none;
     border-radius: 30px;
-    padding: 15px 30px;
+    padding: 12px 26px;
     background:linear-gradient(to right,#fbbd61,#ec7532);
     color: #fff;
     letter-spacing: 5px;
     text-transform: uppercase; 
+    transition: all 0.5s;
 }
+ 
 .movieCarousel__trailer a {
     text-decoration: none;
     color: #fff;
+}
+
+/* luyen tap  */
+.movieCarousel__trailer button{
+    position: relative;
+    overflow: hidden;    
+}
+
+.movieCarousel__trailer button::after {
+    position: absolute; 
+    z-index: 0;   
+    top:0;
+    left: -15px;
+    width: 0;
+    height: 100%;
+    content: "";
+    background-color: #ec763283;
+    transition: all 0.5s;
+    transform:  skewX(30deg);
+}
+/* vị trí đã hover */
+
+.movieCarousel__trailer button:hover::after{
+    width: 100%;
 
 }
 
 /* NEW IN */
 .newIn h2 {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid #d8d8d8;
     color: #ec7532;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
 }
-/* 110 */
 .newIn h2::after{
+    position: absolute;
+    right: auto;
+    bottom: -1px;
     content: "";
     width: 100px;
-    height: 3px;
+    height: 4px;
     display: block;
     background:linear-gradient(to right,#fbbd61,#ec7532);
-    transition: all 0.5s;
+}
+.newIn__star i {
+    font-size: 15px;
+    display: inline-block;
+    width: 18px;
+    color: #fbbd61;
 }
 .newIn__img{
     position: relative;
@@ -140,21 +184,39 @@ header .navbar-nav {
 }
 
 /* showTimes  */
+a.title:hover {
+    text-decoration: none;
+    color: #101010;
+}
+.moviePG2 {
+    background-color: #101010;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.5em;
+    font-size: 0.7rem;
+}
+.btn-secondary {
+    margin-left: 5px;
+}
 
 /* coming soon  */
 .coming_bg h2 {
-    border-bottom: 1px solid rgba(255,255,255,0.2);;
+    border-bottom: 1px solid #d8d8d8;
     color: #fff;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
 }
 /* 110 */
 .coming_bg h2::after{
+    position: absolute;
+    right: auto;
+    bottom: -1px;
     content: "";
     width: 200px;
-    height: 3px;
+    height: 4px;
     display: block;
     background:linear-gradient(to right,#fbbd61,#ec7532);
-    transition: all 0.5s;
 }
 .coming {
     background-color: #101010;
@@ -167,7 +229,6 @@ header .navbar-nav {
 }
 .coming_bg .title {
     color: #fff;
-    /* border-bottom: 2px #ec7532 solid;  */
 }
 .coming_detail > span {
     font-size: 14px;
@@ -210,6 +271,10 @@ header .navbar-nav {
     left: 50%;
     transform: translate(-50%);
 }
+.coming_detail a:hover {
+    color: #fbbd61;
+    text-decoration: none;
+}
 
 /* movie list  */
 .movieList {
@@ -217,7 +282,6 @@ header .navbar-nav {
 }
 .slider {
     width: 100%;
-    /* margin: 0px auto; */
     padding: 50px 0;
 }
 
@@ -227,19 +291,18 @@ header .navbar-nav {
 
 .slick-slide img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   border-radius: 15px;
 }
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
+.slick-prev, .slick-next {
+    position: absolute;
+   top: 40%; 
 }
-
 
 .slick-slide {
   transition: all ease-in-out .3s;
   opacity: .2;
+  margin: 0px 11px;
 }
 
 .slick-active {
@@ -250,8 +313,10 @@ header .navbar-nav {
   opacity: 1;
 }
 .slick-prev:before, .slick-next:before {
-    font-size: 40px;
+    font-size: 35px;
     color: orange;
+    margin-left: -8px;
+
 }
 
 /* contact  */
@@ -259,8 +324,9 @@ header .navbar-nav {
     color: #ec7532;
     font-size: 3rem;
 }
+
 /* footer  */
-.footer_content {
+#footer {
     background-color: black;
     color: #fff;
 }
@@ -298,7 +364,6 @@ header .navbar-nav {
     color: #fbbd61;
     cursor: pointer;
 }
-#footer a:visited,#footer a:active {
-    /* color: #fbbd61; */
-    text-decoration: underline;
+#footer a:visited,#footer a:active {   
+    text-decoration: none;
 }
