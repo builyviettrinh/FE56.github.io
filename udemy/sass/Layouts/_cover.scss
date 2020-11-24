@@ -1,6 +1,51 @@
-.mycover {
-    background-image: url(../../img/cover.jpg);
-    
+.myCover {
+    background-image: url("../img/cover.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    .myCover_content {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        h1 {
+            @include styleText($fs-4,$color-white-0,$fw-bold);
+        }
+        p{
+            @include styleText($fs-2 - 2,$color-white-0,$fw-normal);
+        }
+        .form_search_learn {
+            .form-control{
+                padding: $pd-2;
+                border: none;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                &::placeholder{
+                    @include styleText($fs-2,$color-gray-2,$fw-normal);
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+                .input-group-append {
+                    .input-group-text{
+                        background-color: $color-white-0;
+                        color: $color-red-0;
+                    }
+                    &:hover{
+                        .input-group-text{
+                            background-color: $color-red-0;
+                            color: $color-white-0;
+                        }
+                    }
+                }
+        }
 
 
+        
+    }
 }

@@ -7,7 +7,7 @@
 }
 .btn-white {
     @include styleButton($color-white-0,$color-black-light,$pd-1 + 1,$pd-1 + 2);
-    @include styleText($fs-0,$color-gray-1,$fw-bold-1);
+    @include styleText($fs-0,$color-gray-4,$fw-bold-1);
     &:hover {
         @include styleHoverButton($color-white-0,$color-gray-4,$color-black-0);
     }

@@ -29,17 +29,17 @@ html, body {
 
 .btn-white {
   background: #fff;
-  border: 1px solid #a1a7b3;
+  border: 1px solid #505763;
   padding: 11px 12px;
   border-radius: 2px;
   font-size: 15px;
-  color: #a1a7b3;
+  color: #686f7a;
   font-weight: 700;
 }
 
 .btn-white:hover {
   background-color: #fff;
-  border-color: #a1a7b3;
+  border-color: #686f7a;
   color: #29303b;
 }
 
@@ -139,5 +139,62 @@ header {
   .header_left .cate, .header_left .form_search {
     display: none;
   }
+}
+
+.myCover {
+  background-image: url("../img/cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.myCover .myCover_content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.myCover .myCover_content h1 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.myCover .myCover_content p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.myCover .myCover_content .form_search_learn .form-control {
+  padding: 20px;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.myCover .myCover_content .form_search_learn .form-control::placeholder {
+  font-size: 20px;
+  color: #a1a7b3;
+  font-weight: normal;
+}
+
+.myCover .myCover_content .form_search_learn .form-control:focus {
+  box-shadow: none;
+}
+
+.myCover .myCover_content .form_search_learn .input-group-append .input-group-text {
+  background-color: #fff;
+  color: #ec5252;
+}
+
+.myCover .myCover_content .form_search_learn .input-group-append:hover .input-group-text {
+  background-color: #ec5252;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
