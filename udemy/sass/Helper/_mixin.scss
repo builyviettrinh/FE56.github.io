@@ -1,0 +1,35 @@
+@mixin styleText($fs,$color,$fw) {
+    font-size:$fs ;
+    color: $color;
+    font-weight:$fw;
+}
+
+@mixin styleButton($bg-color,$border,$py,$px) {
+    background: $bg-color;
+    border: 1px solid $border;
+    padding: $py $px;
+    border-radius: $border-radius;
+}
+@mixin styleHoverButton($bg-hover,$border-hover,$color-hover) {
+    background-color: $bg-hover;
+    border-color: $border-hover;
+    color: $color-hover;     
+}
+
+// $screen : ten man hinh
+@mixin responsive($screen) {
+    @if(map-has-key($map:$breakpoints, $key:$screen)){
+        // neu tim thay man hinh 
+        // map-get:  lấy giá trị màn hình
+        // value chứa kết quả lấy được 
+        $value:map-get($map:$breakpoints, $key:$screen);
+        @media screen and(max-width:$value) {
+            @content;
+        }
+
+    }
+    @else {
+        @warn "Man hinh khong ton tai";
+    }
+    
+}
