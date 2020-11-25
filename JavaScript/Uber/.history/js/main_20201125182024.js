@@ -22,11 +22,9 @@ document.getElementById("btn-payment").addEventListener("click",function(){
 });
 function paymentX(a,b,c){
     var total;
-    if(b <= 1){
-        total = b*8000;    
-    }
-    else if(b <= 20){
-        total = b*12000; 
+    if(b < 1){
+        total = b*8000;
+     
     }
 
 }
