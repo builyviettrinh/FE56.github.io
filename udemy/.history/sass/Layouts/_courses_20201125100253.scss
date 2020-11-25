@@ -1,0 +1,15 @@
+.courses {
+    margin-top: $mg-2;
+    .courses_content{
+        width: 80%;
+        margin: auto;
+        .courses_intro {
+            padding: 4rem;
+            h2 {
+                @include styleText($fs-4 -4, $color-black-0,$fw-normal);
+            }
+            
+
+        }
+    }
+}

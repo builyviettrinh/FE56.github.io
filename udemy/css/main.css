@@ -29,7 +29,7 @@ html, body {
 
 .btn-white {
   background: #fff;
-  border: 1px solid #505763;
+  border: 1px solid #686f7a;
   padding: 11px 12px;
   border-radius: 2px;
   font-size: 15px;
@@ -39,8 +39,12 @@ html, body {
 
 .btn-white:hover {
   background-color: #fff;
-  border-color: #686f7a;
+  border-color: #505763;
   color: #29303b;
+}
+
+.btn-white:focus {
+  outline: none;
 }
 
 header {
@@ -154,6 +158,7 @@ header {
   position: absolute;
   top: 30%;
   left: 10%;
+  width: 40%;
 }
 
 .myCover .myCover_content h1 {
@@ -196,5 +201,233 @@ header {
 .myCover .myCover_content .form_search_learn .input-group-append:hover .input-group-text {
   background-color: #ec5252;
   color: #fff;
+  border: 1px solid #ec5252;
+}
+
+.intro {
+  background: linear-gradient(to right, #521822, #ec5252);
+}
+
+.intro .intro_content {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.intro .intro_content .intro_item .icon {
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.intro .intro_content .intro_item .icon_content {
+  padding-top: 10px;
+}
+
+.intro .intro_content .intro_item .icon_content p:first-child {
+  font-size: 17px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.intro .intro_content .intro_item .icon_content p:last-child {
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.courses {
+  margin-top: 25px;
+}
+
+.courses .courses_content {
+  width: 80%;
+  margin: auto;
+}
+
+.courses .courses_content .courses_intro {
+  padding-top: 4rem;
+}
+
+.courses .courses_content .courses_intro h2 {
+  font-size: 40px -4;
+  color: #29303b;
+  font-weight: normal;
+}
+
+.courses .courses_content .myTab .nav {
+  justify-content: space-between;
+  border: none;
+}
+
+.courses .courses_content .myTab .nav .nav-item:hover .nav-link {
+  border: none;
+}
+
+.courses .courses_content .myTab .nav .nav-item .nav-link.active {
+  border: none;
+  border-bottom: 5px solid #007791;
+}
+
+.courses .courses_content .myTab .nav .nav-item .nav-link {
+  font-size: 15px;
+  color: #29303b;
+  font-weight: normal;
+  border: none;
+}
+
+.courses .courses_content .myTab .tab-content {
+  margin-top: 25px;
+  position: relative;
+}
+
+.courses .courses_content .myTab .tab-content .card-title {
+  font-size: 15px;
+  color: #29303b;
+  font-weight: bold;
+}
+
+.courses .courses_content .myTab .tab-content .card-text {
+  font-size: 13px;
+  color: #686f7a;
+  font-weight: normal;
+}
+
+.courses .courses_content .myTab .tab-content .rating {
+  display: flex;
+}
+
+.courses .courses_content .myTab .tab-content .rating .rating_star {
+  font-size: 13px;
+  color: #F4C150;
+  font-weight: normal;
+  margin-right: 2px;
+}
+
+.courses .courses_content .myTab .tab-content .rating span:nth-child(2) {
+  font-size: 13px;
+  color: #686f7a;
+  font-weight: bold;
+}
+
+.courses .courses_content .myTab .tab-content .rating span:last-child {
+  font-size: 13px;
+  color: #686f7a;
+  font-weight: normal;
+}
+
+.courses .courses_content .myTab .tab-content .price {
+  text-align: right;
+}
+
+.courses .courses_content .myTab .tab-content .price .old-price {
+  font-size: 13px;
+  color: #686f7a;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.courses .courses_content .myTab .tab-content .price .new-price {
+  font-size: 13px;
+  color: #29303b;
+  font-weight: bold;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 40%;
+  left: -2%;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  background-color: #fff !important;
+  box-shadow: rgba(20, 23, 28, 0.1) 0px 0px 1px 1px, rgba(20, 23, 28, 0.1) 0px 3px 1px 0px;
+  z-index: 3;
+}
+
+.owl-prev span, .owl-next span {
+  font-size: 40px;
+  color: #007791;
+  font-weight: normal;
+  line-height: 0.6;
+}
+
+.owl-prev:focus, .owl-next:focus {
+  outline: none;
+}
+
+.owl-next {
+  left: unset;
+  right: -2%;
+}
+
+.student .student_content {
+  width: 80%;
+  margin: auto;
+}
+
+.student .student_content h3 {
+  font-size: 24px;
+  color: #686f7a;
+  font-weight: normal;
+}
+
+.student .student_content .card-title {
+  font-size: 15px;
+  color: #29303b;
+  font-weight: bold;
+}
+
+.student .student_content .card-text {
+  font-size: 13px;
+  color: #686f7a;
+  font-weight: normal;
+}
+
+.student .student_content .rating {
+  display: flex;
+}
+
+.student .student_content .rating .rating_star {
+  font-size: 13px;
+  color: #F4C150;
+  font-weight: normal;
+  margin-right: 2px;
+}
+
+.student .student_content .rating span:nth-child(2) {
+  font-size: 13px;
+  color: #686f7a;
+  font-weight: bold;
+}
+
+.student .student_content .rating span:last-child {
+  font-size: 13px;
+  color: #686f7a;
+  font-weight: normal;
+}
+
+.student .student_content .price {
+  text-align: right;
+}
+
+.student .student_content .price .old-price {
+  font-size: 13px;
+  color: #686f7a;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.student .student_content .price .new-price {
+  font-size: 13px;
+  color: #29303b;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

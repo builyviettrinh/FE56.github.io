@@ -1,0 +1,15 @@
+.owl-prev {
+    position: absolute;
+    top: 30%;
+    left: -2%;
+    width: 40px;
+    height: 45px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    span{
+        @include styleText($fs-4,$color-blue,$fw-normal);
+    }
+}

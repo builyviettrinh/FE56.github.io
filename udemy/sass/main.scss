@@ -10,13 +10,19 @@
 @import './Base/reset';
 @import './Base/customize';
 
+
 //Components
 @import './Components/button';
 
 //Layout
 @import './Layouts/header';
 @import './Layouts/cover';
+@import './Layouts/intro';
+@import './Layouts/courses';
 
+@import './Base/normalized';
+
+@import './Layouts/student';
 //Page
 
 // Theme

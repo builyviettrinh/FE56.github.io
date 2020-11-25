@@ -1,0 +1,8 @@
+.owl-prev {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    span{
+        @include styleText($fs-0,$color-blue,$fw-normal;
+    }
+}

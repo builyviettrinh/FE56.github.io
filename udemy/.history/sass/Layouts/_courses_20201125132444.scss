@@ -1,0 +1,56 @@
+.courses {
+    margin-top: $mg-2;
+    .courses_content{
+        width: 80%;
+        margin: auto;
+        .courses_intro {
+            padding-top: 4rem;
+            h2 {
+                @include styleText($fs-4 -4, $color-black-0,$fw-normal);
+            }            
+        }
+
+        .myTab {
+            .nav{
+                justify-content: space-between;
+                border: none;
+                .nav-item{
+                    &:hover{
+                        .nav-link{
+                            border: none;
+                        }
+                    }
+                    .nav-link.active{
+                        border: none;
+                        border-bottom: 5px solid $color-blue;
+                    }
+                    .nav-link{
+                        @include styleText($fs-0,$color-black-0,$fw-normal);
+                        border: none;
+                    }
+                    
+                }
+
+            }
+            .card_title {
+                @include styleText($fs-0,$color-black-0,$fw-bold);
+            }
+            .card-text{
+                @include styleText($fs-1,$color-gray-4,$fw-normal);
+            }
+            .rating{
+                .rating_star{
+                    @include styleText($fs-1,$color-yellow,$fw-normal);
+                    margin-right: $mg-0;
+                }
+                span:nth-child(2){
+                    @include styleText($fs-1,$color-gray-4,$fw-bold);
+                }
+                span:last-child{
+                    @include styleText($fs-1,$color-gray-4,$fw-normal);
+                }
+            }
+
+        }
+    }
+}
