@@ -51,6 +51,8 @@ header {
   font-size: 13px;
   color: #505763;
   font-weight: normal;
+  width: 90%;
+  margin: auto;
 }
 
 .header_left {
@@ -248,18 +250,29 @@ header {
 }
 
 .courses .courses_content .courses_intro {
-  padding-top: 4rem;
+  height: 93%;
+  justify-content: center;
+  padding: 4.5rem 1rem;
+  background-color: rgba(20, 23, 28, 0.05);
 }
 
 .courses .courses_content .courses_intro h2 {
-  font-size: 40px -4;
+  font-size: 13px -4;
   color: #29303b;
-  font-weight: normal;
+  font-weight: bold;
+}
+
+.courses .courses_content .courses_intro p {
+  color: #686f7a;
 }
 
 .courses .courses_content .myTab .nav {
   justify-content: space-between;
   border: none;
+}
+
+.courses .courses_content .myTab .nav .nav-item {
+  color: #686f7a;
 }
 
 .courses .courses_content .myTab .nav .nav-item:hover .nav-link {
@@ -283,53 +296,57 @@ header {
   position: relative;
 }
 
-.courses .courses_content .myTab .tab-content .card-title {
+.courses .courses_content .myTab .tab-content .card {
+  height: 100%;
+}
+
+.courses .courses_content .myTab .tab-content .card .card-title {
   font-size: 15px;
   color: #29303b;
   font-weight: bold;
 }
 
-.courses .courses_content .myTab .tab-content .card-text {
+.courses .courses_content .myTab .tab-content .card .card-text {
   font-size: 13px;
   color: #686f7a;
   font-weight: normal;
 }
 
-.courses .courses_content .myTab .tab-content .rating {
+.courses .courses_content .myTab .tab-content .card .rating {
   display: flex;
 }
 
-.courses .courses_content .myTab .tab-content .rating .rating_star {
+.courses .courses_content .myTab .tab-content .card .rating .rating_star {
   font-size: 13px;
   color: #F4C150;
   font-weight: normal;
   margin-right: 2px;
 }
 
-.courses .courses_content .myTab .tab-content .rating span:nth-child(2) {
+.courses .courses_content .myTab .tab-content .card .rating span:nth-child(2) {
   font-size: 13px;
   color: #686f7a;
   font-weight: bold;
 }
 
-.courses .courses_content .myTab .tab-content .rating span:last-child {
+.courses .courses_content .myTab .tab-content .card .rating span:last-child {
   font-size: 13px;
   color: #686f7a;
   font-weight: normal;
 }
 
-.courses .courses_content .myTab .tab-content .price {
+.courses .courses_content .myTab .tab-content .card .price {
   text-align: right;
 }
 
-.courses .courses_content .myTab .tab-content .price .old-price {
+.courses .courses_content .myTab .tab-content .card .price .old-price {
   font-size: 13px;
   color: #686f7a;
   font-weight: normal;
   text-decoration: line-through;
 }
 
-.courses .courses_content .myTab .tab-content .price .new-price {
+.courses .courses_content .myTab .tab-content .card .price .new-price {
   font-size: 13px;
   color: #29303b;
   font-weight: bold;
@@ -366,6 +383,45 @@ header {
 .owl-next {
   left: unset;
   right: -2%;
+}
+
+.services {
+  background-color: rgba(20, 23, 28, 0.05);
+}
+
+.services .services_content {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.services .services_content .services_item {
+  height: 100%;
+  background-color: #fff;
+}
+
+.services .services_content .services_item .icon {
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 25px;
+}
+
+.services .services_content .services_item .icon_content {
+  padding: 10px;
+}
+
+.services .services_content .services_item .icon_content p:first-child {
+  font-size: 17px;
+  color: #29303b;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.services .services_content .services_item .icon_content p:last-child {
+  font-size: 15px;
+  color: #29303b;
+  font-weight: normal;
 }
 
 .student .student_content {

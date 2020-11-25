@@ -1,0 +1,28 @@
+.services {
+    background-color: $color-gray-1;
+    .services_content{
+        width: 80%;
+        margin: auto;
+        padding: $pd-2 0;
+        .services_item {
+            height: 100%;
+            background-color: $color-white-0;
+            .icon{
+                @include styleText(50px,$color-white-0,$fw-bold);
+                margin: 0 $mg-2;
+            }
+            .icon_content {
+                padding: $pd-1;
+                p:first-child{
+                    @include styleText($fs-0 + 2, $color-black-0, $fw-bold);
+                    margin-bottom: 0;
+                }
+                p:last-child{
+                    @include styleText($fs-0, $color-black-0, $fw-normal);
+                }
+            }
+        }
+
+
+    }
+}

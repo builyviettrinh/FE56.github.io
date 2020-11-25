@@ -1,5 +1,7 @@
 header {
     @include styleText($fs-1,$color-black-light,$fw-normal);
+    width: 90%;
+    margin: auto;
 }
 .header_left {
     display: flex;

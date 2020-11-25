@@ -4,9 +4,15 @@
         width: 80%;
         margin: auto;
         .courses_intro {
-            padding-top: 4rem;
+            height: 93%;
+            justify-content: center;
+            padding: 4.5rem 1rem;
+            background-color: $color-gray-1;
             h2 {
-                @include styleText($fs-4 -4, $color-black-0,$fw-normal);
+                @include styleText($fs-1 -4, $color-black-0,$fw-bold);
+            }
+            p{
+                color: $color-gray-4;
             }            
         }
 
@@ -15,6 +21,7 @@
                 justify-content: space-between;
                 border: none;
                 .nav-item{
+                    color: $color-gray-4;
                     &:hover{
                         .nav-link{
                             border: none;
@@ -35,35 +42,39 @@
             .tab-content{
                 margin-top: $mg-2;
                 position: relative;
-                .card-title {
-                    @include styleText($fs-0,$color-black-0,$fw-bold);
-                }
-                .card-text{
-                    @include styleText($fs-1,$color-gray-4,$fw-normal);
-                }
-                .rating{
-                    display: flex;
-                    .rating_star{
-                        @include styleText($fs-1,$color-yellow,$fw-normal);
-                        margin-right: $mg-0;
+                .card {
+                    height: 100%;
+                    .card-title {
+                        @include styleText($fs-0,$color-black-0,$fw-bold);
                     }
-                    span:nth-child(2){
-                        @include styleText($fs-1,$color-gray-4,$fw-bold);
-                    }
-                    span:last-child{
+                    .card-text{
                         @include styleText($fs-1,$color-gray-4,$fw-normal);
                     }
-                }
-                .price {
-                    text-align: right;
-                    .old-price{
-                        @include styleText($fs-1,$color-gray-4,$fw-normal);
-                        text-decoration: line-through;
+                    .rating{
+                        display: flex;
+                        .rating_star{
+                            @include styleText($fs-1,$color-yellow,$fw-normal);
+                            margin-right: $mg-0;
+                        }
+                        span:nth-child(2){
+                            @include styleText($fs-1,$color-gray-4,$fw-bold);
+                        }
+                        span:last-child{
+                            @include styleText($fs-1,$color-gray-4,$fw-normal);
+                        }
                     }
-                    .new-price{
-                        @include styleText($fs-1,$color-black-0,$fw-bold);
+                    .price {
+                        text-align: right;
+                        .old-price{
+                            @include styleText($fs-1,$color-gray-4,$fw-normal);
+                            text-decoration: line-through;
+                        }
+                        .new-price{
+                            @include styleText($fs-1,$color-black-0,$fw-bold);
+                        }
                     }
                 }
+
             }
 
 
