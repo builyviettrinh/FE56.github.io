@@ -1,0 +1,5 @@
+1. Tính tổng số nguyên chẵn từ 1 -> n .
+2.Cho hai mảng array1, array2 với các phần tử bất kỳ, kiểm tra và in ra dòng thông báo mảng nào chứa nhiều phần tử hơn (nếu hai mảng bằng nhau, in ra một dòng thông báo tương tự), và nhiều hơn bao nhiêu phần tử.
+(Gợi ý: Dùng hàm đếm số phần tử của từng mảng để tính toán.)
+3. Cho mảng fruits = ['orange', 'lemon', 'apple', 'cherry', 'mango', 'cherry'], tìm xem cherry có xuất hiện trong mảng fruits hay không, in ra dòng thông báo, nếu có thì xuất hiện bao nhiêu lần.
+(Gợi ý: Tìm xem cherry có tồn tại trong fruits, nếu tìm thấy, bắt đầu đếm số lần xuất hiện.)
