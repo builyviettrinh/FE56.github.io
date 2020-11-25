@@ -14,14 +14,14 @@ document.getElementById("btn-payment").addEventListener("click",function(){
         window.alert("Vui long Nhập thời gian chờ");
     }
     else{
-         payment(_kmeter,_time);
+        function payment(_kmeter,_time);
     }
 });
 
 function payment(a,b){
     var _payment = a*b;
-    document.getElementById("divThanhTien").style.display = "block";
-    document.getElementById("xuatTien").innerHTML =_payment; 
+    document.getElementById("xuatTien").style.backgroundColor ="orange";
+    document.getElementById("xuatTien").innerHTML ="Thành tiền:"+_payment +"vnd"; 
 
 };
 

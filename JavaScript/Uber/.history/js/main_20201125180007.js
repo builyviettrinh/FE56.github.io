@@ -21,6 +21,7 @@ document.getElementById("btn-payment").addEventListener("click",function(){
 function payment(a,b){
     var _payment = a*b;
     document.getElementById("divThanhTien").style.display = "block";
+    document.getElementById("xuatTien").style.backgroundColor ="orange";
     document.getElementById("xuatTien").innerHTML =_payment; 
 
 };
