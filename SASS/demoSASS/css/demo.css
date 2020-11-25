@@ -1,0 +1,56 @@
+h1 {
+  background-color: pink;
+}
+
+h2 {
+  background-color: pink;
+}
+
+.sec1 h2, .sec2 h2 {
+  background-color: orange;
+}
+
+.sec1 p, .sec2 p {
+  color: red;
+}
+
+.sec1 button, .sec2 button {
+  background-color: orange;
+}
+
+.sec1 button:hover, .sec2 button:hover {
+  background-color: aqua;
+}
+
+.sec3 h2 {
+  background-color: purple;
+}
+
+.sec3 button {
+  background-color: yellowgreen;
+}
+
+.sec4 h2 {
+  background-color: green;
+}
+
+.sec4 button {
+  background-color: green;
+}
+
+.sec5 h2 {
+  background-color: red;
+}
+
+.sec5 button {
+  background-color: red;
+}
+
+.sec6 h2 {
+  background-color: green;
+}
+
+.sec6 button {
+  background-color: green;
+}
+/*# sourceMappingURL=demo.css.map */

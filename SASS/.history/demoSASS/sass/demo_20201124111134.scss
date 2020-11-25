@@ -1,0 +1,80 @@
+//Khai báo biến
+//global
+$bg-color: pink;
+
+h1 {
+    background-color: $bg-color;
+}
+h2 {
+    background-color: $bg-color;
+}
+
+// Nesting
+//lồng code
+//cấp 5 hoặc 6
+.sec1{
+    h2{
+        background-color: orange;
+    }
+    p{
+        color:red;
+    }
+    // button:hover
+    button{
+        background-color: orange;
+        //&: đại diện bộ selector đang được chứa
+        //&: parent selector
+        &:hover{
+            background-color: aqua;
+        }
+    }
+}
+
+//Kế thừa
+//@extend
+//.sec1: cha
+//.sec2: con
+
+.sec2{
+    @extend .sec1;
+}
+
+// @mixin
+//gần giống hàm
+
+//không có tham số
+//Khai báo mixin
+@mixin styleSec(){
+    h2{
+        background-color: purple;
+    }
+    button{
+        background-color: yellowgreen;
+    }
+}
+
+//dùng/ gọi mixin
+.sec3{
+    @include styleSec;
+}
+
+//Có giá trị ( tham số)
+@mixin styleNewSec($bg-color) {
+    // $bg-color: local chỉ dùng trong mixin (hàm)
+    h2{
+        background-color:$bg-color ;
+    }
+    button{
+        background-color:$bg-color ;
+    }
+}
+
+.sec4{
+    @include styleNewSec(green);
+}
+.sec5{
+    @include styleNewSec(red);
+}
+.sec6{
+    @include styleNewSec(green);
+}

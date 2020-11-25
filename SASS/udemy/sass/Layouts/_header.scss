@@ -1,0 +1,56 @@
+header {
+    @include styleText($fs-1, $color-black-light, $fw-normal);
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    .navbar-brand {
+        img {
+            width: 110px;
+        }
+    }
+    .header__form {
+        flex-grow: 1;
+    }
+}
+
+.header__right {
+    .nav-link {
+        @include styleText($fs-1, $color-black-light, $fw-normal);
+    }
+}
+
+//Responsive
+//max-width:1200px
+@include responsive("extra-large") {
+    .header__right{
+        .business,.teach{
+            display: none;
+        }
+    }
+
+}
+
+@include responsive('large'){
+    .header__right{
+        .ude-btnGroup{
+            white-space: nowrap;
+        }
+    }
+}
+
+//max-width:768px
+@include responsive('medium'){
+    .header__right{
+        .ude-btnGroup{
+            display: none;
+        }
+    }
+    .header__left{
+        justify-content: center;
+        .cate,.header__form{
+            display: none;
+        }
+    }
+}
