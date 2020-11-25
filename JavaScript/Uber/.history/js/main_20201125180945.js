@@ -1,12 +1,12 @@
 // Check valiadation 
 document.getElementById("btn-payment").addEventListener("click",function(){
-    var _carTypeX = document.getElementById("uberX").value; 
-    var _carTypeS = document.getElementById("uberSUV").value;
-    var _carTypeB = document.getElementById("uberBlack").value;
+    var carTypeX = document.getElementById("uberX").value; 
+    var carTypeS = document.getElementById("uberSUV").value;
+    var carTypeB = document.getElementById("uberBlack").value;
     var _kmeter = document.getElementById("km").value; 
     var _time = document.getElementById("time").value; 
 
-    if(_kmeter == "" && _time == "" && _carTypeX =="" && _carTypeS =="" && _carTypeB ==""){
+    if(_kmeter == "" && _time == ""){
         window.alert("Vui long nhap thong tin");
     }
     else if(_kmeter == ""){

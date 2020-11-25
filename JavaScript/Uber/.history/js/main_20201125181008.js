@@ -6,7 +6,7 @@ document.getElementById("btn-payment").addEventListener("click",function(){
     var _kmeter = document.getElementById("km").value; 
     var _time = document.getElementById("time").value; 
 
-    if(_kmeter == "" && _time == "" && _carTypeX =="" && _carTypeS =="" && _carTypeB ==""){
+    if(_kmeter == "" && _time == "" && ){
         window.alert("Vui long nhap thong tin");
     }
     else if(_kmeter == ""){
