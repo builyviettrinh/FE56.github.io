@@ -39,16 +39,15 @@ document.getElementById("btn-payment").addEventListener("click",function(){
             document.getElementById("xuatTien").innerHTML = paymentBlack(_kmeter,_time);
         }
             document.getElementById("divThanhTien").style.display = "block";
-}
-
     }
+
 });
 
 // nho gan const giaCuoc 
 function paymentX(_kmeter,_time){
     var total;
     if(_kmeter <= 0){
-        window.alert("Vui long Nhập lai"); break;
+        window.alert("Vui long Nhập lai"); 
     }
     else if(_kmeter <= 1){
          km = _kmeter*8000;    
@@ -65,7 +64,7 @@ function paymentX(_kmeter,_time){
 function paymentSUV(_kmeter,_time){
     var total;
     if(_kmeter <= 0){
-        window.alert("Vui long Nhập lai");break;
+        window.alert("Vui long Nhập lai");
     }
     else if(_kmeter <= 1){
          km = _kmeter*9000;    
@@ -82,7 +81,7 @@ function paymentSUV(_kmeter,_time){
 function paymentBlack(_kmeter,_time){
     var total;
     if(_kmeter <= 0){
-        window.alert("Vui long Nhập lai");break;
+        window.alert("Vui long Nhập lai");
     }
     else if(_kmeter <= 1){
          km = _kmeter*10000;    
