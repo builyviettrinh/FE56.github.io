@@ -1,0 +1,18 @@
+.feedback {
+    background-color: $color-gray-1;
+    .feedback_content{
+        width: 80%;
+        margin: auto;
+        .card {
+            height: 100%;
+            .feedback_item{
+                .feedback_title{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+
+            }
+        }
+    }
+}

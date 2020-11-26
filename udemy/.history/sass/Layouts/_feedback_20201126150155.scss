@@ -1,0 +1,32 @@
+.feedback {
+    background-color: $color-gray-1;
+    .feedback_content{
+        width: 80%;
+        margin: auto;
+        .card {
+            height: 100%;
+            .feedback_item{
+                align-items: center;
+                .feedback_title{
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        margin: $pd-1;
+                    }
+                    .feedback_name {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        background-color: $color-black-light;
+                        color: $color-white-0;
+                    }
+                }
+                p {
+                    font-weight: $fw-normal;
+                }
+
+            }
+        }
+    }
+}

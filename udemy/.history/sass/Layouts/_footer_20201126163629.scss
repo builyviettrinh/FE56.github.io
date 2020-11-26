@@ -1,0 +1,17 @@
+.footer {
+    .footer_content{
+        width: 80%;
+        margin: auto;
+        ul{
+            li{
+                list-style: none;
+                a{
+                    @include styleText($fs-0,$color-blue,$fw-normal)
+                }
+            }
+        }
+        .footer_contact{
+            border-top: 2px solid $color-gray-2;
+        }
+    }
+}

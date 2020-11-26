@@ -1,0 +1,42 @@
+.feedback {
+    .feedback_content{
+        width: 80%;
+        margin: auto;
+        h3{
+            @include styleText($fs-3,$color-gray-4,$fw-normal);
+        }
+        .card-title {
+            @include styleText($fs-0,$color-black-0,$fw-bold);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .card-text{
+            @include styleText($fs-1,$color-gray-4,$fw-normal);
+
+        }
+        .rating{
+            display: flex;
+            .rating_star{
+                @include styleText($fs-1,$color-yellow,$fw-normal);
+                margin-right: $mg-0;
+            }
+            span:nth-child(2){
+                @include styleText($fs-1,$color-gray-4,$fw-bold);
+            }
+            span:last-child{
+                @include styleText($fs-1,$color-gray-4,$fw-normal);
+            }
+        }
+        .price {
+            text-align: right;
+            .old-price{
+                @include styleText($fs-1,$color-gray-4,$fw-normal);
+                text-decoration: line-through;
+            }
+            .new-price{
+                @include styleText($fs-1,$color-black-0,$fw-bold);
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.companies {
+    background-color: $color-gray-1;
+    .companies_content {
+        width: 70px;
+        margin: auto;
+        p{
+            @include styleText($fs-0,$color-gray-4,$fw-normal);
+            color: $color-gray-4;
+        }
+
+    }
+}

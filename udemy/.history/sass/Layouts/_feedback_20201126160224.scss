@@ -1,0 +1,48 @@
+.feedback {
+    background-color: $color-gray-1;
+    .feedback_content{
+        width: 80%;
+        margin: auto;
+        .card {
+            height: 100%;
+            .feedback_item{
+                align-items: center;
+                .feedback_title{
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        margin: $pd-1;
+                    }
+                    .feedback_name {
+                        width: 80px;
+                        height: 80px;
+                        line-height: 80px;
+                        text-align: center;
+                        border-radius: 50%;
+                        margin: $pd-1;
+                        @include styleText($fs-2,$color-white-0,$fw-bold);
+                        background-color: $color-black-light;
+                    }
+                }            
+            }
+            .card-text {
+                font-weight: $fw-normal;
+                margin: $pd-1;
+            }
+        }
+    }
+
+    .companies {
+        background-color: $color-gray-1;
+        .companies_content {
+            width: 70%;
+            margin: auto;
+            p{
+                @include styleText($fs-0,$color-gray-4,$fw-normal);
+                color: $color-gray-4;
+            }
+    
+        }
+    }
+}

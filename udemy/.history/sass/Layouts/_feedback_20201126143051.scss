@@ -1,0 +1,20 @@
+.feedback {
+    background-color: $color-gray-1;
+    .feedback_content{
+        width: 80%;
+        margin: auto;
+        h3{
+            @include styleText($fs-3,$color-gray-4,$fw-normal);
+        }
+        .card-title {
+            @include styleText($fs-0,$color-black-0,$fw-bold);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .card-text{
+            @include styleText($fs-1,$color-gray-4,$fw-normal);
+
+        }
+    }
+}

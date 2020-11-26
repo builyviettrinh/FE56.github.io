@@ -1,0 +1,7 @@
+.companies {
+    background-color: $color-gray-1;
+    .companies_content {
+        @include styleText($fs-0)
+        color: $color-gray-4;
+    }
+}

@@ -1,0 +1,22 @@
+.topCategories{
+    .topCategories_content{
+        width: 80%;
+        margin: auto;
+        padding: $pd-2;
+        .categories_item {
+            border: 1px solid $color-gray-2;
+            margin-bottom: $mg-1;
+            .icon{
+                @include styleText($fs-2,$color-black-0,$fw-bold);
+                margin-right: $mg-2;
+                align-items: center;
+            }
+            .icon_content {
+                padding-top: $pd-1;
+            }
+        }
+        
+    }
+    
+}
+
