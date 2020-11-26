@@ -16,15 +16,17 @@ document.getElementById("btn-payment").addEventListener("click",function(){
     }
     else{
         // tìm ra value của radio 
-         function dataByClassName(st){
-            var value=document.getElementsByName(selector);
-            for(var i=0;i < value.length;i++){
-                if(value[i].checked){
-                    return value[i].value;
-                }
-            }
-        }
-        var _carType = dataByClassName("Rm");
+        //  function dataByClassName(st){
+        //     var value=document.getElementsByName(selector);
+        //     for(var i=0;i < value.length;i++){
+        //         if(value[i].checked){
+        //             return value[i].id;
+        //         }
+        //     }
+        // }
+        // var _carType = dataByClassName("Rm");
+        
+        var _carType = gRadioValue; 
 
         // so sanh 3 gia tri
         if(_carType ==="uberX"){
