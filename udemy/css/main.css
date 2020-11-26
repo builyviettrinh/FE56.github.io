@@ -302,9 +302,9 @@ header {
   font-size: 15px;
   color: #29303b;
   font-weight: bold;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  overflow: hidden !important;
 }
 
 .courses .courses_content .myTab .tab-content .card .card-text {
