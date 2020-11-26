@@ -1,6 +1,5 @@
 .footer {
     border-top: 1px solid $color-gray-3;
-    position: relative;
     .footer_content{
         width: 80%;
         margin: auto;
@@ -19,26 +18,18 @@
                 }
             }
         }  
-        .language {
-            border: 1px solid $color-black-dark;
-            width: 30%;
-            padding: 3px;
-        }
-    }    
-    .line_grey{
-        position: absolute;
-        bottom: 30%;
-        left: 0;
-        height: 1px;
-        width: 100%;
-        background: $color-gray-3;
+        &::after{
+            content: "";
+            width: 150%;
+            height: 1px;
+            display: block;
+            background-color: $color-gray-3  
     }
-    .line_red{
-        position: absolute;
-        bottom:0;
-        left: 0;
-        height: 5px;
-        width: 100%;
-        background: $color-red-0;
-    }
+; 
+    } 
+        .copyright{
+            width: 80%;
+            margin: auto;
+            }    
+    
 }

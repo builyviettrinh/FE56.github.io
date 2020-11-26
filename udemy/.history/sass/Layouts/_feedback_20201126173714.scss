@@ -43,10 +43,10 @@
                 color: $color-gray-4;
             }
             .logo-item{
-                height: 50px;
+                height: 100px;
                 img{
                     width: 100%;
-                    height: 70%;
+                    height: 50%;
                 }
 
             }
@@ -55,22 +55,19 @@
     }
 
     .getUdemy{
+        position: relative;
         .getUdemy_content{
             width: 80%;
             margin: auto;
-            position: relative;
+ 
             p{
                 font-weight: $fw-normal;
             }
-            .line{
-                position: absolute;
-                top: 0;
-                left: 50%;
-                height: 90%;
-                width: 1px;
-                background: $color-gray-3;
-            }
         }
-
+        .line{
+            position: relative;
+            height: 100%;
+            width: 5px;
+        }
     }
 }

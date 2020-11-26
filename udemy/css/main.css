@@ -561,7 +561,7 @@ header {
 }
 
 .feedback .companies .companies_content {
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
@@ -572,17 +572,37 @@ header {
   color: #686f7a;
 }
 
+.feedback .companies .companies_content .logo-item {
+  height: 50px;
+}
+
+.feedback .companies .companies_content .logo-item img {
+  width: 100%;
+  height: 70%;
+}
+
 .feedback .getUdemy .getUdemy_content {
   width: 80%;
   margin: auto;
+  position: relative;
 }
 
 .feedback .getUdemy .getUdemy_content p {
   font-weight: normal;
 }
 
+.feedback .getUdemy .getUdemy_content .line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 90%;
+  width: 1px;
+  background: #cacbcc;
+}
+
 .footer {
-  border-top: 2px solid #cacbcc;
+  border-top: 1px solid #cacbcc;
+  position: relative;
 }
 
 .footer .footer_content {
@@ -605,11 +625,27 @@ header {
   color: #29303b;
 }
 
-.footer .footer_content::before {
-  content: "";
-  width: 120%;
-  height: 2px;
-  display: block;
-  color: #cacbcc;
+.footer .footer_content .language {
+  border: 1px solid rgba(20, 23, 28, 0.1);
+  width: 30%;
+  padding: 3px;
+}
+
+.footer .line_grey {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #cacbcc;
+}
+
+.footer .line_red {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: #ec5252;
 }
 /*# sourceMappingURL=main.css.map */

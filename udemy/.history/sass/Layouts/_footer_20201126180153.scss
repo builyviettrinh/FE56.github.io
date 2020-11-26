@@ -1,0 +1,35 @@
+.footer {
+    border-top: 2px solid $color-gray-3;
+    .footer_content{
+        width: 80%;
+        margin: auto;
+        .footer_contact{
+            ul{
+                li{
+                    list-style: none;
+                    a{
+                        @include styleText($fs-0,$color-blue,$fw-normal);
+                        &:hover{
+                            text-decoration: none;
+                            color: $color-black-0;
+                        }
+                    }
+    
+                }
+            }
+        }
+    
+        &::before{
+            content: "";
+            width: 120%;
+            height: 2px;
+            display: block;
+            background-color: $color-gray-3; 
+        }   
+        .copyright{
+
+            }
+    
+    }
+
+}

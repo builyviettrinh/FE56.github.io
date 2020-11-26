@@ -18,27 +18,14 @@
     
                 }
             }
-        }  
-        .language {
-            border: 1px solid $color-black-dark;
-            width: 30%;
-            padding: 3px;
-        }
+        }   
     }    
-    .line_grey{
+    .line{
         position: absolute;
-        bottom: 30%;
+        bottom: 40%;
         left: 0;
         height: 1px;
         width: 100%;
         background: $color-gray-3;
-    }
-    .line_red{
-        position: absolute;
-        bottom:0;
-        left: 0;
-        height: 5px;
-        width: 100%;
-        background: $color-red-0;
     }
 }
