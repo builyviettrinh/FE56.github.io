@@ -1,8 +1,6 @@
 // Check valiadation 
 document.getElementById("btn-payment").addEventListener("click",function(){
-    var _carTypeX = document.getElementById("uberX").value; 
-    var _carTypeS = document.getElementById("uberSUV").value;
-    var _carTypeB = document.getElementById("uberBlack").value;
+    var _carType = document.getElementByName("selector");
     var _kmeter = document.getElementById("km").value; 
     var _time = document.getElementById("time").value; 
 

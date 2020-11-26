@@ -6,7 +6,7 @@
         .courses_intro {
             height: 93%;
             justify-content: center;
-            padding: 4.5rem 1rem;
+            padding: 4.5rem 2rem;
             background-color: $color-gray-1;
             h2 {
                 @include styleText($fs-1 -4, $color-black-0,$fw-bold);
@@ -46,6 +46,10 @@
                     height: 100%;
                     .card-title {
                         @include styleText($fs-0,$color-black-0,$fw-bold);
+                        display: -webkit-box!important;
+                        -webkit-line-clamp: 2!important ;
+                        -webkit-box-orient: vertical!important;
+                        overflow: hidden!important;
                     }
                     .card-text{
                         @include styleText($fs-1,$color-gray-4,$fw-normal);
