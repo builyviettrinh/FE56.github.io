@@ -25,9 +25,13 @@ document.getElementById("btn-payment").addEventListener("click",function(){
         //     }
         // }
         // var _carType = dataByClassName("Rm");
-        
-        var _carType = gRadioValue; 
+        var gRadioValue ="";
+        function myRadioFunc(){
+        var _carType = document.getElementById(gRadioValue);
+        return _carType;
 
+        }
+        _carType = myRadioFunc();
         // so sanh 3 gia tri
         if(_carType ==="uberX"){
             document.getElementById("xuatTien").innerHTML = paymentX(_kmeter,_time);
@@ -41,11 +45,12 @@ document.getElementById("btn-payment").addEventListener("click",function(){
             document.getElementById("divThanhTien").style.display = "block";
     }
 
+
+
 });
 
 // nho gan const giaCuoc 
 function paymentX(_kmeter,_time){
-    var total;
     if(_kmeter <= 0){
         window.alert("Vui long Nhập lai"); 
     }
@@ -58,11 +63,10 @@ function paymentX(_kmeter,_time){
     else {
         km = _kmeter*10000;
     }
-    total= km + 2000*_time;
+    var total= km + 2000*_time;
 }
 
 function paymentSUV(_kmeter,_time){
-    var total;
     if(_kmeter <= 0){
         window.alert("Vui long Nhập lai");
     }
@@ -75,11 +79,10 @@ function paymentSUV(_kmeter,_time){
     else {
         km = _kmeter*12000;
     }
-    total= km + 3000*_time;
+    var  total= km + 3000*_time;
 }
 
 function paymentBlack(_kmeter,_time){
-    var total;
     if(_kmeter <= 0){
         window.alert("Vui long Nhập lai");
     }
@@ -92,7 +95,7 @@ function paymentBlack(_kmeter,_time){
     else {
         km = _kmeter*14000;
     }
-    total= km + 4000*_time;
+    var total= km + 4000*_time;
 }
 
 
