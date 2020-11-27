@@ -1,60 +1,70 @@
 // Check valiadation 
 document.getElementById("btn-payment").addEventListener("click",function(){
-    
-    // var _carType = document.querySelector('input[name = "selector"]:checked').value;
-    var _kmeter = document.getElementById("km").value; 
-    var _time = document.getElementById("time").value; 
 
-    if(_kmeter == "" && _time == "" && _carTypeX =="" && _carTypeS =="" && _carTypeB ==""){
-        window.alert("Vui long nhap thong tin");
+    // khoi tao bien
+    var checkbox = document.getElementsByName("selector");
+    var _kmeter = document.getElementById("km").value; 
+    var _time = document.getElementById("time").value;
+
+    // check validation _carType
+     for(var i = 0; i< checkbox.length; i++){
+        var _carType = "";
+        if(checkbox[i].checked){
+            _carType = checkbox[i].getAttribute("id");break;
+        }
     }
-    else if(_kmeter == ""){
-        window.alert("Vui long Nhập vào số KM");
-    }
-    else if(_time == ""){
-        window.alert("Vui long Nhập thời gian chờ");
+
+    if( _carType === ""){
+        window.alert("Vui lòng chọn loại xe.");
     }
     else{
-        // tìm ra value của radio 
-        //  function dataByClassName(st){
-        //     var value=document.getElementsByName(selector);
-        //     for(var i=0;i < value.length;i++){
-        //         if(value[i].checked){
-        //             return value[i].id;
-        //         }
-        //     }
-        // }
-        // var _carType = dataByClassName("Rm");
-        var gRadioValue ="";
-        function myRadioFunc(){
-        var _carType = document.getElementById(gRadioValue);
-        return _carType;
-
+        // check validation _kmeter
+        if( _kmeter === ""){
+            window.alert("Vui lòng nhập vào số km");
         }
-        _carType = myRadioFunc();
-        // so sanh 3 gia tri
-        if(_carType ==="uberX"){
-            document.getElementById("xuatTien").innerHTML = paymentX(_kmeter,_time);
+        else if( _kmeter <= 0){
+            window.alert("Vui lòng nhập giá trị hợp lệ. (>0)");
         }
-        else if( _carType ==="uberSUV"){
-            document.getElementById("xuatTien").innerHTML = paymentSUV(_kmeter,_time);
+        // check validation _time
+        else if( _time  < 0){
+            window.alert("Vui lòng nhập giá trị hợp lệ. (>=0)");
         }
-        else {
-            document.getElementById("xuatTien").innerHTML = paymentBlack(_kmeter,_time);
+        else if( _time === ""){
+            window.alert("Vui lòng nhập thời gian chờ");
         }
-            document.getElementById("divThanhTien").style.display = "block";
+        else{
+            // so sanh 3 gia tri cua carType
+            if(_carType ==="uberX"){
+                document.getElementById("xuatTien").innerHTML = paymentX(_kmeter,_time);
+            }
+            else if( _carType ==="uberSUV"){
+                document.getElementById("xuatTien").innerHTML = paymentSUV(_kmeter,_time);
+            }
+            else {
+                document.getElementById("xuatTien").innerHTML = paymentBlack(_kmeter,_time);
+            }
+                document.getElementById("divThanhTien").style.display = "block";
     }
 
-
+        // cach 2 
+        // if(ocument.getElementById("uberX").checked){
+        //     document.getElementById("xuatTien").innerHTML = paymentX(_kmeter,_time);
+        // }
+        // else if(document.getElementById("uberSUV").checked){
+        //     document.getElementById("xuatTien").innerHTML = paymentSUV(_kmeter,_time);
+        // }
+        // else if(document.getElementById("uberBlack").checked){{
+        //     document.getElementById("xuatTien").innerHTML = paymentBlack(_kmeter,_time);
+        // }
+        //     document.getElementById("divThanhTien").style.display = "block";
+    }
 
 });
 
-// nho gan const giaCuoc 
+// can gan const k ?
 function paymentX(_kmeter,_time){
-    if(_kmeter <= 0){
-        window.alert("Vui long Nhập lai"); 
-    }
-    else if(_kmeter <= 1){
+    var total = 0;
+    if(_kmeter <= 1){
          km = _kmeter*8000;    
     }
     else if(_kmeter <= 20){
@@ -63,14 +73,12 @@ function paymentX(_kmeter,_time){
     else {
         km = _kmeter*10000;
     }
-    var total= km + 2000*_time;
+    return total= km + 2000*_time;
 }
 
 function paymentSUV(_kmeter,_time){
-    if(_kmeter <= 0){
-        window.alert("Vui long Nhập lai");
-    }
-    else if(_kmeter <= 1){
+    var total= 0;
+    if(_kmeter <= 1){
          km = _kmeter*9000;    
     }
     else if(_kmeter <= 20){
@@ -79,14 +87,12 @@ function paymentSUV(_kmeter,_time){
     else {
         km = _kmeter*12000;
     }
-    var  total= km + 3000*_time;
+    return total= km + 3000*_time;
 }
 
 function paymentBlack(_kmeter,_time){
-    if(_kmeter <= 0){
-        window.alert("Vui long Nhập lai");
-    }
-    else if(_kmeter <= 1){
+    var total= 0;
+    if(_kmeter <= 1){
          km = _kmeter*10000;    
     }
     else if(_kmeter <= 20){
@@ -95,7 +101,7 @@ function paymentBlack(_kmeter,_time){
     else {
         km = _kmeter*14000;
     }
-    var total= km + 4000*_time;
+    return total = km + 4000*_time;
 }
 
 
