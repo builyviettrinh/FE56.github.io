@@ -61,47 +61,50 @@ document.getElementById("btn-payment").addEventListener("click",function(){
 
 });
 
-// can gan const k ?
-function paymentX(_kmeter,_time){
+// testcase : -1,0, 0.5, 1,2,21,100  = error, error, 4, 8, 20, 246, 1036000
+function paymentX(a,b){
     var total = 0;
-    if(_kmeter <= 1){
-         km = _kmeter*8000;    
+
+    if(a <= 1){
+         km = a*8000;    
     }
-    else if(_kmeter <= 20){
-        km = _kmeter*12000; 
+    else if(a <= 20){
+        km = 1*8000 + (a-1)*12000; 
     }
     else {
-        km = _kmeter*10000;
+        km = 1*8000 +  (20-1)*12000 + (a-20)*10000;
     }
-    return total= km + 2000*_time;
+    return total= km + 2000*b;
 }
 
-function paymentSUV(_kmeter,_time){
+// testcase : -1,0, 0.5, 1,2,21,100  = error, error, 4.5, 23, 287, 1036000
+function paymentSUV(a,b){
     var total= 0;
-    if(_kmeter <= 1){
-         km = _kmeter*9000;    
+    if(a <= 1){
+         km = a*9000;    
     }
-    else if(_kmeter <= 20){
-        km = _kmeter*14000; 
+    else if(a <= 20){
+        km = 1*9000 + (a-1)*14000; 
     }
     else {
-        km = _kmeter*12000;
+        km = 1*9000 + (20-1)*14000 + (a-20)*12000;
     }
-    return total= km + 3000*_time;
+    return total= km + 3000*b;
 }
 
-function paymentBlack(_kmeter,_time){
+// testcase : -1,0, 0.5, 1,2,21,100  = error, error, 5,10,26,528, 2424
+function paymentBlack(a,b){
     var total= 0;
-    if(_kmeter <= 1){
-         km = _kmeter*10000;    
+    if( a <= 1){
+         km = a *10000;    
     }
-    else if(_kmeter <= 20){
-        km = _kmeter*16000; 
+    else if( a <= 20){
+        km = a *10000 + (a-1)*16000; 
     }
     else {
-        km = _kmeter*14000;
+        km = a *10000 + (20-1)*16000 + (a-20)*14000;
     }
-    return total = km + 4000*_time;
+    return total = km + 4000*b;
 }
 
 
