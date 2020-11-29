@@ -45,18 +45,6 @@ document.getElementById("btn-payment").addEventListener("click",function(){
             }
                 document.getElementById("divThanhTien").style.display = "block";
     }
-
-        // cach 2 
-        // if(ocument.getElementById("uberX").checked){
-        //     document.getElementById("xuatTien").innerHTML = paymentX(_kmeter,_time);
-        // }
-        // else if(document.getElementById("uberSUV").checked){
-        //     document.getElementById("xuatTien").innerHTML = paymentSUV(_kmeter,_time);
-        // }
-        // else if(document.getElementById("uberBlack").checked){{
-        //     document.getElementById("xuatTien").innerHTML = paymentBlack(_kmeter,_time);
-        // }
-        //     document.getElementById("divThanhTien").style.display = "block";
     }
 
 });
@@ -106,6 +94,20 @@ function paymentBlack(a,b){
     }
     return total = km + 4000*b;
 }
+
+// tao bảng hoá đơn
+function taoBang(){
+    document.getElementById("").innerHTML = "";
+
+    for(var i = 0; i < ds.length; i++ ){
+        // tao dong
+        var tagTR = document.createElement("tr");
+
+        // tạo cột        
+
+    }
+}
+
 
 
 
