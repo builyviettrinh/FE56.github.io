@@ -1,4 +1,3 @@
-// Check valiadation 
 document.getElementById("btn-payment").addEventListener("click",function(){
 
     // khoi tao bien
@@ -34,11 +33,14 @@ document.getElementById("btn-payment").addEventListener("click",function(){
         }
         else{
             // so sanh 3 gia tri cua carType
+            var payX = paymentX(_kmeter,_time);
+            var paySUV = paymentSUV(_kmeter,_time);
+            var payBlack = paymentBlack(_kmeter,_time);
             if(_carType ==="uberX"){
-                document.getElementById("xuatTien").innerHTML = paymentX(_kmeter,_time);
+                document.getElementById("xuatTien").innerHTML = payX;
             }
             else if( _carType ==="uberSUV"){
-                document.getElementById("xuatTien").innerHTML = paymentSUV(_kmeter,_time);
+                document.getElementById("xuatTien").innerHTML = payBlack;
             }
             else {
                 document.getElementById("xuatTien").innerHTML = paymentBlack(_kmeter,_time);
@@ -95,15 +97,81 @@ function paymentBlack(a,b){
     return total = km + 4000*b;
 }
 
-// tao bảng hoá đơn
-function taoBang(){
-    document.getElementById("").innerHTML = "";
+// tạo danh sách hóa đơn
+var listPayment = [];
+document.getElementById("printBill").addEventListener("click",function(){
+        // khoi tao bien
+        var checkbox = document.getElementsByName("selector");
+        var _kmeter = document.getElementById("km").value; 
+        var _time = document.getElementById("time").value;
+    
+        // check validation _carType
+         for(var i = 0; i< checkbox.length; i++){
+            var _carType = "";
+            if(checkbox[i].checked){
+                _carType = checkbox[i].getAttribute("id");break;
+            }
+        }
+    
+        if( _carType === ""){
+            window.alert("Vui lòng chọn loại xe.");
+        }
+        else{
+            // check validation _kmeter
+            if( _kmeter === ""){
+                window.alert("Vui lòng nhập vào số km");
+            }
+            else if( _kmeter <= 0){
+                window.alert("Vui lòng nhập giá trị hợp lệ. (>0)");
+            }
+            // check validation _time
+            else if( _time  < 0){
+                window.alert("Vui lòng nhập giá trị hợp lệ. (>=0)");
+            }
+            else if( _time === ""){
+                window.alert("Vui lòng nhập thời gian chờ");
+            }
+            else{
+                // so sanh 3 gia tri cua carType
+                var payX = paymentX(_kmeter,_time);
+                var paySUV = paymentSUV(_kmeter,_time);
+                var payBlack = paymentBlack(_kmeter,_time);
+            }
+        }
 
-    for(var i = 0; i < ds.length; i++ ){
+    listPayment.push(_carType,_kmeter,_time,payX);
+
+    addTable();
+})
+
+// tao bảng hoá đơn
+function addTable(){
+    document.getElementById("tbodyHoaDon").innerHTML = "";
+
+    for(var i = 0; i < listPayment.length; i++ ){
         // tao dong
         var tagTR = document.createElement("tr");
 
-        // tạo cột        
+        // tạo cột   
+        var  tagTD_type = document.createElement("td");
+        var  tagTD_km = document.createElement("td");
+        var  tagTD_time = document.createElement("td");
+        var  tagTD_pay = document.createElement("td");   
+
+        // gán nội dung vào cột
+        tagTD_type.innerHTML = listPayment[i]._carType;
+        tagTD_km.innerHTML = listPayment[i]._kmeter;
+        tagTD_time.innerHTML = listPayment[i]._time;
+        tagTD_pay.innerHTML = listPayment[i].payX;
+
+        // append 5 cột vào dòng
+        tagTR.appendChild(tagTD_type);
+        tagTR.appendChild(tagTD_km);
+        tagTR.appendChild(tagTD_time);
+        tagTR.appendChild(tagTD_pay);
+
+        // append dòng vào tbody
+        document.getElementById("tbodyHoaDon").appendChild(tagTR);
 
     }
 }
