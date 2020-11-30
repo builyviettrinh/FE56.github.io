@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy</title>
+
+    <!-- bootrap css  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONT GOOGLE -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- bootrap css  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- OWL CAROUSEL  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-- header  -->
+    <header class="px-0">
+      <nav class="navbar navbar-expand-md">
+        <!-- resposive man hinh nho hien thi  -->
+        <div class="col-2 d-md-none">
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="col-9 col-md-9 col-lg-9 col-xl-7">
+          <div class="header_left">
+            <a class="navbar-brand" href="#">
+              <img src="./img/logo-coral.svg" alt="" />
+            </a>
+            <span class="cate"> <i class="fa fa-th"></i> Categories </span>
+            <form action="" class="form_search">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search for anything"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2"
+                    ><i class="fa fa-search"></i
+                  ></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-1 col-md-3 col-lg-3 col-xl-5">
+          <div class="header_right">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item bussiness">
+                <a class="nav-link" href="#"
+                  >Udemy for bussiness<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item teach">
+                <a class="nav-link" href="#">Teach on Udemy</a>
+              </li>
+              <li class="nav-item shopping-cart">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+              </li>
+              <li class="nav-item ude-btnGroup">
+                <a class="nav-link" href="#">
+                  <button class="btn-white">Log In</button>
+                  <button class="btn-red">Sign Up</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- udeCarousel -->
+    <section class="udeCarousel myCover">
+      <div class="myCover_content">
+        <h1>Learn on your schedule</h1>
+        <p>
+          Study any topic, anytime. Choose from thousands of expert-led courses
+          now.
+        </p>
+        <form action="" class="form_search_learn">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="What do you want to learn?"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- intro-->
+    <section class="intro">
+      <div class="intro_content">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="intro_item d-flex">
+              <div class="icon">
+                <i class="fa fa-bullseye"></i>
+              </div>
+              <div class="icon_content">
+                <p>100,000 online courses</p>
+                <p>Explore a variety of fresh topics</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="intro_item d-flex">
+              <div class="icon">
+                <i class="fa fa-spinner"></i>
+              </div>
+              <div class="icon_content">
+                <p>Expert instruction</p>
+                <p>Find the right instructor for you</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="intro_item d-flex">
+              <div class="icon">
+                <i class="fa fa-sync"></i>
+              </div>
+              <div class="icon_content">
+                <p>Lifetime access</p>
+                <p>Learn on your schedule</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- courses-->
+    <section class="courses">
+      <div class="courses_content">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="courses_intro">
+              <h2>The world’s largest selection of courses</h2>
+              <p>
+                Choose from over 100,000 online video courses with new additions
+                published every month
+              </p>
+            </div>
+          </div>
+          <div class="col-md-8 px-0">
+            <div class="myTab">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#Bussiness"
+                    >Bussiness</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Design"
+                    >Design</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Photography"
+                    >Photography</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Development"
+                    >Development</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Marketing"
+                    >Marketing</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Software"
+                    >IT & Software</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Personal"
+                    >Personal Development</a
+                  >
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane container active px-0" id="Bussiness">
+                  <div class="course_bussiness owl-carousel owl-theme">
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/complate.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Tableau 2020 A-Z: Hands-On Tab Training
+                        </h4>
+                        <p class="card-text">Mohsen Hassan,bloom team</p>
+                        <div class="rating">
+                          <div class="rating_star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <span>4.8 </span>
+                          <span> (43028)</span>
+                        </div>
+                        <div class="price">
+                          <span class="old-price">$179.99</span>
+                          <span class="new-price">$1.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/bi.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Microsoft Power BI - Up & Running Power BI
+                        </h4>
+                        <p class="card-text">Mohsen Hassan,bloom team</p>
+                        <div class="rating">
+                          <div class="rating_star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <span>4.8 </span>
+                          <span>(43028)</span>
+                        </div>
+                        <div class="price">
+                          <span class="old-price">$259.99</span>
+                          <span class="new-price">$1.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/mba.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          MBA in a Box: Business Lessons from a CEO
+                        </h4>
+                        <p class="card-text">Mohsen Hassan,bloom team</p>
+                        <div class="rating">
+                          <div class="rating_star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <span>4.8 </span>
+                          <span>(43028)</span>
+                        </div>
+                        <div class="price">
+                          <span class="old-price">$19.99</span>
+                          <span class="new-price">$1.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img
+                        class="card-img-top"
+                        src="./img/kh4.jpg"
+                        alt="Card image"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">
+                          Tableau 2020 A-Z: Hands-On Tableau Training for Data
+                          Science
+                        </h4>
+                        <p class="card-text">Mohsen Hassan,bloom team</p>
+                        <div class="rating">
+                          <div class="rating_star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <span>4.8 </span>
+                          <span>(43028)</span>
+                        </div>
+                        <div class="price">
+                          <span class="old-price">$179.99</span>
+                          <span class="new-price">$1.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane container fade" id="Design">
+                  <div class="course_design"></div>
+                </div>
+                <div class="tab-pane container fade" id="Photography">
+                  <div class="course_photography"></div>
+                </div>
+                <div class="tab-pane container fade" id="Development">
+                  <div class="course_development"></div>
+                </div>
+                <div class="tab-pane container fade" id="Marketing">
+                  <div class="course_marketing"></div>
+                </div>
+                <div class="tab-pane container fade" id="Software">
+                  <div class="course_Software"></div>
+                </div>
+                <div class="tab-pane container fade" id="Personal">
+                  <div class="course_Personal"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services-->
+    <section class="services">
+      <div class="services_content px-5">
+        <div class="row">
+          <div class="col-12 col-md-4 pr-0 mb-sm-3 mb-3">
+            <div class="services_item d-flex">
+              <div class="icon">
+                <img src="./img/go_own_pace.svg" alt="" />
+              </div>
+              <div class="icon_content">
+                <p>Go at your own pace</p>
+                <p>
+                  Enjoy lifetime access to courses on Udemy’s website and app
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pr-0 mb-sm-3 mb-3">
+            <div class="services_item d-flex">
+              <div class="icon">
+                <img src="./img/learn_from_experts.svg" alt="" />
+              </div>
+              <div class="icon_content">
+                <p>Learn from industry experts</p>
+                <p>
+                  Enjoy lifetime access to courses on Udemy’s website and app
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pr-0">
+            <div class="services_item d-flex">
+              <div class="icon">
+                <img src="./img/video_courses.svg" alt="" />
+              </div>
+              <div class="icon_content">
+                <p>Find video courses on almost any topic</p>
+                <p>
+                  Enjoy lifetime access to courses on Udemy’s website and app
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- students-->
+    <section class="student pt-3">
+      <div class="student_content">
+        <h3>Students are viewing</h3>
+        <div class="student_course owl-carousel owl-theme">
+          <div class="card">
+            <img class="card-img-top" src="./img/kh2.jpg" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">
+                Tableau 2020 A-Z: Hands-On Tab Training
+              </h4>
+              <p class="card-text">Mohsen Hassan,bloom team</p>
+              <div class="rating">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span>4.8 </span>
+                <span> (43028)</span>
+              </div>
+              <div class="price">
+                <span class="old-price">$179.99</span>
+                <span class="new-price">$1.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./img/kh5.jpg" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">
+                Microsoft Power BI - Up & Running Power BI
+              </h4>
+              <p class="card-text">Mohsen Hassan,bloom team</p>
+              <div class="rating">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span>4.8 </span>
+                <span>(43028)</span>
+              </div>
+              <div class="price">
+                <span class="old-price">$259.99</span>
+                <span class="new-price">$1.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./img/kh4.jpg" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">
+                MBA in a Box: Business Lessons from a CEO
+              </h4>
+              <p class="card-text">Mohsen Hassan,bloom team</p>
+              <div class="rating">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span>4.8 </span>
+                <span>(43028)</span>
+              </div>
+              <div class="price">
+                <span class="old-price">$19.99</span>
+                <span class="new-price">$1.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./img/kh13.jpg" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">
+                Tableau 2020 A-Z: Hands-On Tableau Training for Data Science
+              </h4>
+              <p class="card-text">Mohsen Hassan,bloom team</p>
+              <div class="rating">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span>4.8 </span>
+                <span>(43028)</span>
+              </div>
+              <div class="price">
+                <span class="old-price">$179.99</span>
+                <span class="new-price">$1.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./img/kh10.jpg" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">
+                Tableau 2020 A-Z: Hands-On Tableau Training for Data Science
+              </h4>
+              <p class="card-text">Mohsen Hassan,bloom team</p>
+              <div class="rating">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span>4.8 </span>
+                <span>(43028)</span>
+              </div>
+              <div class="price">
+                <span class="old-price">$179.99</span>
+                <span class="new-price">$1.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./img/kh4.jpg" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">
+                Tableau 2020 A-Z: Hands-On Tableau Training for Data Science
+              </h4>
+              <p class="card-text">Mohsen Hassan,bloom team</p>
+              <div class="rating">
+                <div class="rating_star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span>4.8 </span>
+                <span>(43028)</span>
+              </div>
+              <div class="price">
+                <span class="old-price">$179.99</span>
+                <span class="new-price">$1.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner-->
+    <section class="banner text-center">
+      <div class="container p-5">
+        <h2>Get personalized recommendations</h2>
+        <p>Answer a few questions for your top picks</p>
+        <button class="btn-red">Get started</button>
+      </div>
+    </section>
+
+    <!-- topCategories -->
+    <section class="topCategories">
+      <div class="topCategories_content">
+        <h2>Top categories</h2>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="categories_item d-flex">
+              <div class="icon">
+                <i class="fa fa-hard-hat"></i>
+              </div>
+              <div class="icon_content">
+                <p>Development</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="categories_item d-flex">
+              <div class="icon">
+                <i class="fa fa-handshake"></i>
+              </div>
+              <div class="icon_content">
+                <p>Business</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="categories_item d-flex">
+              <div class="icon">
+                <i class="fa fa-helicopter"></i>
+              </div>
+              <div class="icon_content">
+                <p>IT and Software</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="categories_item d-flex">
+              <div class="icon">
+                <i class="fa fa-hand-holding-usd"></i>
+              </div>
+              <div class="icon_content">
+                <p>Design</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="categories_item d-flex">
+              <div class="icon">
+                <i class="fa fa-handshake"></i>
+              </div>
+              <div class="icon_content">
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="categories_item d-flex">
+              <div class="icon">
+                <i class="fa fa-hammer"></i>
+              </div>
+              <div class="icon_content">
+                <p>Personal Development</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="categories_item d-flex">
+              <div class="icon">
+                <i class="fa fa-star-of-david"></i>
+              </div>
+              <div class="icon_content">
+                <p>Photography</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="categories_item d-flex">
+              <div class="icon">
+                <i class="fa fa-music"></i>
+              </div>
+              <div class="icon_content">
+                <p>Music</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feedback -->
+    <section class="feedback">
+      <div class="feedback_content">
+        <h2 class="pt-5 pb-3">What our students have to say</h2>
+        <div class="feedback_detail owl-carousel owl-theme">
+          <div class="card pb-4">
+            <div class="card-body">
+              <div class="feedback_item d-flex">
+                <div class="feedback_title">
+                  <img class="card-img-top" src="./img/fb1.jpg" alt="" />
+                </div>
+                <div class="feedback_text">
+                  <h4>Zulaika</h4>
+                </div>
+              </div>
+
+              <p class="card-text">
+                I work in project management and joined Udemy because I get
+                great courses for less. The instructors are fantastic,
+                interesting, and helpful. I plan to use Udemy for a long time!
+              </p>
+            </div>
+          </div>
+
+          <div class="card pb-4">
+            <div class="card-body">
+              <div class="feedback_item d-flex">
+                <div class="feedback_title">
+                  <img class="card-img-top" src="./img/fb2.jpg" alt="" />
+                </div>
+                <div class="feedback_text">
+                  <h4>Marco</h4>
+                </div>
+              </div>
+
+              <p class="card-text">
+                I work in project management and joined Udemy because I get
+                great courses for less. The instructors are fantastic,
+                interesting, and helpful. I plan to use Udemy for a long time!
+              </p>
+            </div>
+          </div>
+          <div class="card pb-4">
+            <div class="card-body">
+              <div class="feedback_item d-flex">
+                <div class="feedback_title">
+                  <div class="feedback_name">J</div>
+                </div>
+                <div class="feedback_text">
+                  <h4>Justin</h4>
+                </div>
+              </div>
+
+              <p class="card-text">
+                I work in project management and joined Udemy because I get
+                great courses for less. The instructors are fantastic,
+                interesting, and helpful. I plan to use Udemy for a long time!
+              </p>
+            </div>
+          </div>
+
+          <div class="card pb-4">
+            <div class="card-body">
+              <div class="feedback_item d-flex">
+                <div class="feedback_title">
+                  <img class="card-img-top" src="./img/fb1.jpg" alt="" />
+                </div>
+                <div class="feedback_text">
+                  <h4>Zulaika</h4>
+                </div>
+              </div>
+
+              <p class="card-text">
+                I work in project management and joined Udemy because I get
+                great courses for less. The instructors are fantastic,
+                interesting, and helpful. I plan to use Udemy for a long time!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="companies">
+        <div class="companies_content">
+          <p class="py-5 text-center">Trusted by companies of all sizes</p>
+          <div class="row justify-content-between">
+            <div class="col-xs-12 col-sm-4 col-lg-2 mb-sm-1 mb-1 logo-item">
+              <img src="./img/booking.svg" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-2 mb-sm-1 mb-1 logo-item">
+              <img src="./img/volkswagen.svg" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-2 mb-sm-1 mb-1 logo-item">
+              <img src="./img/mercedes.svg" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-2 mb-sm-1 mb-1 logo-item">
+              <img src="./img/pinterest.svg" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-2 mb-sm-1 mb-1 logo-item">
+              <img src="./img/adidas.svg" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-2 mb-sm-1 mb-1 logo-item">
+              <img src="./img/eventbrite-logo.svg" alt="">
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+
+      <div class="getUdemy">
+        <div class="getUdemy_content">
+          <div class="row  justify-content-between pb-5">
+            <div class="col-12 col-md-4 text-center  mb-sm-4 mb-4 pt-5">
+              <h4>Become an instructor</h4>
+              <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
+              <button class="btn-red">Start teaching today</button>
+            </div>
+            <div class="col-12 col-md-4 text-center pt-5">
+              <h4>Become an instructor</h4>
+              <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
+              <button class="btn-red">Start teaching today</button>
+            </div>
+            
+          </div>
+          <div class="line"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- companies-->
+    <!-- <section class="companies">
+      <div class="companies_content">
+        <p class="py-5 text-center">Trusted by companies of all sizes</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-lg-2">
+            <img src="./img/booking.svg" alt="">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-2">
+            <img src="./img/volkswagen.svg" alt="">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-2">
+            <img src="./img/mercedes.svg" alt="">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-2">
+            <img src="./img/pinterest.svg" alt="">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-2">
+            <img src="./img/adidas.svg" alt="">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-2">
+            <img src="./img/eventbrite-logo.svg" alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </section> -->
+
+    <!-- footer  -->
+    <footer id="footer" class="footer">
+      <div class="footer_content">
+        <div class="row footer_contact">
+          <div class="col-8">
+            <div class="row py-4">
+              <div class="col-12 col-sm-4">
+                <ul>
+                  <li><a class="font-weight-bold" href="">Udemy for Business</a></li>
+                  <li><a class="font-weight-bold" href="">Teach on Udemy</a></li>
+                  <li><a href="">Udemy app</a></li>
+                  <li><a href="">Contact us</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-12 col-sm-4">      
+                <ul>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Find us</a></li>
+                  <li><a href="">Schedule</a></li>
+                  <li><a href="">News</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-12 col-sm-4">
+                <ul>
+                  <li><a href="">Terms & Conditions</a></li>
+                  <li><a href="">Privacy policy</a></li>
+                  <li><a href="">Cookie policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-4  py-4">
+            <div class="nav-item dropdown language">
+              <a class="nav-link dropdown-toggle text-black-50" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">English</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#one">one</a>
+                <a class="dropdown-item" href="#two">two</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#three">three</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p class="py-4">
+           <img src="./img/logo-coral.svg" alt="" style="width: 110px;">
+            <span class="ml-4">Copyright © 2020 Udemy, Inc.</span>
+          </p>
+        </div>
+      </div>
+      <div class="line_grey"></div>
+      <div class="line_red"></div>
+
+    </footer>
+
+    <!-- Thư viện hỗ trợ -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- OWL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".feedback_detail").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      $(".student_course").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+    <script>
+      $("#myModal").on("shown.bs.modal", function () {
+        $("#myInput").trigger("focus");
+      });
+    </script>
+  </body>
+</html>

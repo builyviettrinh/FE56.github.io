@@ -1,0 +1,110 @@
+header {
+    @include styleText($fs-1,$color-black-light,$fw-normal);
+    // width: 90%;
+    // margin: auto;
+}
+.header_left {
+    display: flex;
+    align-items: center;
+    .navbar-brand {
+        img{
+            width: 110px;
+        }
+    }
+    .form_search {
+        flex-grow: 1;
+        padding-left: 2em;
+        .form-control {
+            background-color: $color-gray-1;
+            border: none;
+            transition: none;
+            &:focus{
+                box-shadow: none;
+                background-color: $color-white-0;
+                border-top: 1px solid $color-gray-3;
+                border-bottom: 1px solid $color-gray-3;
+                border-left: 1px solid $color-gray-3;
+            }
+            &:focus + .input-group-append {
+                .input-group-text {
+                    color: $color-red-0;
+                    background-color: $color-white-0;
+                    border-top: 1px solid $color-gray-3;
+                    border-bottom: 1px solid $color-gray-3;
+                    border-right: 1px solid $color-gray-3;
+                }
+            }
+        }
+        .input-group-append {
+            .input-group-text {
+                background-color: $color-gray-1;
+                color: $color-red-0;
+                border: none;
+                }
+                &:hover {
+                    .input-group-text {
+                        background-color: $color-red-0;
+                        color: $color-white-0;
+                    }
+                }
+                                
+            }
+        }
+
+    }
+
+.header_right {
+    .navbar-nav {
+        justify-content: space-between;
+        width: 100%;
+        .bussiness, .teach, .shopping-cart {
+            display: flex;
+            align-items: center;
+        }
+        .nav-link{
+            @include styleText($fs-1,$color-black-light,$fw-normal);
+            padding: $pd-1 $pd-1;
+        }
+        &:hover{
+            background-color: $color-gray-1;
+            
+        }
+
+    }
+
+}
+
+// responsive 
+// max-width:1200px 
+@include responsive('extra-large'){
+    .header_right {
+        .bussiness, .teach {
+            display: none;
+        }
+    }
+}
+
+// max-width: 992px 
+@include responsive('large'){
+    .header_right {
+        .udebtnGroup {
+            white-space: nowrap;
+        }
+    }
+}
+
+// max-width:768px 
+@include responsive('medium'){
+    .header_right {
+        .ude-btnGroup {
+            display: none;
+        }
+    }
+    .header_left {
+        justify-content: center;
+        .cate, .form_search {
+            display: none;
+        }
+    }
+
+}
