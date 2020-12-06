@@ -108,32 +108,25 @@ function paymentBlack(a,b){
 var listPayment = [];
 document.getElementById("printBill").addEventListener("click",function(){
     // khoi tao bien
-    var checkbox = document.getElementsByName("selector");
+    // var checkbox = document.getElementsById("uberX").checked;
     var _kmeter = document.getElementById("km").value; 
     var _time = document.getElementById("time").value;
 
-    var _carType = checkValidation(checkbox,_kmeter,_time);
+    // var _carType = checkValidation(checkbox,_kmeter,_time);
 
     // so sanh 3 gia tri cua carType
-    if(_carType != "" && _kmeter != "" && _time != ""){
-        var payX = paymentX(_kmeter,_time);
-        var paySUV = paymentSUV(_kmeter,_time);
-        var payBlack = paymentBlack(_kmeter,_time);
+        listPayment.push(checkbox,_kmeter,_time,payX);
 
-        listPayment.push(_carType,_kmeter,_time,payX);
-
-        addTable();
+        addTable(listPayment);
         // var divPayment = document.getElementsByClassName("modal-payment");
         // divPayment.setAttribute("id","exampleModal1");
         // document.getElementsByClassName("modal-payment").setAttribute("id","exampleModal1");
-
-    }
 
 
 })
 
 // tao bảng hoá đơn
-function addTable(){
+function addTable(listPayment){
     document.getElementById("tbodyHoaDon").innerHTML = "";
 
     for(var i = 0; i < listPayment.length; i++ ){
@@ -148,7 +141,7 @@ function addTable(){
         var  tagTD_pay = document.createElement("td");   
 
         // gán nội dung vào cột
-        tagTD_type.innerHTML = listPayment[i]._carType;
+        // tagTD_type.innerHTML = listPayment[i].checkbox;
         tagTD_km.innerHTML = listPayment[i]._kmeter;
         tagTD_time.innerHTML = listPayment[i]._time;
         tagTD_pay.innerHTML = listPayment[i].payX;
