@@ -87,23 +87,6 @@ function deleteNV(maNV) {
 
 //edit nhan vien
 function editNV(maNV) {
-  // hide button them nhan vien
   getEle("btnThemNV").style.display = "none";
   getEle("btnCapNhat").style.display = "block";
-
-  var nhanVien = dsnv.getInfoNv(maNV);
-  console.log(nhanVien);
-
-  // do data de hien thi ra cac o input
-  getEle("msnv").value = nhanVien.maNV;
-  getEle("msnv").setAttribute("disabled", true);
-  getEle("name").value = nhanVien.hoTen;
-  getEle("email").value = nhanVien.email;
-  getEle("password").value = nhanVien.mk;
-  getEle("datepicker").value = nhanVien.ngaySinh;
-  getEle("chucvu").value = nhanVien.chucVu;
 }
-
-/*
-những phần chưa làm : bấm cập nhật, bấm search, checkvalidation
-*/

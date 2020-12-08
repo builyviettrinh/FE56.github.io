@@ -103,7 +103,3 @@ function editNV(maNV) {
   getEle("datepicker").value = nhanVien.ngaySinh;
   getEle("chucvu").value = nhanVien.chucVu;
 }
-
-/*
-những phần chưa làm : bấm cập nhật, bấm search, checkvalidation
-*/

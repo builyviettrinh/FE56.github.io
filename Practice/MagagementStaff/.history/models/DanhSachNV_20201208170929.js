@@ -23,10 +23,10 @@ function DanhSachNV() {
   };
 
   // lay thong tin nhan vien
-  this.getInfoNv = function (maNV) {
-    var viTri = this.timViTri(maNV);
-    if (viTri !== -1) {
-      return this.arr[viTri];
-    }
-  };
+  this.getInfoNv = function(maNV){
+      var viTri = this.timViTri(maNV);
+      if( viTri !== -1){
+          return this.arr[viTri];
+      }
+
 }
