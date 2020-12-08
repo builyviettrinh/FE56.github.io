@@ -130,7 +130,7 @@ function addTable(listPayment){
     document.getElementById("tbodyHoaDon").innerHTML = "";
 
     for(var i = 0; i < listPayment.length; i++ ){
-        
+
         // tao dong
         var tagTR = document.createElement("tr");
 
