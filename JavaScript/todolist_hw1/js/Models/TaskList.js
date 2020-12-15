@@ -17,4 +17,17 @@ function TaskList() {
             return this.arr.splice(viTri, 1)
         }
     }
+
+    this.timTask = function(task) {
+        return this.arr.findIndex(function(item) {
+            return task === item.task;
+        });
+    };
+
+    this.checkDuplicate = function(task) {
+        var task = this.timTask(task);
+        if (task) {
+            return window.alert("bi trung");
+        }
+    }
 }

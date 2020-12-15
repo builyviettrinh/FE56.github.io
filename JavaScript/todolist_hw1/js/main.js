@@ -6,6 +6,7 @@ getId("addItem").addEventListener("click", function() {
     //   console.log(task);
 
     // check validation
+    taskList.checkDuplicate(task);
     if (task === "") {
         window.alert("Vui long dien activity");
     } else {
@@ -57,6 +58,10 @@ function deleteTask(id) {
     taskList.deleteTask(id);
     createTable(taskList.arr);
     setLocalStorage();
+}
+
+function checkDuplicate(task) {
+    taskList.checkDuplicate(task);
 }
 
 // ham dung chung cho gon
