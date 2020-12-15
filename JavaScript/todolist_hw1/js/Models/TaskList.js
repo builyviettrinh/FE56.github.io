@@ -1,13 +1,20 @@
 function TaskList() {
-  this.arr = [];
+    this.arr = [];
 
-  this.addTask = function (task) {
-    this.arr.push(task);
-  };
+    this.addTask = function(task) {
+        this.arr.push(task);
+    };
 
-  this.timViTri = function (input) {
-    return this.arr.findIndex(function (item) {
-      return input === item.input;
-    });
-  };
+    this.timViTri = function(id) {
+        return this.arr.findIndex(function(item) {
+            return id === item.id;
+        });
+    };
+
+    this.deleteTask = function(id) {
+        var viTri = this.timViTri(id);
+        if (viTri !== -1) {
+            return this.arr.splice(viTri, 1)
+        }
+    }
 }
