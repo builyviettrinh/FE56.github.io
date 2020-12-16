@@ -37,10 +37,9 @@ function TaskList() {
   };
 
   this.updateTask = function (status) {
-    var status = this.timViTri(status.id);
-    if (status !== "todo") {
-      return (status = "completed");
+    var viTri = this.timViTri(status.id);
+    if (viTri !== -1) {
+      this.arr[viTri] = status;
     }
-    return (status = "todo");
   };
 }

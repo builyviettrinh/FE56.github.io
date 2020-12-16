@@ -31,7 +31,7 @@ function createTable(arr) {
             <li><span>${item.id} ${item.status} ${item.task}</span>
             <div class="buttons">
             <button class="remove" onclick="deleteTask(${item.id})"> <i class="fa fa-trash-alt"></i></button>
-            <button class="complete" onclick="changeStatus(${item.id})">
+            <button class="complete" onclick="changeStatus(${item.status})">
         <i class="far fa-check-circle"></i>
 
       </button>
@@ -68,19 +68,14 @@ function deleteTask(id) {
 }
 
 // change status
-function changeStatus(id) {
+function changeStatus(status) {
   // lay thong tin
-  var tasks = taskList.getTaskById(id);
-  console.log(tasks);
+  var task = getId("newTask").value;
+  var status = "todo";
 
-  if (status !== "todo") {
-    return (status = "completed");
-  }
-  return (status = "todo");
-
-  //   var tasks = new Tasks(id, task, status);
+  var tasks = new Tasks(id, task, status);
   // change status
-  //   taskList.updateTask(status);
+  taskList.updateTask();
   setLocalStorage();
 }
 

@@ -16,8 +16,8 @@ getId("addItem").addEventListener("click", function () {
 
   var id = Math.random().toString().slice(2, 4);
   var status = "todo";
-  var tasks = new Tasks(id, task, status);
-  taskList.addTask(tasks);
+  var task = new Tasks(id, task, status);
+  taskList.addTask(task);
   createTable(taskList.arr);
   setLocalStorage();
 });
@@ -31,7 +31,7 @@ function createTable(arr) {
             <li><span>${item.id} ${item.status} ${item.task}</span>
             <div class="buttons">
             <button class="remove" onclick="deleteTask(${item.id})"> <i class="fa fa-trash-alt"></i></button>
-            <button class="complete" onclick="changeStatus(${item.id})">
+            <button class="complete" onclick="changeStatus(${item.status})">
         <i class="far fa-check-circle"></i>
 
       </button>
@@ -40,11 +40,7 @@ function createTable(arr) {
       </ul>
         `;
   });
-  if (status === "completed") {
-    getId("completed").innerHTML = content;
-  } else {
-    getId("todo").innerHTML = content;
-  }
+  getId("todo").innerHTML = content;
 }
 
 // get localStorage
@@ -68,21 +64,7 @@ function deleteTask(id) {
 }
 
 // change status
-function changeStatus(id) {
-  // lay thong tin
-  var tasks = taskList.getTaskById(id);
-  console.log(tasks);
-
-  if (status !== "todo") {
-    return (status = "completed");
-  }
-  return (status = "todo");
-
-  //   var tasks = new Tasks(id, task, status);
-  // change status
-  //   taskList.updateTask(status);
-  setLocalStorage();
-}
+function changeStatus(status) {}
 
 // ham dung chung cho gon
 function getId(id) {

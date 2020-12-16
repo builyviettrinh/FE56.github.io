@@ -5,13 +5,10 @@ function Validation() {
       window.alert("Vui long dien activity");
       return false;
     }
-    return true;
   };
   this.checkDuplicate = function (task) {
     if (taskList.checkDuplicate(task) !== -1) {
-      window.alert("bi trung");
-      return false;
-    }
-    return true;
+    window.alert("bi trung");
   };
+}''
 }

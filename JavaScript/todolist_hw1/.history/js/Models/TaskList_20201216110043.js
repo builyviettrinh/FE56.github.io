@@ -36,11 +36,5 @@ function TaskList() {
     }
   };
 
-  this.updateTask = function (status) {
-    var status = this.timViTri(status.id);
-    if (status !== "todo") {
-      return (status = "completed");
-    }
-    return (status = "todo");
-  };
+  this.updateTask = function (status) {};
 }

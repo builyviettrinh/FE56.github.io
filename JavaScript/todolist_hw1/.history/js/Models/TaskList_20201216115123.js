@@ -38,9 +38,9 @@ function TaskList() {
 
   this.updateTask = function (status) {
     var status = this.timViTri(status.id);
-    if (status !== "todo") {
+    if (status !=== "todo") {
       return (status = "completed");
     }
-    return (status = "todo");
+     return (status = "todo");
   };
 }

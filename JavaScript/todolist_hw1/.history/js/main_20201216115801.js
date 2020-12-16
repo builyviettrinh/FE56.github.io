@@ -70,17 +70,12 @@ function deleteTask(id) {
 // change status
 function changeStatus(id) {
   // lay thong tin
-  var tasks = taskList.getTaskById(id);
-  console.log(tasks);
+  var task = getId("newTask").value;
+  var status = "todo";
 
-  if (status !== "todo") {
-    return (status = "completed");
-  }
-  return (status = "todo");
-
-  //   var tasks = new Tasks(id, task, status);
+  var tasks = new Tasks(id, task, status);
   // change status
-  //   taskList.updateTask(status);
+  taskList.updateTask(status);
   setLocalStorage();
 }
 

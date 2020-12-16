@@ -26,21 +26,8 @@ function TaskList() {
 
   this.checkDuplicate = function (task) {
     var task = this.timTask(task);
-    return task;
-  };
-
-  this.getTaskById = function (id) {
-    var viTri = this.timViTri(id);
-    if (viTri !== -1) {
-      return this.arr[viTri];
+    if (task) {
+      return task;
     }
-  };
-
-  this.updateTask = function (status) {
-    var status = this.timViTri(status.id);
-    if (status !== "todo") {
-      return (status = "completed");
-    }
-    return (status = "todo");
   };
 }
