@@ -3,35 +3,35 @@ var validation = new Validation();
 
 getLocalStorage();
 
-getId("addItem").addEventListener("click", function () {
-  var task = getId("newTask").value;
-  //   console.log(task);
+getId("addItem").addEventListener("click", function() {
+    var task = getId("newTask").value;
+    //   console.log(task);
 
-  // check validation
-  var isValid = true;
+    // check validation
+    var isValid = true;
 
-  isValid = validation.checkNull(task) && validation.checkDuplicate(task);
+    isValid = validation.checkNull(task) && validation.checkDuplicate(task);
 
-  if (!isValid) return;
+    if (!isValid) return;
 
-  var id = Math.random().toString().slice(2, 4);
-  var status = "todo";
-  var tasks = new Tasks(id, task, status);
-  taskList.addTask(tasks);
-  createTable(taskList.arr);
-  setLocalStorage();
+    var id = Math.random().toString().slice(2, 4);
+    var status = "todo";
+    var tasks = new Tasks(id, task, status);
+    taskList.addTask(tasks);
+    createTable(taskList.arr);
+    setLocalStorage();
 });
 
 // tao bang
 function createTable(arr) {
-  var content = "";
-  arr.map(function (item, i) {
-    content += `
+    var content = "";
+    arr.map(function(item, i) {
+        content += `
         <ul>
             <li><span>${item.id} ${item.status} ${item.task}</span>
             <div class="buttons">
             <button class="remove" onclick="deleteTask(${item.id})"> <i class="fa fa-trash-alt"></i></button>
-            <button class="complete" onclick="changeStatus(${item.id})">
+            <button class="complete" onclick="">
         <i class="far fa-check-circle"></i>
 
       </button>
@@ -39,54 +39,55 @@ function createTable(arr) {
       </li>
       </ul>
         `;
-  });
-  if (status === "completed") {
-    getId("completed").innerHTML = content;
-  } else {
+    });
     getId("todo").innerHTML = content;
-  }
+    // if (status === "completed") {
+    //     getId("completed").innerHTML = content;
+    // } else {
+    //     getId("todo").innerHTML = content;
+    // }
 }
 
 // get localStorage
 function getLocalStorage() {
-  if (localStorage.getItem("ListTask")) {
-    taskList.arr = JSON.parse(localStorage.getItem("ListTask"));
-    createTable(taskList.arr);
-  }
+    if (localStorage.getItem("ListTask")) {
+        taskList.arr = JSON.parse(localStorage.getItem("ListTask"));
+        createTable(taskList.arr);
+    }
 }
 
 // set localStorage
 function setLocalStorage() {
-  localStorage.setItem("ListTask", JSON.stringify(taskList.arr));
+    localStorage.setItem("ListTask", JSON.stringify(taskList.arr));
 }
 
 // delete task
 function deleteTask(id) {
-  taskList.deleteTask(id);
-  createTable(taskList.arr);
-  setLocalStorage();
+    taskList.deleteTask(id);
+    createTable(taskList.arr);
+    setLocalStorage();
 }
 
 // change status
-function changeStatus(id) {
-  // lay thong tin
-  var tasks = taskList.getTaskById(id);
-  console.log(tasks);
+// function changeStatus(id) {
+//     // lay thong tin
+//     var tasks = taskList.getTaskById(id);
+//     console.log(tasks);
 
-  if ( !== "todo") {
-    return (status = "completed");
-  }
-  return (status = "todo");
+//     // if ( !== "todo") {
+//     //   return (status = "completed");
+//     // }
+//     // return (status = "todo");
 
-  //   var tasks = new Tasks(id, task, status);
-  // change status
-  //   taskList.updateTask(status);
-  setLocalStorage();
-}
+//     //   var tasks = new Tasks(id, task, status);
+//     // change status
+//     //   taskList.updateTask(status);
+//     setLocalStorage();
+// }
 
 // ham dung chung cho gon
 function getId(id) {
-  return document.getElementById(id);
+    return document.getElementById(id);
 }
 
 // <i class="fas fa-check-circle"></i>;
