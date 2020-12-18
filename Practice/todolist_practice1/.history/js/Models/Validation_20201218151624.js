@@ -9,7 +9,7 @@ function Validation() {
   };
 
   this.checkDuplicate = function (task) {
-    if (taskList.timTask(task) !== -1) {
+    if (taskList.checkDuplicate(task) !== -1) {
       window.alert("activity bị trùng");
       return false;
     }

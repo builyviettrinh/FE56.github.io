@@ -11,10 +11,10 @@ function TaskList() {
     });
   };
 
-  // this.checkDuplicate = function (task) {
-  //   var task = this.timTask(task);
-  //   return task;
-  // };
+  this.checkDuplicate = function (task) {
+    var task = this.timTask(task);
+    return task;
+  };
 
   this.timViTri = function (id) {
     return this.arr.findIndex(function (item) {

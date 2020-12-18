@@ -11,8 +11,6 @@ getId("addItem").addEventListener("click", function () {
 
   isValid = validation.checkNull(task) && validation.checkDuplicate(task);
 
-  if (!isValid) return;
-
   var idTask = Math.random().toString().slice(2, 4);
   var id = parseInt(idTask); // ep kieu
   var status = "todo";
