@@ -7,7 +7,7 @@ function TaskList() {
 
     this.timViTri = function(id) {
         return this.arr.findIndex(function(item) {
-            return id === item.id;
+            return id === parseInt(item.id);
         });
     };
 
@@ -18,29 +18,26 @@ function TaskList() {
         }
     };
 
-    // this.timTask = function(task) {
-    //     return this.arr.findIndex(function(item) {
-    //         return task === item.task;
-    //     });
-    // };
+    this.timTask = function(task) {
+        return this.arr.findIndex(function(item) {
+            return task === item.task;
+        });
+    };
+    this.getTaskById = function(id) {
+        return this.arr.findIndex(function(item) {
+            console.log(item.status);
+            if (item.status == "todo") {
+                return item.status == "completed";
+            } else {
+                return item.status;
+            }
 
-    // this.checkDuplicate = function(task) {
-    //     var task = this.timTask(task);
-    //     return task;
-    // };
+        });
 
-    // this.getTaskById = function (id) {
-    //   var viTri = this.timViTri(id);
-    //   if (viTri !== -1) {
-    //     return this.arr[viTri];
-    //   }
-    // };
+    };
 
-    this.updateTask = function(status) {
-        var status = this.timViTri(status.id);
-        if (status !== "todo") {
-            return (status = "completed");
-        }
-        return (status = "todo");
+    this.updateStatus = function(tasks) {
+        this.arr.push(task);
+
     };
 }

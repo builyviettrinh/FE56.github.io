@@ -14,7 +14,8 @@ getId("addItem").addEventListener("click", function() {
 
     if (!isValid) return;
 
-    var id = Math.random().toString().slice(2, 4);
+    var idTask = Math.random().toString().slice(2, 4);
+    var id = parseInt(idTask);
     var status = "todo";
     var tasks = new Tasks(id, task, status);
     taskList.addTask(tasks);
@@ -28,24 +29,22 @@ function createTable(arr) {
     arr.map(function(item, i) {
         content += `
         <ul>
-            <li><span>${item.id} ${item.status} ${item.task}</span>
+            <li>
+            <span>${item.id} ${item.status} ${item.task}</span>
             <div class="buttons">
-            <button class="remove" onclick="deleteTask(${item.id})"> <i class="fa fa-trash-alt"></i></button>
-            <button class="complete" onclick="">
-        <i class="far fa-check-circle"></i>
-
-      </button>
-      </div>
-      </li>
+                <button class="remove" onclick="deleteTask(${item.id})"> <i class="fa fa-trash-alt"></i></button>
+                <button class="complete" onclick="changeStatus(${item.id})"> <i class="far fa-check-circle"></i></button>
+            </div>
+            </li>
       </ul>
         `;
     });
-    getId("todo").innerHTML = content;
-    // if (status === "completed") {
-    //     getId("completed").innerHTML = content;
-    // } else {
-    //     getId("todo").innerHTML = content;
-    // }
+    // getId("todo").innerHTML = content;
+    if (status === "completed") {
+        getId("completed").innerHTML = content;
+    } else {
+        getId("todo").innerHTML = content;
+    }
 }
 
 // get localStorage
@@ -69,21 +68,23 @@ function deleteTask(id) {
 }
 
 // change status
-// function changeStatus(id) {
-//     // lay thong tin
-//     var tasks = taskList.getTaskById(id);
-//     console.log(tasks);
+function changeStatus(id) {
+    // lay thong tin
+    // var tasks = taskList.getTaskById(id);
+    console.log(id);
+    // taskList.getTaskById(id);
 
-//     // if ( !== "todo") {
-//     //   return (status = "completed");
-//     // }
-//     // return (status = "todo");
+    taskList.getTaskById(id);
+    console.log(taskList.getTaskById(id));
 
-//     //   var tasks = new Tasks(id, task, status);
-//     // change status
-//     //   taskList.updateTask(status);
-//     setLocalStorage();
-// }
+    var tasks = new Tasks(id, task, status);
+
+    taskList.updateStatus(tasks);
+    // console.log(taskList.updateStatus(id));
+    // console.log(taskList.updateStatus(status));
+    createTable(taskList.arr);
+    setLocalStorage();
+}
 
 // ham dung chung cho gon
 function getId(id) {
