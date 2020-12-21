@@ -19,17 +19,15 @@ getId("addItem").addEventListener("click", function () {
   var status = "todo";
   var tasks = new Tasks(id, task, status);
   taskList.addTask(tasks);
-  createTable(taskList.arr);
+  createTable(taskList.arr, "todo");
   setLocalStorage();
 });
 
 // tao bang
-function createTable(arr) {
+function createTable(arr, status) {
   var content = "";
-  getId("todo").innerHTML = "";
-  getId("completed").innerHTML = "";
   arr.map(function (item, i) {
-    content = `
+    content += `
     
             <li>
             <span>${item.id} ${item.status} ${item.task}</span>
@@ -39,14 +37,12 @@ function createTable(arr) {
             </div>
             </li>
         `;
-
-    if (item.status === "completed") {
-      getId("completed").innerHTML += content;
-    } else {
-      getId("todo").innerHTML += content;
-    }
   });
+  if (status !== undefined) {
+    getId(status).innerHTML = content;
+  }
 
+  console.log(status);
   //   if (status === "completed") {
   //     getId("completed").innerHTML = content;
   //   } else {
@@ -94,7 +90,7 @@ function changeStatus(id) {
   console.log(tasks);
 
   taskList.updateStatus(tasks);
-  createTable(taskList.arr);
+  createTable(taskList.arr, "completed");
   setLocalStorage();
 }
 

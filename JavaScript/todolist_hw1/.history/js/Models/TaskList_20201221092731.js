@@ -24,16 +24,17 @@ function TaskList() {
     });
   };
   this.getTaskById = function (id) {
-    var viTri = this.timViTri(id);
-    if (viTri !== -1) {
-      return this.arr[viTri];
-    }
+    return this.arr.findIndex(function (item) {
+      console.log((item.status.innerText = "completed"));
+      if (item.status == "todo") {
+        return item.status.innerText == "completed";
+      } else {
+        return item.status;
+      }
+    });
   };
 
   this.updateStatus = function (tasks) {
-    var viTri = this.timViTri(tasks.id);
-    if (viTri !== -1) {
-      this.arr[viTri] = tasks;
-    }
+    this.arr.push(task);
   };
 }

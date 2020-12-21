@@ -20,16 +20,15 @@ getId("addItem").addEventListener("click", function () {
   var tasks = new Tasks(id, task, status);
   taskList.addTask(tasks);
   createTable(taskList.arr);
+  showList("todo");
   setLocalStorage();
 });
 
 // tao bang
 function createTable(arr) {
   var content = "";
-  getId("todo").innerHTML = "";
-  getId("completed").innerHTML = "";
   arr.map(function (item, i) {
-    content = `
+    content += `
     
             <li>
             <span>${item.id} ${item.status} ${item.task}</span>
@@ -39,19 +38,17 @@ function createTable(arr) {
             </div>
             </li>
         `;
-
-    if (item.status === "completed") {
-      getId("completed").innerHTML += content;
-    } else {
-      getId("todo").innerHTML += content;
-    }
   });
 
+  //   console.log(status);
   //   if (status === "completed") {
   //     getId("completed").innerHTML = content;
   //   } else {
   //     getId("todo").innerHTML = content;
   //   }
+}
+function showList(status) {
+  getId(status).innerHTML = content;
 }
 
 // get localStorage
@@ -95,6 +92,7 @@ function changeStatus(id) {
 
   taskList.updateStatus(tasks);
   createTable(taskList.arr);
+  showList("completed");
   setLocalStorage();
 }
 

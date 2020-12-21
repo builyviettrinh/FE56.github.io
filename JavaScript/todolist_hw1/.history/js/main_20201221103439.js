@@ -26,11 +26,9 @@ getId("addItem").addEventListener("click", function () {
 // tao bang
 function createTable(arr) {
   var content = "";
-  getId("todo").innerHTML = "";
-  getId("completed").innerHTML = "";
   arr.map(function (item, i) {
-    content = `
-    
+    content += `
+        <ul>
             <li>
             <span>${item.id} ${item.status} ${item.task}</span>
             <div class="buttons">
@@ -38,20 +36,15 @@ function createTable(arr) {
                 <button class="complete" onclick="changeStatus(${item.id})"> <i class="far fa-check-circle"></i></button>
             </div>
             </li>
+      </ul>
         `;
-
-    if (item.status === "completed") {
-      getId("completed").innerHTML += content;
-    } else {
-      getId("todo").innerHTML += content;
-    }
   });
-
-  //   if (status === "completed") {
-  //     getId("completed").innerHTML = content;
-  //   } else {
-  //     getId("todo").innerHTML = content;
-  //   }
+  // getId("todo").innerHTML = content;
+  if (status === "completed") {
+    getId("completed").innerHTML = content;
+  } else {
+    getId("todo").innerHTML = content;
+  }
 }
 
 // get localStorage
@@ -78,20 +71,17 @@ function deleteTask(id) {
 function changeStatus(id) {
   // lay thong tin
   // taskList.getTaskById(id);
-  var taskItem = taskList.getTaskById(id);
+  var tasks = taskList.getTaskById(id);
   console.log(taskList.getTaskById(id));
-  console.log(taskItem.status);
-  if (taskItem.status === "todo") {
+  console.log(tasks.status);
+  if (tasks.status === "todo") {
     var status = "completed";
-    console.log(status);
+    console.log(tasks.status);
   } else {
     status = "todo";
   }
-  var id = taskItem.id;
-  var task = taskItem.task;
 
   var tasks = new Tasks(id, task, status);
-  console.log(tasks);
 
   taskList.updateStatus(tasks);
   createTable(taskList.arr);

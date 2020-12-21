@@ -27,7 +27,6 @@ getId("addItem").addEventListener("click", function () {
 function createTable(arr) {
   var content = "";
   getId("todo").innerHTML = "";
-  getId("completed").innerHTML = "";
   arr.map(function (item, i) {
     content = `
     

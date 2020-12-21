@@ -26,10 +26,8 @@ getId("addItem").addEventListener("click", function () {
 // tao bang
 function createTable(arr) {
   var content = "";
-  getId("todo").innerHTML = "";
-  getId("completed").innerHTML = "";
   arr.map(function (item, i) {
-    content = `
+    content += `
     
             <li>
             <span>${item.id} ${item.status} ${item.task}</span>
@@ -39,12 +37,7 @@ function createTable(arr) {
             </div>
             </li>
         `;
-
-    if (item.status === "completed") {
-      getId("completed").innerHTML += content;
-    } else {
-      getId("todo").innerHTML += content;
-    }
+    getId("todo").innerHTML = content;
   });
 
   //   if (status === "completed") {

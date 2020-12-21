@@ -26,11 +26,9 @@ getId("addItem").addEventListener("click", function () {
 // tao bang
 function createTable(arr) {
   var content = "";
-  getId("todo").innerHTML = "";
-  getId("completed").innerHTML = "";
   arr.map(function (item, i) {
-    content = `
-    
+    content += `
+        <ul>
             <li>
             <span>${item.id} ${item.status} ${item.task}</span>
             <div class="buttons">
@@ -38,20 +36,15 @@ function createTable(arr) {
                 <button class="complete" onclick="changeStatus(${item.id})"> <i class="far fa-check-circle"></i></button>
             </div>
             </li>
+      </ul>
         `;
-
-    if (item.status === "completed") {
-      getId("completed").innerHTML += content;
-    } else {
-      getId("todo").innerHTML += content;
-    }
   });
-
-  //   if (status === "completed") {
-  //     getId("completed").innerHTML = content;
-  //   } else {
-  //     getId("todo").innerHTML = content;
-  //   }
+  // getId("todo").innerHTML = content;
+  if (status === "completed") {
+    getId("completed").innerHTML = content;
+  } else {
+    getId("todo").innerHTML = content;
+  }
 }
 
 // get localStorage
