@@ -71,9 +71,10 @@ function deleteTask(id) {
 // change status
 function changeStatus(id) {
   // lay thong tin
+  // taskList.getTaskById(id);
   var taskItem = taskList.getTaskById(id);
-  //   console.log(taskList.getTaskById(id));
-  //   console.log(taskItem.status);
+  console.log(taskList.getTaskById(id));
+  console.log(taskItem.status);
   if (taskItem.status === "todo") {
     var status = "completed";
     console.log(status);
@@ -91,7 +92,7 @@ function changeStatus(id) {
   setLocalStorage();
 }
 
-// viet gon
+// ham dung chung cho gon
 function getId(id) {
   return document.getElementById(id);
 }

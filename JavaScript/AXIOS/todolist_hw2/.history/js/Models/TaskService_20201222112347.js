@@ -7,7 +7,7 @@ const getListTaskApi = () => {
 
 const deleteTaskApi = (id) => {
   return axios({
-    url: `https://5d29df39f3e25400147244c8.mockapi.io/toDoList/${id}`,
+    url: ``,
     method: "DELETE",
   });
 };
@@ -22,14 +22,14 @@ const addTaskApi = (task) => {
 
 const getTaskById = (id) => {
   return axos({
-    url: `https://5d29df39f3e25400147244c8.mockapi.io/toDoList/${id}`,
+    url: "",
     method: "GET",
   });
 };
 
 const updateStatusById = (task) => {
   return axios({
-    url: `https://5d29df39f3e25400147244c8.mockapi.io/toDoList/${task.id}`,
+    url: ``,
     method: "PUT",
     data: task,
   });

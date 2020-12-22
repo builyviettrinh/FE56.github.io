@@ -91,7 +91,7 @@ function changeStatus(id) {
   setLocalStorage();
 }
 
-// viet gon
+// ham dung chung cho gon
 function getId(id) {
   return document.getElementById(id);
 }

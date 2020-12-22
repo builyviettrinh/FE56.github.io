@@ -14,9 +14,10 @@ const getId = (id) => {
 
 const createListTask = () => {
   getListTaskApi()
-    .then((result) => {
-      let content = "";
-      result.data.forEach((task) => {
+  .then((result) => {
+    let content = "";
+    result.data
+      .forEach((task) => {
         content += `
             <li>
                 <span>${task.id} ${task.status} ${task.task}</span>
@@ -32,12 +33,12 @@ const createListTask = () => {
         // } else {
         //   getId("todo").innerHTML += content;
         // }
+      })
+      getId("todo").innerHTML += content;
+      .catch((err) => {
+        console.log(err);
       });
-      getId("todo").innerHTML = content;
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  });
 };
 
 createListTask();

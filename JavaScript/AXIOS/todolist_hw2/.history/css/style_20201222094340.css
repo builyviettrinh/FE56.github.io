@@ -310,9 +310,7 @@ ul.todo#completed li .buttons .complete .fas {
 }
 
 ul.todo#completed li .buttons .complete .far {
-  /* display: none; */
-    display: block;
-    color: #25b99a;
+  display: none;
 }
 
 ul.todo#completed span {
@@ -322,4 +320,3 @@ ul.todo#completed span {
 .alert-danger {
   color: red;
 }
-

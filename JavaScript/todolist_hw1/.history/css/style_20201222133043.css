@@ -312,7 +312,7 @@ ul.todo#completed li .buttons .complete .fas {
 ul.todo#completed li .buttons .complete .far {
   /* display: none; */
     display: block;
-    color: #25b99a;
+  color: #25b99a;
 }
 
 ul.todo#completed span {

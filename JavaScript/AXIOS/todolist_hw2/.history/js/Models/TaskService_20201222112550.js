@@ -29,7 +29,7 @@ const getTaskById = (id) => {
 
 const updateStatusById = (task) => {
   return axios({
-    url: `https://5d29df39f3e25400147244c8.mockapi.io/toDoList/${task.id}`,
+    url: ``,
     method: "PUT",
     data: task,
   });
