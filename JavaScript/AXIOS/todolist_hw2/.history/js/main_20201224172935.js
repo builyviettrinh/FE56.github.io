@@ -12,7 +12,6 @@ isLoading = false;
 
 const checkLoading(){
     let loader= document.createElement("div");
-    loader.classList.add("load");
     if(isLoading){
         document.getElementsByClassName("card").appendChild(loader);
     }

@@ -10,7 +10,7 @@ getId("addItem").addEventListener("click", function () {
   // check validation
   var isValid = false;
 
-  isValid = validation.checkNull(task) || validation.checkDuplicate(task);
+  isValid = validation.checkNull(task) && validation.checkDuplicate(task);
 
   if (isValid) return;
 

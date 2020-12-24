@@ -12,7 +12,7 @@ getId("addItem").addEventListener("click", function () {
 
   isValid = validation.checkNull(task) || validation.checkDuplicate(task);
 
-  if (isValid) return;
+  if (!isValid) return;
 
   var idTask = Math.random().toString().slice(2, 4);
   var id = parseInt(idTask);
