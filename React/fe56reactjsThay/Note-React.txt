@@ -1,0 +1,4 @@
+========== Buổi 1 =========
+* Component:
+    - Stateful Component: class
+    - Stateless Component: function
