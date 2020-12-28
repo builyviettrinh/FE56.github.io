@@ -66,8 +66,6 @@ function deleteTask(id) {
     .then((result) => {
       alert("deleted!");
       createListTask();
-      isLoading = false;
-      checkLoading(isLoading);
     })
     .catch((err) => {
       console.log(err);

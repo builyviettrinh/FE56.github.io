@@ -10,15 +10,15 @@ import Task from "./Models/Tasks.js";
 
 let isLoading = false;
 
-const checkLoading = (isLoading) => {
-  let loader = document.createElement("div");
-  loader.classList.add("load");
-  if (isLoading) {
-    document.getElementsByClassName("card").append(loader);
-  } else {
-    document.getElementsByClassName("card").remove(loader);
-  }
-};
+const checkLoading(){
+    let loader= document.createElement("div");
+    loader.classList.add("load");
+    if(isLoading){
+        document.getElementsByClassName("card").append(loader);
+    }else{
+        document.getElementsByClassName("card").remove(loader);
+    }
+}
 
 const getId = (id) => {
   return document.getElementById(id);
@@ -60,14 +60,10 @@ createListTask();
 window.deleteTask = deleteTask;
 
 function deleteTask(id) {
-  isLoading = true;
-  checkLoading(isLoading);
   deleteTaskApi(id)
     .then((result) => {
       alert("deleted!");
       createListTask();
-      isLoading = false;
-      checkLoading(isLoading);
     })
     .catch((err) => {
       console.log(err);

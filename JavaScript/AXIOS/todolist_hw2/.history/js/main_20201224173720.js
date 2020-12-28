@@ -21,6 +21,8 @@ const checkLoading = (isLoading) => {
 };
 
 const getId = (id) => {
+  isLoading = true;
+  checkLoading(isLoading);
   return document.getElementById(id);
 };
 
@@ -60,14 +62,10 @@ createListTask();
 window.deleteTask = deleteTask;
 
 function deleteTask(id) {
-  isLoading = true;
-  checkLoading(isLoading);
   deleteTaskApi(id)
     .then((result) => {
       alert("deleted!");
       createListTask();
-      isLoading = false;
-      checkLoading(isLoading);
     })
     .catch((err) => {
       console.log(err);

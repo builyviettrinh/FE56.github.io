@@ -10,7 +10,7 @@ import Task from "./Models/Tasks.js";
 
 let isLoading = false;
 
-const checkLoading = (isLoading) => {
+const checkLoading = () => {
   let loader = document.createElement("div");
   loader.classList.add("load");
   if (isLoading) {
@@ -21,6 +21,7 @@ const checkLoading = (isLoading) => {
 };
 
 const getId = (id) => {
+  isLoading = true;
   return document.getElementById(id);
 };
 
@@ -60,14 +61,10 @@ createListTask();
 window.deleteTask = deleteTask;
 
 function deleteTask(id) {
-  isLoading = true;
-  checkLoading(isLoading);
   deleteTaskApi(id)
     .then((result) => {
       alert("deleted!");
       createListTask();
-      isLoading = false;
-      checkLoading(isLoading);
     })
     .catch((err) => {
       console.log(err);

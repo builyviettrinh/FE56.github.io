@@ -64,10 +64,10 @@ function deleteTask(id) {
   checkLoading(isLoading);
   deleteTaskApi(id)
     .then((result) => {
-      alert("deleted!");
-      createListTask();
       isLoading = false;
       checkLoading(isLoading);
+      alert("deleted!");
+      createListTask();
     })
     .catch((err) => {
       console.log(err);
