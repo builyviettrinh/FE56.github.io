@@ -17,6 +17,7 @@ const checkLoading = (isLoading) => {
   if (isLoading) {
     addLoader.appendChild(loader);
   } else {
+    // addLoader.remove(loader);
     let getLoad = document.getElementsByClassName("load")[0];
     // dự phòng get giá trị a = null
     if (getLoad != null || getLoad != undefined) getLoad.remove();

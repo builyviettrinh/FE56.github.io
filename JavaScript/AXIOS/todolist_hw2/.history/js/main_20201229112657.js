@@ -17,9 +17,9 @@ const checkLoading = (isLoading) => {
   if (isLoading) {
     addLoader.appendChild(loader);
   } else {
-    let getLoad = document.getElementsByClassName("load")[0];
-    // dự phòng get giá trị a = null
-    if (getLoad != null || getLoad != undefined) getLoad.remove();
+    // addLoader.remove(loader);
+    let a = document.getElementsByClassName("load")[0];
+    if (a != null || a != undefined) a.remove();
   }
 };
 
@@ -77,7 +77,7 @@ function deleteTask(id) {
 // add task
 getId("addItem").addEventListener("click", function () {
   // get info
-  checkLoading(true);
+  checkLoading(isLoading);
   const taskName = getId("newTask").value;
   const status = "todo";
 
@@ -89,7 +89,8 @@ getId("addItem").addEventListener("click", function () {
     .then((result) => {
       alert("added!");
       createListTask();
-      checkLoading(false);
+      isLoading = false;
+      checkLoading(isLoading);
     })
     .catch((err) => {
       console.log(err);
@@ -104,6 +105,7 @@ function changeStatus(id) {
     .then((result) => {
       // get info
       // console.log(result.data);
+
       if (result.data.status != "completed") {
         result.data.status = "completed";
         console.log(result.data.status);

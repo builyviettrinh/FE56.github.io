@@ -8,18 +8,20 @@ import {
 
 import Task from "./Models/Tasks.js";
 
+let isLoading = true;
+
 const checkLoading = (isLoading) => {
   let loader = document.createElement("div");
   loader.classList.add("load");
   // console.log(loader);
-  let addLoader = document.getElementsByClassName("card__body")[0];
+  let addLoader = document.getElementsByClassName("card")[0];
   // console.log(addLoader);
   if (isLoading) {
     addLoader.appendChild(loader);
   } else {
-    let getLoad = document.getElementsByClassName("load")[0];
-    // dự phòng get giá trị a = null
-    if (getLoad != null || getLoad != undefined) getLoad.remove();
+    // addLoader.remove(loader);
+    let a = document.getElementsByClassName("load");
+    a.remove();
   }
 };
 
@@ -50,6 +52,8 @@ const createListTask = () => {
           getId("todo").innerHTML += content;
         }
       });
+      isLoading = false;
+      // checkLoading(isLoading);
     })
     .catch((err) => {
       console.log(err);
@@ -62,12 +66,14 @@ createListTask();
 window.deleteTask = deleteTask;
 
 function deleteTask(id) {
-  checkLoading(true);
+  isLoading = true;
+  checkLoading(isLoading);
   deleteTaskApi(id)
     .then((result) => {
       alert("deleted!");
       createListTask();
-      checkLoading(false);
+      isLoading = false;
+      checkLoading(isLoading);
     })
     .catch((err) => {
       console.log(err);
@@ -77,7 +83,7 @@ function deleteTask(id) {
 // add task
 getId("addItem").addEventListener("click", function () {
   // get info
-  checkLoading(true);
+  checkLoading(isLoading);
   const taskName = getId("newTask").value;
   const status = "todo";
 
@@ -87,9 +93,10 @@ getId("addItem").addEventListener("click", function () {
   // add task
   addTaskApi(task)
     .then((result) => {
-      alert("added!");
+      alert("added");
       createListTask();
-      checkLoading(false);
+      // isLoading = false;
+      // checkLoading(isLoading);
     })
     .catch((err) => {
       console.log(err);
@@ -99,18 +106,17 @@ getId("addItem").addEventListener("click", function () {
 // change status
 window.changeStatus = changeStatus;
 function changeStatus(id) {
-  checkLoading(true);
   getTaskById(id)
     .then((result) => {
       // get info
-      // console.log(result.data);
+      console.log(result.data);
+
       if (result.data.status != "completed") {
         result.data.status = "completed";
         console.log(result.data.status);
       } else {
         result.data.status = "todo";
       }
-
       const status = result.data.status;
       const id = result.data.id;
       const taskName = result.data.task;
@@ -120,9 +126,8 @@ function changeStatus(id) {
       console.log(task);
 
       updateStatusById(task).then((result) => {
-        alert("changed status!");
+        alert("changed status");
         createListTask();
-        checkLoading(false);
       });
     })
     .catch((err) => {
