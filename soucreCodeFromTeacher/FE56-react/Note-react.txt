@@ -1,0 +1,40 @@
+==== Buổi 1 ====
+   Chạy 1 lần duy nhất: npm install create-react-app -g
+   Câu lệnh cài project: create-react-app tenProject
+   Câu lệnh chạy project: npm start
+   npm install: Cài lại node_modules
+
+* Component:
+   - Stateful Component: class
+   - Stateless Component: function
+
+============== Buổi 2 ===============
+* Rendering Elements: {}
+* Handling Events: onClick
+* State
+* List keys
+
+============== Buoi 3 ==============
+* Props: Truyền dữ liệu từ Component Cha => Component Con
+   + class: mặc định có this.props
+   + function: phải có tham số props trên function
+   + children
+* Lifting State Up: Truyền dữ liệu từ Component Con => Component Cha
+* Shopping cart
+
+============== Buoi 4 ==============
+* Shopping cart
+
+============== Buoi 5 ==============
+* Usermanagement -props
+
+============== Buoi 6 ==============
+* Usermanagement - props (done)
+* Usermanagement - redux
+
+============== Buoi 7 ==============
+* Usermanagement - redux
+
+============== Buoi 8 ==============
+* Form validation
+* Lifecycle
